@@ -1,0 +1,796 @@
+{
+  "workflow": "conditional_relative_month_forecasting_baselines",
+  "target": "measured SM3 PHQ-9 severity (phq9_score_end), not change",
+  "cutoff": "SM2",
+  "horizon": "one relative study-month interval; not a fixed elapsed-day duration",
+  "assumptions": {
+    "assume_release_index_mapping": true,
+    "assume_historical_features_available_by_sm2": true,
+    "assume_sm0_phq_available_by_sm2": true,
+    "assume_enrollment_demographics": true,
+    "evidence_reference": "docs/temporal_feasibility.md"
+  },
+  "eligibility": {
+    "input_rows": 35694,
+    "input_participants_under_assumed_mapping": 4948,
+    "candidate_endpoint_rows": 10866,
+    "missing_measured_endpoint_pair": 0,
+    "missing_sm0_score": 0,
+    "missing_sm3_score": 0,
+    "missing_both_scores": 0,
+    "measured_endpoint_pool": 10866,
+    "measured_endpoint_participants": 4036,
+    "history_patterns_samples": {
+      "both": 8494,
+      "sm1_only": 786,
+      "sm2_only": 899,
+      "neither": 687
+    },
+    "history_patterns_participants_overlapping": {
+      "both": 3375,
+      "sm1_only": 725,
+      "sm2_only": 815,
+      "neither": 639
+    },
+    "excluded_missing_required_history": 2372,
+    "eligible_samples": 8494,
+    "eligible_participants": 3375,
+    "measured_endpoint_participants_without_eligible_sample": 661,
+    "per_endpoint_month": {
+      "3": {
+        "endpoint_rows": 3244,
+        "measured_endpoint_pairs": 3244,
+        "eligible": 2488,
+        "missing_required_history": 756
+      },
+      "6": {
+        "endpoint_rows": 2832,
+        "measured_endpoint_pairs": 2832,
+        "eligible": 2166,
+        "missing_required_history": 666
+      },
+      "9": {
+        "endpoint_rows": 2732,
+        "measured_endpoint_pairs": 2732,
+        "eligible": 2157,
+        "missing_required_history": 575
+      },
+      "12": {
+        "endpoint_rows": 2058,
+        "measured_endpoint_pairs": 2058,
+        "eligible": 1683,
+        "missing_required_history": 375
+      }
+    },
+    "individual_missing_predictor_values_retained": {
+      "wearable": 56005,
+      "demographics": 202
+    },
+    "sample_order": "participant prefix lexicographic, then endpoint study month numeric",
+    "quarter_numbering": "zero-based (endpoint_month - 1) // 3",
+    "participant_prefix_spelling": "preserved; integer normalization applies to month suffix only"
+  },
+  "feature_allowlist": {
+    "wearable_sm1_sm2": [
+      "steps_awake_mean",
+      "steps_mvpa_iqr",
+      "steps_lpa_iqr",
+      "steps_awake_sum_iqr",
+      "steps__active_day_count_",
+      "steps__sedentary_day_count_",
+      "steps_mvpa_sum_recent",
+      "steps_lpa_sum_recent",
+      "steps_rolling_6_median_recent",
+      "steps_rolling_6_max_recent",
+      "sleep_asleep_weekday_mean",
+      "sleep_asleep_weekend_mean",
+      "sleep_in_bed_weekday_mean",
+      "sleep_in_bed_weekend_mean",
+      "sleep_ratio_asleep_in_bed_weekday_mean",
+      "sleep_ratio_asleep_in_bed_weekend_mean",
+      "sleep_in_bed_iqr",
+      "sleep_asleep_iqr",
+      "sleep_ratio_asleep_in_bed_iqr",
+      "sleep_main_start_hour_adj_median",
+      "sleep_main_start_hour_adj_iqr",
+      "sleep_main_start_hour_adj_range",
+      "sleep__hypersomnia_count_",
+      "sleep__hyposomnia_count_",
+      "sleep_asleep_mean_recent",
+      "sleep_in_bed_mean_recent",
+      "sleep_ratio_asleep_in_bed_mean_recent"
+    ],
+    "enrollment_demographics_from_sm1": [
+      "sex",
+      "race_white",
+      "race_black",
+      "race_hispanic",
+      "race_asian",
+      "race_other",
+      "birthyear",
+      "educ",
+      "height",
+      "weight",
+      "bmi",
+      "pregnant",
+      "birth",
+      "trauma",
+      "insurance",
+      "money",
+      "money_assistance",
+      "household",
+      "comorbid_cancer",
+      "comorbid_diabetes_typ1",
+      "comorbid_diabetes_typ2",
+      "comorbid_gout",
+      "comorbid_migraines",
+      "comorbid_ms",
+      "comorbid_osteoporosis",
+      "comorbid_neuropathic",
+      "comorbid_arthritis",
+      "num_migraine_days",
+      "meds_migraine"
+    ],
+    "measured_sm0_scalar": "phq9_score_start",
+    "categorical_demographics": [
+      "sex",
+      "educ",
+      "money",
+      "household",
+      "num_migraine_days"
+    ],
+    "feature_details": {
+      "sex": {
+        "category": "Demographic",
+        "subcategory": "Static",
+        "description": "Sex",
+        "notes": "0=female, 1=male, 2=other"
+      },
+      "race_white": {
+        "category": "Demographic",
+        "subcategory": "Static",
+        "description": "Race, white",
+        "notes": ""
+      },
+      "race_black": {
+        "category": "Demographic",
+        "subcategory": "Static",
+        "description": "Race, black",
+        "notes": ""
+      },
+      "race_hispanic": {
+        "category": "Demographic",
+        "subcategory": "Static",
+        "description": "Race, hispanic",
+        "notes": ""
+      },
+      "race_asian": {
+        "category": "Demographic",
+        "subcategory": "Static",
+        "description": "Race, asian",
+        "notes": ""
+      },
+      "race_other": {
+        "category": "Demographic",
+        "subcategory": "Static",
+        "description": "Race, other",
+        "notes": ""
+      },
+      "birthyear": {
+        "category": "Demographic",
+        "subcategory": "Static",
+        "description": "Birth year",
+        "notes": ""
+      },
+      "educ": {
+        "category": "Demographic",
+        "subcategory": "Static",
+        "description": "Education level",
+        "notes": "higher = more education"
+      },
+      "height": {
+        "category": "Demographic",
+        "subcategory": "Static",
+        "description": "Height, in inches",
+        "notes": ""
+      },
+      "weight": {
+        "category": "Demographic",
+        "subcategory": "Static",
+        "description": "Weight, in lbs",
+        "notes": ""
+      },
+      "bmi": {
+        "category": "Demographic",
+        "subcategory": "Static",
+        "description": "BMI",
+        "notes": "calculated with height and weight using formula"
+      },
+      "pregnant": {
+        "category": "Demographic",
+        "subcategory": "Static",
+        "description": "Pregnant, at baseline",
+        "notes": "boolean"
+      },
+      "birth": {
+        "category": "Demographic",
+        "subcategory": "Static",
+        "description": "Given birth, past year",
+        "notes": "boolean"
+      },
+      "trauma": {
+        "category": "Demographic",
+        "subcategory": "Static",
+        "description": "Experienced trauma resulting in injury (e.g. accident, fall), past year",
+        "notes": "boolean"
+      },
+      "insurance": {
+        "category": "Demographic",
+        "subcategory": "Static",
+        "description": "Has health insurance",
+        "notes": "boolean"
+      },
+      "money": {
+        "category": "Demographic",
+        "subcategory": "Static",
+        "description": "Sufficient money, past month",
+        "notes": "higher = worse off"
+      },
+      "money_assistance": {
+        "category": "Demographic",
+        "subcategory": "Static",
+        "description": "Money assistance from government, past month",
+        "notes": "boolean"
+      },
+      "household": {
+        "category": "Demographic",
+        "subcategory": "Static",
+        "description": "Number of individuals in household",
+        "notes": "integer"
+      },
+      "comorbid_cancer": {
+        "category": "Demographic",
+        "subcategory": "Static",
+        "description": "Diagnosed: cancer",
+        "notes": "boolean"
+      },
+      "comorbid_diabetes_typ1": {
+        "category": "Demographic",
+        "subcategory": "Static",
+        "description": "Diagnosed: type 1 diabetes",
+        "notes": "boolean"
+      },
+      "comorbid_diabetes_typ2": {
+        "category": "Demographic",
+        "subcategory": "Static",
+        "description": "Diagnosed: type 2 diabetes",
+        "notes": "boolean"
+      },
+      "comorbid_gout": {
+        "category": "Demographic",
+        "subcategory": "Static",
+        "description": "Diagnosed: gout",
+        "notes": "boolean"
+      },
+      "comorbid_migraines": {
+        "category": "Demographic",
+        "subcategory": "Static",
+        "description": "Diagnosed: migraines",
+        "notes": "boolean"
+      },
+      "comorbid_ms": {
+        "category": "Demographic",
+        "subcategory": "Static",
+        "description": "Diagnosed: multiple sclerosis",
+        "notes": "boolean"
+      },
+      "comorbid_osteoporosis": {
+        "category": "Demographic",
+        "subcategory": "Static",
+        "description": "Diagnosed: osteoporosis",
+        "notes": "boolean"
+      },
+      "comorbid_neuropathic": {
+        "category": "Demographic",
+        "subcategory": "Static",
+        "description": "Diagnosed: fibromyalgia, peripheral neuropathic pain, central neuropathic pain (sum)",
+        "notes": "0-3"
+      },
+      "comorbid_arthritis": {
+        "category": "Demographic",
+        "subcategory": "Static",
+        "description": "Diagnosed: osteoarthritis, rheumatoid arthritis (sum)",
+        "notes": "0-2"
+      },
+      "num_migraine_days": {
+        "category": "Demographic",
+        "subcategory": "Static",
+        "description": "Number of migraines days, per month, on average",
+        "notes": "categories, check questionnaire for mapping"
+      },
+      "meds_migraine": {
+        "category": "Demographic",
+        "subcategory": "Static",
+        "description": "Takes daily prescription migraine medication, at baseline",
+        "notes": "boolean"
+      },
+      "steps_awake_mean": {
+        "category": "Steps",
+        "subcategory": "Statistics",
+        "description": "Mean number of steps taken while awake",
+        "notes": ""
+      },
+      "steps_mvpa_iqr": {
+        "category": "Steps",
+        "subcategory": "Statistics",
+        "description": "IQR of number of minutes with MVPA-range steps",
+        "notes": ""
+      },
+      "steps_lpa_iqr": {
+        "category": "Steps",
+        "subcategory": "Statistics",
+        "description": "IQR of number of minutes with LPA-range steps",
+        "notes": ""
+      },
+      "steps_awake_sum_iqr": {
+        "category": "Steps",
+        "subcategory": "Statistics",
+        "description": "IQR of number of steps taken while awake",
+        "notes": ""
+      },
+      "steps__active_day_count_": {
+        "category": "Steps",
+        "subcategory": "Statistics",
+        "description": "Number of days with >10k steps, last 7 days",
+        "notes": ""
+      },
+      "steps__sedentary_day_count_": {
+        "category": "Steps",
+        "subcategory": "Statistics",
+        "description": "Number of days with <5k steps, last 7 days",
+        "notes": ""
+      },
+      "steps_mvpa_sum_recent": {
+        "category": "Steps",
+        "subcategory": "Statistics",
+        "description": "Number of MVPA-range step minutes, last 4 days",
+        "notes": ""
+      },
+      "steps_lpa_sum_recent": {
+        "category": "Steps",
+        "subcategory": "Statistics",
+        "description": "Number of LPA-range step minutes, last 4 days",
+        "notes": ""
+      },
+      "steps_rolling_6_median_recent": {
+        "category": "Steps",
+        "subcategory": "Statistics",
+        "description": "Median number of 6 minute rolling number of steps, last 4 days",
+        "notes": ""
+      },
+      "steps_rolling_6_max_recent": {
+        "category": "Steps",
+        "subcategory": "Statistics",
+        "description": "Max number of 6 minute rolling number of steps, last 4 days",
+        "notes": ""
+      },
+      "sleep_asleep_weekday_mean": {
+        "category": "Sleep",
+        "subcategory": "Statistics",
+        "description": "Mean number of minutes asleep per night on weekdays",
+        "notes": ""
+      },
+      "sleep_asleep_weekend_mean": {
+        "category": "Sleep",
+        "subcategory": "Statistics",
+        "description": "Mean number of minutes asleep per night on weekends",
+        "notes": ""
+      },
+      "sleep_in_bed_weekday_mean": {
+        "category": "Sleep",
+        "subcategory": "Statistics",
+        "description": "Mean number of minutes in bed per night on weekdays",
+        "notes": ""
+      },
+      "sleep_in_bed_weekend_mean": {
+        "category": "Sleep",
+        "subcategory": "Statistics",
+        "description": "Mean number of minutes in bed per night on weekends",
+        "notes": ""
+      },
+      "sleep_ratio_asleep_in_bed_weekday_mean": {
+        "category": "Sleep",
+        "subcategory": "Statistics",
+        "description": "Mean ratio between number of minutes asleep / in bed on weekdays",
+        "notes": ""
+      },
+      "sleep_ratio_asleep_in_bed_weekend_mean": {
+        "category": "Sleep",
+        "subcategory": "Statistics",
+        "description": "Mean ratio between number of minutes asleep / in bed on weekends",
+        "notes": ""
+      },
+      "sleep_in_bed_iqr": {
+        "category": "Sleep",
+        "subcategory": "Statistics",
+        "description": "IQR of minutes in bed per night",
+        "notes": ""
+      },
+      "sleep_asleep_iqr": {
+        "category": "Sleep",
+        "subcategory": "Statistics",
+        "description": "IQR of minutes asleep per night",
+        "notes": ""
+      },
+      "sleep_ratio_asleep_in_bed_iqr": {
+        "category": "Sleep",
+        "subcategory": "Statistics",
+        "description": "IQR of ratio between number of minutes asleep / in bed",
+        "notes": ""
+      },
+      "sleep_main_start_hour_adj_median": {
+        "category": "Sleep",
+        "subcategory": "Statistics",
+        "description": "Median start hour of main sleep",
+        "notes": "0-30+ (adjusted so that 4am next day = 28)"
+      },
+      "sleep_main_start_hour_adj_iqr": {
+        "category": "Sleep",
+        "subcategory": "Statistics",
+        "description": "IQR of start hour of main sleep",
+        "notes": ""
+      },
+      "sleep_main_start_hour_adj_range": {
+        "category": "Sleep",
+        "subcategory": "Statistics",
+        "description": "Max start hour of main sleep - min start hour of main sleep",
+        "notes": ""
+      },
+      "sleep__hypersomnia_count_": {
+        "category": "Sleep",
+        "subcategory": "Statistics",
+        "description": "Number of nights with >10 hours asleep, last 7 days",
+        "notes": ""
+      },
+      "sleep__hyposomnia_count_": {
+        "category": "Sleep",
+        "subcategory": "Statistics",
+        "description": "Number of nights with <5 hours asleep, last 7 days",
+        "notes": ""
+      },
+      "sleep_asleep_mean_recent": {
+        "category": "Sleep",
+        "subcategory": "Statistics",
+        "description": "Mean number of minutes asleep per night, last 4 days",
+        "notes": ""
+      },
+      "sleep_in_bed_mean_recent": {
+        "category": "Sleep",
+        "subcategory": "Statistics",
+        "description": "Mean number of minutes in bed per night, last 4 days",
+        "notes": ""
+      },
+      "sleep_ratio_asleep_in_bed_mean_recent": {
+        "category": "Sleep",
+        "subcategory": "Statistics",
+        "description": "Mean ratio between number of minutes asleep / in bed, last 4 days",
+        "notes": ""
+      },
+      "phq9_score_start": {
+        "category": "PHQ-9",
+        "subcategory": "PHQ-9 score",
+        "description": "PHQ-9 score at the start of the 3 month period",
+        "notes": "0-27"
+      }
+    }
+  },
+  "feature_names": {
+    "wearable": [
+      "numeric__steps_awake_mean",
+      "numeric__steps_mvpa_iqr",
+      "numeric__steps_lpa_iqr",
+      "numeric__steps_awake_sum_iqr",
+      "numeric__steps__active_day_count_",
+      "numeric__steps__sedentary_day_count_",
+      "numeric__steps_mvpa_sum_recent",
+      "numeric__steps_lpa_sum_recent",
+      "numeric__steps_rolling_6_median_recent",
+      "numeric__steps_rolling_6_max_recent",
+      "numeric__sleep_asleep_weekday_mean",
+      "numeric__sleep_asleep_weekend_mean",
+      "numeric__sleep_in_bed_weekday_mean",
+      "numeric__sleep_in_bed_weekend_mean",
+      "numeric__sleep_ratio_asleep_in_bed_weekday_mean",
+      "numeric__sleep_ratio_asleep_in_bed_weekend_mean",
+      "numeric__sleep_in_bed_iqr",
+      "numeric__sleep_asleep_iqr",
+      "numeric__sleep_ratio_asleep_in_bed_iqr",
+      "numeric__sleep_main_start_hour_adj_median",
+      "numeric__sleep_main_start_hour_adj_iqr",
+      "numeric__sleep_main_start_hour_adj_range",
+      "numeric__sleep__hypersomnia_count_",
+      "numeric__sleep__hyposomnia_count_",
+      "numeric__sleep_asleep_mean_recent",
+      "numeric__sleep_in_bed_mean_recent",
+      "numeric__sleep_ratio_asleep_in_bed_mean_recent",
+      "numeric__missingindicator_steps_awake_mean",
+      "numeric__missingindicator_steps_mvpa_iqr",
+      "numeric__missingindicator_steps_lpa_iqr",
+      "numeric__missingindicator_steps_awake_sum_iqr",
+      "numeric__missingindicator_steps_rolling_6_median_recent",
+      "numeric__missingindicator_steps_rolling_6_max_recent",
+      "numeric__missingindicator_sleep_asleep_weekday_mean",
+      "numeric__missingindicator_sleep_asleep_weekend_mean",
+      "numeric__missingindicator_sleep_in_bed_weekday_mean",
+      "numeric__missingindicator_sleep_in_bed_weekend_mean",
+      "numeric__missingindicator_sleep_ratio_asleep_in_bed_weekday_mean",
+      "numeric__missingindicator_sleep_ratio_asleep_in_bed_weekend_mean",
+      "numeric__missingindicator_sleep_in_bed_iqr",
+      "numeric__missingindicator_sleep_asleep_iqr",
+      "numeric__missingindicator_sleep_ratio_asleep_in_bed_iqr",
+      "numeric__missingindicator_sleep_main_start_hour_adj_median",
+      "numeric__missingindicator_sleep_main_start_hour_adj_iqr",
+      "numeric__missingindicator_sleep_main_start_hour_adj_range",
+      "numeric__missingindicator_sleep_asleep_mean_recent",
+      "numeric__missingindicator_sleep_in_bed_mean_recent",
+      "numeric__missingindicator_sleep_ratio_asleep_in_bed_mean_recent"
+    ],
+    "demographics": [
+      "numeric__race_white",
+      "numeric__race_black",
+      "numeric__race_hispanic",
+      "numeric__race_asian",
+      "numeric__race_other",
+      "numeric__birthyear",
+      "numeric__height",
+      "numeric__weight",
+      "numeric__bmi",
+      "numeric__pregnant",
+      "numeric__birth",
+      "numeric__trauma",
+      "numeric__insurance",
+      "numeric__money_assistance",
+      "numeric__comorbid_cancer",
+      "numeric__comorbid_diabetes_typ1",
+      "numeric__comorbid_diabetes_typ2",
+      "numeric__comorbid_gout",
+      "numeric__comorbid_migraines",
+      "numeric__comorbid_ms",
+      "numeric__comorbid_osteoporosis",
+      "numeric__comorbid_neuropathic",
+      "numeric__comorbid_arthritis",
+      "numeric__meds_migraine",
+      "numeric__missingindicator_height",
+      "numeric__missingindicator_bmi",
+      "numeric__missingindicator_pregnant",
+      "numeric__missingindicator_birth",
+      "numeric__missingindicator_insurance",
+      "numeric__missingindicator_money_assistance",
+      "categorical__sex_0",
+      "categorical__sex_1",
+      "categorical__sex_2",
+      "categorical__educ_0",
+      "categorical__educ_1",
+      "categorical__educ_2",
+      "categorical__educ_3",
+      "categorical__educ_4",
+      "categorical__educ_5",
+      "categorical__educ_6",
+      "categorical__educ___MISSING__",
+      "categorical__money_0",
+      "categorical__money_1",
+      "categorical__money_2",
+      "categorical__money_3",
+      "categorical__money_4",
+      "categorical__money___MISSING__",
+      "categorical__household_0",
+      "categorical__household_1",
+      "categorical__household_2",
+      "categorical__household_3",
+      "categorical__household_4",
+      "categorical__household_5",
+      "categorical__household_6",
+      "categorical__household_7",
+      "categorical__household_8",
+      "categorical__num_migraine_days_0",
+      "categorical__num_migraine_days_1",
+      "categorical__num_migraine_days_2",
+      "categorical__num_migraine_days_3",
+      "categorical__num_migraine_days_4",
+      "categorical__num_migraine_days_5"
+    ],
+    "sm0_phq": [
+      "measured_sm0_phq9_standardized"
+    ],
+    "tabular": [
+      "SM1__numeric__steps_awake_mean",
+      "SM1__numeric__steps_mvpa_iqr",
+      "SM1__numeric__steps_lpa_iqr",
+      "SM1__numeric__steps_awake_sum_iqr",
+      "SM1__numeric__steps__active_day_count_",
+      "SM1__numeric__steps__sedentary_day_count_",
+      "SM1__numeric__steps_mvpa_sum_recent",
+      "SM1__numeric__steps_lpa_sum_recent",
+      "SM1__numeric__steps_rolling_6_median_recent",
+      "SM1__numeric__steps_rolling_6_max_recent",
+      "SM1__numeric__sleep_asleep_weekday_mean",
+      "SM1__numeric__sleep_asleep_weekend_mean",
+      "SM1__numeric__sleep_in_bed_weekday_mean",
+      "SM1__numeric__sleep_in_bed_weekend_mean",
+      "SM1__numeric__sleep_ratio_asleep_in_bed_weekday_mean",
+      "SM1__numeric__sleep_ratio_asleep_in_bed_weekend_mean",
+      "SM1__numeric__sleep_in_bed_iqr",
+      "SM1__numeric__sleep_asleep_iqr",
+      "SM1__numeric__sleep_ratio_asleep_in_bed_iqr",
+      "SM1__numeric__sleep_main_start_hour_adj_median",
+      "SM1__numeric__sleep_main_start_hour_adj_iqr",
+      "SM1__numeric__sleep_main_start_hour_adj_range",
+      "SM1__numeric__sleep__hypersomnia_count_",
+      "SM1__numeric__sleep__hyposomnia_count_",
+      "SM1__numeric__sleep_asleep_mean_recent",
+      "SM1__numeric__sleep_in_bed_mean_recent",
+      "SM1__numeric__sleep_ratio_asleep_in_bed_mean_recent",
+      "SM1__numeric__missingindicator_steps_awake_mean",
+      "SM1__numeric__missingindicator_steps_mvpa_iqr",
+      "SM1__numeric__missingindicator_steps_lpa_iqr",
+      "SM1__numeric__missingindicator_steps_awake_sum_iqr",
+      "SM1__numeric__missingindicator_steps_rolling_6_median_recent",
+      "SM1__numeric__missingindicator_steps_rolling_6_max_recent",
+      "SM1__numeric__missingindicator_sleep_asleep_weekday_mean",
+      "SM1__numeric__missingindicator_sleep_asleep_weekend_mean",
+      "SM1__numeric__missingindicator_sleep_in_bed_weekday_mean",
+      "SM1__numeric__missingindicator_sleep_in_bed_weekend_mean",
+      "SM1__numeric__missingindicator_sleep_ratio_asleep_in_bed_weekday_mean",
+      "SM1__numeric__missingindicator_sleep_ratio_asleep_in_bed_weekend_mean",
+      "SM1__numeric__missingindicator_sleep_in_bed_iqr",
+      "SM1__numeric__missingindicator_sleep_asleep_iqr",
+      "SM1__numeric__missingindicator_sleep_ratio_asleep_in_bed_iqr",
+      "SM1__numeric__missingindicator_sleep_main_start_hour_adj_median",
+      "SM1__numeric__missingindicator_sleep_main_start_hour_adj_iqr",
+      "SM1__numeric__missingindicator_sleep_main_start_hour_adj_range",
+      "SM1__numeric__missingindicator_sleep_asleep_mean_recent",
+      "SM1__numeric__missingindicator_sleep_in_bed_mean_recent",
+      "SM1__numeric__missingindicator_sleep_ratio_asleep_in_bed_mean_recent",
+      "SM2__numeric__steps_awake_mean",
+      "SM2__numeric__steps_mvpa_iqr",
+      "SM2__numeric__steps_lpa_iqr",
+      "SM2__numeric__steps_awake_sum_iqr",
+      "SM2__numeric__steps__active_day_count_",
+      "SM2__numeric__steps__sedentary_day_count_",
+      "SM2__numeric__steps_mvpa_sum_recent",
+      "SM2__numeric__steps_lpa_sum_recent",
+      "SM2__numeric__steps_rolling_6_median_recent",
+      "SM2__numeric__steps_rolling_6_max_recent",
+      "SM2__numeric__sleep_asleep_weekday_mean",
+      "SM2__numeric__sleep_asleep_weekend_mean",
+      "SM2__numeric__sleep_in_bed_weekday_mean",
+      "SM2__numeric__sleep_in_bed_weekend_mean",
+      "SM2__numeric__sleep_ratio_asleep_in_bed_weekday_mean",
+      "SM2__numeric__sleep_ratio_asleep_in_bed_weekend_mean",
+      "SM2__numeric__sleep_in_bed_iqr",
+      "SM2__numeric__sleep_asleep_iqr",
+      "SM2__numeric__sleep_ratio_asleep_in_bed_iqr",
+      "SM2__numeric__sleep_main_start_hour_adj_median",
+      "SM2__numeric__sleep_main_start_hour_adj_iqr",
+      "SM2__numeric__sleep_main_start_hour_adj_range",
+      "SM2__numeric__sleep__hypersomnia_count_",
+      "SM2__numeric__sleep__hyposomnia_count_",
+      "SM2__numeric__sleep_asleep_mean_recent",
+      "SM2__numeric__sleep_in_bed_mean_recent",
+      "SM2__numeric__sleep_ratio_asleep_in_bed_mean_recent",
+      "SM2__numeric__missingindicator_steps_awake_mean",
+      "SM2__numeric__missingindicator_steps_mvpa_iqr",
+      "SM2__numeric__missingindicator_steps_lpa_iqr",
+      "SM2__numeric__missingindicator_steps_awake_sum_iqr",
+      "SM2__numeric__missingindicator_steps_rolling_6_median_recent",
+      "SM2__numeric__missingindicator_steps_rolling_6_max_recent",
+      "SM2__numeric__missingindicator_sleep_asleep_weekday_mean",
+      "SM2__numeric__missingindicator_sleep_asleep_weekend_mean",
+      "SM2__numeric__missingindicator_sleep_in_bed_weekday_mean",
+      "SM2__numeric__missingindicator_sleep_in_bed_weekend_mean",
+      "SM2__numeric__missingindicator_sleep_ratio_asleep_in_bed_weekday_mean",
+      "SM2__numeric__missingindicator_sleep_ratio_asleep_in_bed_weekend_mean",
+      "SM2__numeric__missingindicator_sleep_in_bed_iqr",
+      "SM2__numeric__missingindicator_sleep_asleep_iqr",
+      "SM2__numeric__missingindicator_sleep_ratio_asleep_in_bed_iqr",
+      "SM2__numeric__missingindicator_sleep_main_start_hour_adj_median",
+      "SM2__numeric__missingindicator_sleep_main_start_hour_adj_iqr",
+      "SM2__numeric__missingindicator_sleep_main_start_hour_adj_range",
+      "SM2__numeric__missingindicator_sleep_asleep_mean_recent",
+      "SM2__numeric__missingindicator_sleep_in_bed_mean_recent",
+      "SM2__numeric__missingindicator_sleep_ratio_asleep_in_bed_mean_recent",
+      "baseline_demographic__numeric__race_white",
+      "baseline_demographic__numeric__race_black",
+      "baseline_demographic__numeric__race_hispanic",
+      "baseline_demographic__numeric__race_asian",
+      "baseline_demographic__numeric__race_other",
+      "baseline_demographic__numeric__birthyear",
+      "baseline_demographic__numeric__height",
+      "baseline_demographic__numeric__weight",
+      "baseline_demographic__numeric__bmi",
+      "baseline_demographic__numeric__pregnant",
+      "baseline_demographic__numeric__birth",
+      "baseline_demographic__numeric__trauma",
+      "baseline_demographic__numeric__insurance",
+      "baseline_demographic__numeric__money_assistance",
+      "baseline_demographic__numeric__comorbid_cancer",
+      "baseline_demographic__numeric__comorbid_diabetes_typ1",
+      "baseline_demographic__numeric__comorbid_diabetes_typ2",
+      "baseline_demographic__numeric__comorbid_gout",
+      "baseline_demographic__numeric__comorbid_migraines",
+      "baseline_demographic__numeric__comorbid_ms",
+      "baseline_demographic__numeric__comorbid_osteoporosis",
+      "baseline_demographic__numeric__comorbid_neuropathic",
+      "baseline_demographic__numeric__comorbid_arthritis",
+      "baseline_demographic__numeric__meds_migraine",
+      "baseline_demographic__numeric__missingindicator_height",
+      "baseline_demographic__numeric__missingindicator_bmi",
+      "baseline_demographic__numeric__missingindicator_pregnant",
+      "baseline_demographic__numeric__missingindicator_birth",
+      "baseline_demographic__numeric__missingindicator_insurance",
+      "baseline_demographic__numeric__missingindicator_money_assistance",
+      "baseline_demographic__categorical__sex_0",
+      "baseline_demographic__categorical__sex_1",
+      "baseline_demographic__categorical__sex_2",
+      "baseline_demographic__categorical__educ_0",
+      "baseline_demographic__categorical__educ_1",
+      "baseline_demographic__categorical__educ_2",
+      "baseline_demographic__categorical__educ_3",
+      "baseline_demographic__categorical__educ_4",
+      "baseline_demographic__categorical__educ_5",
+      "baseline_demographic__categorical__educ_6",
+      "baseline_demographic__categorical__educ___MISSING__",
+      "baseline_demographic__categorical__money_0",
+      "baseline_demographic__categorical__money_1",
+      "baseline_demographic__categorical__money_2",
+      "baseline_demographic__categorical__money_3",
+      "baseline_demographic__categorical__money_4",
+      "baseline_demographic__categorical__money___MISSING__",
+      "baseline_demographic__categorical__household_0",
+      "baseline_demographic__categorical__household_1",
+      "baseline_demographic__categorical__household_2",
+      "baseline_demographic__categorical__household_3",
+      "baseline_demographic__categorical__household_4",
+      "baseline_demographic__categorical__household_5",
+      "baseline_demographic__categorical__household_6",
+      "baseline_demographic__categorical__household_7",
+      "baseline_demographic__categorical__household_8",
+      "baseline_demographic__categorical__num_migraine_days_0",
+      "baseline_demographic__categorical__num_migraine_days_1",
+      "baseline_demographic__categorical__num_migraine_days_2",
+      "baseline_demographic__categorical__num_migraine_days_3",
+      "baseline_demographic__categorical__num_migraine_days_4",
+      "baseline_demographic__categorical__num_migraine_days_5",
+      "measured_sm0_phq9_standardized"
+    ]
+  },
+  "preprocessing": "reuse original training-fitted artifact without refitting",
+  "persistence": "measured SM0 severity exactly; no fitted parameters",
+  "training_mean": {
+    "mean_sm3": 7.3114850322833105,
+    "fitted_partition": "train"
+  },
+  "ridge": {
+    "alphas": [
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "selected_alpha": 10.0,
+    "solver": "svd",
+    "fit_intercept": true,
+    "positive": false,
+    "dtype": "float64",
+    "selection": "minimum validation RMSE; first ascending alpha on exact ties",
+    "final_refit": false,
+    "fitted_partition": "train"
+  },
+  "prediction_clipping": false,
+  "target_transformation": "none",
+  "metric_weighting": "equal weight per quarter sample; repeated participants not independent",
+  "evaluation_partition": "validation_only",
+  "calibration_observations_opened": false,
+  "test_observations_opened": false
+}

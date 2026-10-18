@@ -1,0 +1,98 @@
+{
+  "format_version": 1,
+  "workflow": "conditional_relative_month_forecasting_baselines",
+  "dataset_dir": "/workspace/uncertainty-aware-kan-phenotyping/artifacts/conditional_forecasting/sm2-seed42",
+  "dataset_manifest_sha256": "af8c7874005e6f4c008a1e35b3f11109bbcb28d38ff75208c0b42fbc47e5216b",
+  "original_input_hashes": {
+    "data": {
+      "path": "/workspace/private-data/psyche-d/anon_processed_df_parquet.csv",
+      "sha256": "3d96afaa768bcd50c56524b931ac2e6acdd5f08c95db16c1e3b13d7dd6ce3934"
+    },
+    "dictionary": {
+      "path": "/workspace/private-data/psyche-d/feature_explanations.tsv",
+      "sha256": "e346b57eb81c8c7d22a6ff0bda71214e527d8bed72eef1c2218d7e5826612e3e"
+    }
+  },
+  "original_input_hash_verification": "inherited from dataset manifest; raw CSV not reopened",
+  "dataset_files_consumed": [
+    "manifest.json",
+    "splits.npz",
+    "sample_index.npz",
+    "preprocessor.joblib",
+    "train_inputs.npz",
+    "train_targets.npz",
+    "validation_inputs.npz",
+    "validation_targets.npz"
+  ],
+  "consumed_sha256": {
+    "manifest.json": "af8c7874005e6f4c008a1e35b3f11109bbcb28d38ff75208c0b42fbc47e5216b",
+    "splits.npz": "db9ef44c8fdf01ed07269628065dd287872b11f86239d17dab291e8f713ea126",
+    "sample_index.npz": "19dfe017fe49feaa1b7f514d96b3156d98e29998da9d429fb54fa3b525aacf57",
+    "preprocessor.joblib": "bdaf5b1980a8811204c4999bb74c0054410ecab2b945904c759bd7c3a01a5749",
+    "train_inputs.npz": "e36893d6e953a8d7e75cabecccf64db93ac7ca93fed3bb30839abe57c945dcc4",
+    "train_targets.npz": "053b0d7b933f8700bc438cf3f78a0a3d25d947cf9d6dcb794045b9457916ab31",
+    "validation_inputs.npz": "40bebf351865b480fa3d630f03718962aa98e64cf82df2997efd1d17195818a7",
+    "validation_targets.npz": "a13de356f8421045b60fa3749a63030db9b7eb43eb7cc8561d1c59c86ee51873"
+  },
+  "dataset_source_sha256": {
+    "build_forecasting_dataset.py": "8a9095f75703d2f2d6b65b240009106b7ea2ad5bc26c432165d82be4be5e23ce",
+    "conditional_forecasting.py": "00bc36cd50e775e637e58d3822822b36225ed39919d562806a548143a9678fe0",
+    "forecasting_splits.py": "fcf4b93e3184732d1dba97ae5781c071997ffab77d1a786edb9ec9a9536a255b",
+    "forecasting_preprocessing.py": "bee2cc449a20d57305bbbd958e4aaf7d866564f63e7b6a395f92c130810c4f4d",
+    "preprocessing.py": "032f99fb041ace049bd4bccc507061a10a6e4d635034821fd7ba9a4fba61a0ba",
+    "dataset.py": "280506856664ff5a73fe479dcf3b7ebbbb01a27b442580c4e9b5c9581102054a"
+  },
+  "baseline_source_sha256": "1008ac7a0d17b51f0e888f9d27632f9119b92d5e1ca857e1cac54dbba27764a9",
+  "split_configuration": {
+    "seed": 42,
+    "fractions": {
+      "train": 0.6,
+      "validation": 0.1,
+      "calibration": 0.1,
+      "test": 0.2
+    },
+    "train": {
+      "samples": 5111,
+      "participants": 2025
+    },
+    "validation": {
+      "samples": 851,
+      "participants": 338
+    },
+    "calibration": {
+      "samples": 827,
+      "participants": 337
+    },
+    "test": {
+      "samples": 1705,
+      "participants": 675
+    },
+    "participant_overlap": false,
+    "every_sample_assigned_once": true,
+    "identity_basis": "source-supported participant prefix, conditional export correspondence",
+    "calibration_role": "reserved; not used to fit preprocessing or any model",
+    "stratification": "none; no target values used"
+  },
+  "available_at_timestamps_verified": false,
+  "prospective_clinical_validation": false,
+  "kan_ode_conformal_used": false,
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scikit-learn": "1.8.0"
+  },
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": null
+  },
+  "artifact_sha256": {
+    "config.json": "a72980f1882936369b57a0ddfea290e69f7380961b60705b0e72e1144a992b7a",
+    "models.joblib": "1edfbe707f26dfad9527967fd0e143a736f89d1883f5bc5a6ed2478067209beb",
+    "preprocessor.joblib": "bdaf5b1980a8811204c4999bb74c0054410ecab2b945904c759bd7c3a01a5749",
+    "ridge_candidates.joblib": "ad5ebdc02d944db7076445bec6b1d8c08626e796f21a532015f133937c77561e",
+    "used_split_indices.npz": "3b2f55b682a236df75ea48a49f9b3075089cc3af3fdaf2cbe44e5f1e248d5a8a",
+    "validation_metrics.json": "824070590b7ebf013d57b5c1ab5e47f1eb71e6b46a75047b2060866ebc70d400",
+    "validation_predictions.npz": "85d1c6d5289ae2f0be9feab3840dc47e6d97f67fe09b37ec16f72754607c140a"
+  }
+}

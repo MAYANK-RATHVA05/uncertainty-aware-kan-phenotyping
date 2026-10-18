@@ -1,0 +1,31 @@
+{
+  "checks": {
+    "saved_predictions_align_with_identical_validation_samples_and_raw_targets": true,
+    "persistence_equals_exact_measured_sm0": true,
+    "fresh_process_model_reload_reproduces_all_predictions": true,
+    "training_mean_uses_training_sm3_only": true,
+    "validation_rmse_selects_saved_training_fitted_ridge_candidate": true,
+    "independent_repeat_has_identical_metrics_predictions_and_all_ridge_coefficients": true,
+    "consumed_inputs_fitted_artifacts_and_source_hashes_match": true,
+    "preexisting_code_docs_retrospective_results_and_dataset_artifacts_preserved": true,
+    "reserved_calibration_test_observations_never_opened": true
+  },
+  "checks_passed": 9,
+  "actual_dataset_files_opened": [
+    "manifest.json",
+    "preprocessor.joblib",
+    "sample_index.npz",
+    "splits.npz",
+    "train_inputs.npz",
+    "train_targets.npz",
+    "validation_inputs.npz",
+    "validation_targets.npz"
+  ],
+  "preexisting_source_files_preserved": 54,
+  "prior_preservation_files_verified": 151,
+  "dataset_artifacts_unchanged": 13,
+  "training_samples": 5111,
+  "validation_samples": 851,
+  "selected_ridge_alpha": 10.0,
+  "test_or_calibration_performance_computed": false
+}
