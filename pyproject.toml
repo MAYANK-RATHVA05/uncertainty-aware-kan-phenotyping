@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools==78.1.0", "wheel==0.45.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "uncertainty-aware-kan-phenotyping"
+version = "0.1.0"
+description = "Depression-only KAN research with explicit data and temporal validity checks"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "torch==2.9.1", "numpy==2.3.5", "pandas==2.2.3", "pyarrow==22.0.0",
+  "scikit-learn==1.8.0", "scipy==1.17.0", "matplotlib==3.10.8", "PyYAML==6.0.3",
+]
+
+[project.optional-dependencies]
+test = ["pytest==8.4.2"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"
