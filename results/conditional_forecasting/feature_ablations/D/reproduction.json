@@ -1,0 +1,20 @@
+{
+  "result_origin": "reused compatible existing full Ridge after independent reproduction",
+  "baseline_dir": "/workspace/uncertainty-aware-kan-phenotyping/artifacts/conditional_forecasting_baselines/sm2-seed42",
+  "original_run_sha256": "161105f7a0a707d03802cc89da531348d805c8a988eb8e00dab444beec096849",
+  "all_five_candidates_reproduced": true,
+  "selected_alpha_reproduced": true,
+  "sample_indices_and_targets_identical": true,
+  "absolute_tolerance": 1e-10,
+  "max_candidate_prediction_difference": 0.0,
+  "selected_prediction_max_difference": 0.0,
+  "consumed_sha256": {
+    "run.json": "161105f7a0a707d03802cc89da531348d805c8a988eb8e00dab444beec096849",
+    "config.json": "a72980f1882936369b57a0ddfea290e69f7380961b60705b0e72e1144a992b7a",
+    "validation_metrics.json": "824070590b7ebf013d57b5c1ab5e47f1eb71e6b46a75047b2060866ebc70d400",
+    "validation_predictions.npz": "85d1c6d5289ae2f0be9feab3840dc47e6d97f67fe09b37ec16f72754607c140a",
+    "models.joblib": "1edfbe707f26dfad9527967fd0e143a736f89d1883f5bc5a6ed2478067209beb",
+    "ridge_candidates.joblib": "ad5ebdc02d944db7076445bec6b1d8c08626e796f21a532015f133937c77561e"
+  },
+  "original_artifacts_replaced": false
+}

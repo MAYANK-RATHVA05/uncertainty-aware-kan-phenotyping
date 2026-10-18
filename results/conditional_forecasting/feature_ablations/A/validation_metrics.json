@@ -1,0 +1,54 @@
+{
+  "name": "Measured SM0 PHQ-9 only",
+  "selected_alpha": 0.01,
+  "metrics": {
+    "mae": 2.875081972386991,
+    "rmse": 3.864836734823243,
+    "r2": 0.6095130382224714
+  },
+  "candidates": [
+    {
+      "alpha": 0.01,
+      "validation_metrics": {
+        "mae": 2.875081972386991,
+        "rmse": 3.864836734823243,
+        "r2": 0.6095130382224714
+      }
+    },
+    {
+      "alpha": 0.1,
+      "validation_metrics": {
+        "mae": 2.875094755406162,
+        "rmse": 3.864842839938499,
+        "r2": 0.6095118045508034
+      }
+    },
+    {
+      "alpha": 1.0,
+      "validation_metrics": {
+        "mae": 2.875222560842027,
+        "rmse": 3.8649039700879495,
+        "r2": 0.6094994517636316
+      }
+    },
+    {
+      "alpha": 10.0,
+      "validation_metrics": {
+        "mae": 2.8765116500094616,
+        "rmse": 3.8655231365784264,
+        "r2": 0.609374323572558
+      }
+    },
+    {
+      "alpha": 100.0,
+      "validation_metrics": {
+        "mae": 2.8904472810009465,
+        "rmse": 3.872467559863573,
+        "r2": 0.6079695425859009
+      }
+    }
+  ],
+  "feature_count": 1,
+  "original_feature_groups": 1,
+  "result_origin": "new_training_only_fit"
+}

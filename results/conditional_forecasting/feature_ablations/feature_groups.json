@@ -1,0 +1,992 @@
+[
+  {
+    "block": "SM1",
+    "original_feature": "steps_awake_mean",
+    "column_indices": [
+      0,
+      27
+    ],
+    "feature_names": [
+      "SM1__numeric__steps_awake_mean",
+      "SM1__numeric__missingindicator_steps_awake_mean"
+    ]
+  },
+  {
+    "block": "SM1",
+    "original_feature": "steps_mvpa_iqr",
+    "column_indices": [
+      1,
+      28
+    ],
+    "feature_names": [
+      "SM1__numeric__steps_mvpa_iqr",
+      "SM1__numeric__missingindicator_steps_mvpa_iqr"
+    ]
+  },
+  {
+    "block": "SM1",
+    "original_feature": "steps_lpa_iqr",
+    "column_indices": [
+      2,
+      29
+    ],
+    "feature_names": [
+      "SM1__numeric__steps_lpa_iqr",
+      "SM1__numeric__missingindicator_steps_lpa_iqr"
+    ]
+  },
+  {
+    "block": "SM1",
+    "original_feature": "steps_awake_sum_iqr",
+    "column_indices": [
+      3,
+      30
+    ],
+    "feature_names": [
+      "SM1__numeric__steps_awake_sum_iqr",
+      "SM1__numeric__missingindicator_steps_awake_sum_iqr"
+    ]
+  },
+  {
+    "block": "SM1",
+    "original_feature": "steps__active_day_count_",
+    "column_indices": [
+      4
+    ],
+    "feature_names": [
+      "SM1__numeric__steps__active_day_count_"
+    ]
+  },
+  {
+    "block": "SM1",
+    "original_feature": "steps__sedentary_day_count_",
+    "column_indices": [
+      5
+    ],
+    "feature_names": [
+      "SM1__numeric__steps__sedentary_day_count_"
+    ]
+  },
+  {
+    "block": "SM1",
+    "original_feature": "steps_mvpa_sum_recent",
+    "column_indices": [
+      6
+    ],
+    "feature_names": [
+      "SM1__numeric__steps_mvpa_sum_recent"
+    ]
+  },
+  {
+    "block": "SM1",
+    "original_feature": "steps_lpa_sum_recent",
+    "column_indices": [
+      7
+    ],
+    "feature_names": [
+      "SM1__numeric__steps_lpa_sum_recent"
+    ]
+  },
+  {
+    "block": "SM1",
+    "original_feature": "steps_rolling_6_median_recent",
+    "column_indices": [
+      8,
+      31
+    ],
+    "feature_names": [
+      "SM1__numeric__steps_rolling_6_median_recent",
+      "SM1__numeric__missingindicator_steps_rolling_6_median_recent"
+    ]
+  },
+  {
+    "block": "SM1",
+    "original_feature": "steps_rolling_6_max_recent",
+    "column_indices": [
+      9,
+      32
+    ],
+    "feature_names": [
+      "SM1__numeric__steps_rolling_6_max_recent",
+      "SM1__numeric__missingindicator_steps_rolling_6_max_recent"
+    ]
+  },
+  {
+    "block": "SM1",
+    "original_feature": "sleep_asleep_weekday_mean",
+    "column_indices": [
+      10,
+      33
+    ],
+    "feature_names": [
+      "SM1__numeric__sleep_asleep_weekday_mean",
+      "SM1__numeric__missingindicator_sleep_asleep_weekday_mean"
+    ]
+  },
+  {
+    "block": "SM1",
+    "original_feature": "sleep_asleep_weekend_mean",
+    "column_indices": [
+      11,
+      34
+    ],
+    "feature_names": [
+      "SM1__numeric__sleep_asleep_weekend_mean",
+      "SM1__numeric__missingindicator_sleep_asleep_weekend_mean"
+    ]
+  },
+  {
+    "block": "SM1",
+    "original_feature": "sleep_in_bed_weekday_mean",
+    "column_indices": [
+      12,
+      35
+    ],
+    "feature_names": [
+      "SM1__numeric__sleep_in_bed_weekday_mean",
+      "SM1__numeric__missingindicator_sleep_in_bed_weekday_mean"
+    ]
+  },
+  {
+    "block": "SM1",
+    "original_feature": "sleep_in_bed_weekend_mean",
+    "column_indices": [
+      13,
+      36
+    ],
+    "feature_names": [
+      "SM1__numeric__sleep_in_bed_weekend_mean",
+      "SM1__numeric__missingindicator_sleep_in_bed_weekend_mean"
+    ]
+  },
+  {
+    "block": "SM1",
+    "original_feature": "sleep_ratio_asleep_in_bed_weekday_mean",
+    "column_indices": [
+      14,
+      37
+    ],
+    "feature_names": [
+      "SM1__numeric__sleep_ratio_asleep_in_bed_weekday_mean",
+      "SM1__numeric__missingindicator_sleep_ratio_asleep_in_bed_weekday_mean"
+    ]
+  },
+  {
+    "block": "SM1",
+    "original_feature": "sleep_ratio_asleep_in_bed_weekend_mean",
+    "column_indices": [
+      15,
+      38
+    ],
+    "feature_names": [
+      "SM1__numeric__sleep_ratio_asleep_in_bed_weekend_mean",
+      "SM1__numeric__missingindicator_sleep_ratio_asleep_in_bed_weekend_mean"
+    ]
+  },
+  {
+    "block": "SM1",
+    "original_feature": "sleep_in_bed_iqr",
+    "column_indices": [
+      16,
+      39
+    ],
+    "feature_names": [
+      "SM1__numeric__sleep_in_bed_iqr",
+      "SM1__numeric__missingindicator_sleep_in_bed_iqr"
+    ]
+  },
+  {
+    "block": "SM1",
+    "original_feature": "sleep_asleep_iqr",
+    "column_indices": [
+      17,
+      40
+    ],
+    "feature_names": [
+      "SM1__numeric__sleep_asleep_iqr",
+      "SM1__numeric__missingindicator_sleep_asleep_iqr"
+    ]
+  },
+  {
+    "block": "SM1",
+    "original_feature": "sleep_ratio_asleep_in_bed_iqr",
+    "column_indices": [
+      18,
+      41
+    ],
+    "feature_names": [
+      "SM1__numeric__sleep_ratio_asleep_in_bed_iqr",
+      "SM1__numeric__missingindicator_sleep_ratio_asleep_in_bed_iqr"
+    ]
+  },
+  {
+    "block": "SM1",
+    "original_feature": "sleep_main_start_hour_adj_median",
+    "column_indices": [
+      19,
+      42
+    ],
+    "feature_names": [
+      "SM1__numeric__sleep_main_start_hour_adj_median",
+      "SM1__numeric__missingindicator_sleep_main_start_hour_adj_median"
+    ]
+  },
+  {
+    "block": "SM1",
+    "original_feature": "sleep_main_start_hour_adj_iqr",
+    "column_indices": [
+      20,
+      43
+    ],
+    "feature_names": [
+      "SM1__numeric__sleep_main_start_hour_adj_iqr",
+      "SM1__numeric__missingindicator_sleep_main_start_hour_adj_iqr"
+    ]
+  },
+  {
+    "block": "SM1",
+    "original_feature": "sleep_main_start_hour_adj_range",
+    "column_indices": [
+      21,
+      44
+    ],
+    "feature_names": [
+      "SM1__numeric__sleep_main_start_hour_adj_range",
+      "SM1__numeric__missingindicator_sleep_main_start_hour_adj_range"
+    ]
+  },
+  {
+    "block": "SM1",
+    "original_feature": "sleep__hypersomnia_count_",
+    "column_indices": [
+      22
+    ],
+    "feature_names": [
+      "SM1__numeric__sleep__hypersomnia_count_"
+    ]
+  },
+  {
+    "block": "SM1",
+    "original_feature": "sleep__hyposomnia_count_",
+    "column_indices": [
+      23
+    ],
+    "feature_names": [
+      "SM1__numeric__sleep__hyposomnia_count_"
+    ]
+  },
+  {
+    "block": "SM1",
+    "original_feature": "sleep_asleep_mean_recent",
+    "column_indices": [
+      24,
+      45
+    ],
+    "feature_names": [
+      "SM1__numeric__sleep_asleep_mean_recent",
+      "SM1__numeric__missingindicator_sleep_asleep_mean_recent"
+    ]
+  },
+  {
+    "block": "SM1",
+    "original_feature": "sleep_in_bed_mean_recent",
+    "column_indices": [
+      25,
+      46
+    ],
+    "feature_names": [
+      "SM1__numeric__sleep_in_bed_mean_recent",
+      "SM1__numeric__missingindicator_sleep_in_bed_mean_recent"
+    ]
+  },
+  {
+    "block": "SM1",
+    "original_feature": "sleep_ratio_asleep_in_bed_mean_recent",
+    "column_indices": [
+      26,
+      47
+    ],
+    "feature_names": [
+      "SM1__numeric__sleep_ratio_asleep_in_bed_mean_recent",
+      "SM1__numeric__missingindicator_sleep_ratio_asleep_in_bed_mean_recent"
+    ]
+  },
+  {
+    "block": "SM2",
+    "original_feature": "steps_awake_mean",
+    "column_indices": [
+      48,
+      75
+    ],
+    "feature_names": [
+      "SM2__numeric__steps_awake_mean",
+      "SM2__numeric__missingindicator_steps_awake_mean"
+    ]
+  },
+  {
+    "block": "SM2",
+    "original_feature": "steps_mvpa_iqr",
+    "column_indices": [
+      49,
+      76
+    ],
+    "feature_names": [
+      "SM2__numeric__steps_mvpa_iqr",
+      "SM2__numeric__missingindicator_steps_mvpa_iqr"
+    ]
+  },
+  {
+    "block": "SM2",
+    "original_feature": "steps_lpa_iqr",
+    "column_indices": [
+      50,
+      77
+    ],
+    "feature_names": [
+      "SM2__numeric__steps_lpa_iqr",
+      "SM2__numeric__missingindicator_steps_lpa_iqr"
+    ]
+  },
+  {
+    "block": "SM2",
+    "original_feature": "steps_awake_sum_iqr",
+    "column_indices": [
+      51,
+      78
+    ],
+    "feature_names": [
+      "SM2__numeric__steps_awake_sum_iqr",
+      "SM2__numeric__missingindicator_steps_awake_sum_iqr"
+    ]
+  },
+  {
+    "block": "SM2",
+    "original_feature": "steps__active_day_count_",
+    "column_indices": [
+      52
+    ],
+    "feature_names": [
+      "SM2__numeric__steps__active_day_count_"
+    ]
+  },
+  {
+    "block": "SM2",
+    "original_feature": "steps__sedentary_day_count_",
+    "column_indices": [
+      53
+    ],
+    "feature_names": [
+      "SM2__numeric__steps__sedentary_day_count_"
+    ]
+  },
+  {
+    "block": "SM2",
+    "original_feature": "steps_mvpa_sum_recent",
+    "column_indices": [
+      54
+    ],
+    "feature_names": [
+      "SM2__numeric__steps_mvpa_sum_recent"
+    ]
+  },
+  {
+    "block": "SM2",
+    "original_feature": "steps_lpa_sum_recent",
+    "column_indices": [
+      55
+    ],
+    "feature_names": [
+      "SM2__numeric__steps_lpa_sum_recent"
+    ]
+  },
+  {
+    "block": "SM2",
+    "original_feature": "steps_rolling_6_median_recent",
+    "column_indices": [
+      56,
+      79
+    ],
+    "feature_names": [
+      "SM2__numeric__steps_rolling_6_median_recent",
+      "SM2__numeric__missingindicator_steps_rolling_6_median_recent"
+    ]
+  },
+  {
+    "block": "SM2",
+    "original_feature": "steps_rolling_6_max_recent",
+    "column_indices": [
+      57,
+      80
+    ],
+    "feature_names": [
+      "SM2__numeric__steps_rolling_6_max_recent",
+      "SM2__numeric__missingindicator_steps_rolling_6_max_recent"
+    ]
+  },
+  {
+    "block": "SM2",
+    "original_feature": "sleep_asleep_weekday_mean",
+    "column_indices": [
+      58,
+      81
+    ],
+    "feature_names": [
+      "SM2__numeric__sleep_asleep_weekday_mean",
+      "SM2__numeric__missingindicator_sleep_asleep_weekday_mean"
+    ]
+  },
+  {
+    "block": "SM2",
+    "original_feature": "sleep_asleep_weekend_mean",
+    "column_indices": [
+      59,
+      82
+    ],
+    "feature_names": [
+      "SM2__numeric__sleep_asleep_weekend_mean",
+      "SM2__numeric__missingindicator_sleep_asleep_weekend_mean"
+    ]
+  },
+  {
+    "block": "SM2",
+    "original_feature": "sleep_in_bed_weekday_mean",
+    "column_indices": [
+      60,
+      83
+    ],
+    "feature_names": [
+      "SM2__numeric__sleep_in_bed_weekday_mean",
+      "SM2__numeric__missingindicator_sleep_in_bed_weekday_mean"
+    ]
+  },
+  {
+    "block": "SM2",
+    "original_feature": "sleep_in_bed_weekend_mean",
+    "column_indices": [
+      61,
+      84
+    ],
+    "feature_names": [
+      "SM2__numeric__sleep_in_bed_weekend_mean",
+      "SM2__numeric__missingindicator_sleep_in_bed_weekend_mean"
+    ]
+  },
+  {
+    "block": "SM2",
+    "original_feature": "sleep_ratio_asleep_in_bed_weekday_mean",
+    "column_indices": [
+      62,
+      85
+    ],
+    "feature_names": [
+      "SM2__numeric__sleep_ratio_asleep_in_bed_weekday_mean",
+      "SM2__numeric__missingindicator_sleep_ratio_asleep_in_bed_weekday_mean"
+    ]
+  },
+  {
+    "block": "SM2",
+    "original_feature": "sleep_ratio_asleep_in_bed_weekend_mean",
+    "column_indices": [
+      63,
+      86
+    ],
+    "feature_names": [
+      "SM2__numeric__sleep_ratio_asleep_in_bed_weekend_mean",
+      "SM2__numeric__missingindicator_sleep_ratio_asleep_in_bed_weekend_mean"
+    ]
+  },
+  {
+    "block": "SM2",
+    "original_feature": "sleep_in_bed_iqr",
+    "column_indices": [
+      64,
+      87
+    ],
+    "feature_names": [
+      "SM2__numeric__sleep_in_bed_iqr",
+      "SM2__numeric__missingindicator_sleep_in_bed_iqr"
+    ]
+  },
+  {
+    "block": "SM2",
+    "original_feature": "sleep_asleep_iqr",
+    "column_indices": [
+      65,
+      88
+    ],
+    "feature_names": [
+      "SM2__numeric__sleep_asleep_iqr",
+      "SM2__numeric__missingindicator_sleep_asleep_iqr"
+    ]
+  },
+  {
+    "block": "SM2",
+    "original_feature": "sleep_ratio_asleep_in_bed_iqr",
+    "column_indices": [
+      66,
+      89
+    ],
+    "feature_names": [
+      "SM2__numeric__sleep_ratio_asleep_in_bed_iqr",
+      "SM2__numeric__missingindicator_sleep_ratio_asleep_in_bed_iqr"
+    ]
+  },
+  {
+    "block": "SM2",
+    "original_feature": "sleep_main_start_hour_adj_median",
+    "column_indices": [
+      67,
+      90
+    ],
+    "feature_names": [
+      "SM2__numeric__sleep_main_start_hour_adj_median",
+      "SM2__numeric__missingindicator_sleep_main_start_hour_adj_median"
+    ]
+  },
+  {
+    "block": "SM2",
+    "original_feature": "sleep_main_start_hour_adj_iqr",
+    "column_indices": [
+      68,
+      91
+    ],
+    "feature_names": [
+      "SM2__numeric__sleep_main_start_hour_adj_iqr",
+      "SM2__numeric__missingindicator_sleep_main_start_hour_adj_iqr"
+    ]
+  },
+  {
+    "block": "SM2",
+    "original_feature": "sleep_main_start_hour_adj_range",
+    "column_indices": [
+      69,
+      92
+    ],
+    "feature_names": [
+      "SM2__numeric__sleep_main_start_hour_adj_range",
+      "SM2__numeric__missingindicator_sleep_main_start_hour_adj_range"
+    ]
+  },
+  {
+    "block": "SM2",
+    "original_feature": "sleep__hypersomnia_count_",
+    "column_indices": [
+      70
+    ],
+    "feature_names": [
+      "SM2__numeric__sleep__hypersomnia_count_"
+    ]
+  },
+  {
+    "block": "SM2",
+    "original_feature": "sleep__hyposomnia_count_",
+    "column_indices": [
+      71
+    ],
+    "feature_names": [
+      "SM2__numeric__sleep__hyposomnia_count_"
+    ]
+  },
+  {
+    "block": "SM2",
+    "original_feature": "sleep_asleep_mean_recent",
+    "column_indices": [
+      72,
+      93
+    ],
+    "feature_names": [
+      "SM2__numeric__sleep_asleep_mean_recent",
+      "SM2__numeric__missingindicator_sleep_asleep_mean_recent"
+    ]
+  },
+  {
+    "block": "SM2",
+    "original_feature": "sleep_in_bed_mean_recent",
+    "column_indices": [
+      73,
+      94
+    ],
+    "feature_names": [
+      "SM2__numeric__sleep_in_bed_mean_recent",
+      "SM2__numeric__missingindicator_sleep_in_bed_mean_recent"
+    ]
+  },
+  {
+    "block": "SM2",
+    "original_feature": "sleep_ratio_asleep_in_bed_mean_recent",
+    "column_indices": [
+      74,
+      95
+    ],
+    "feature_names": [
+      "SM2__numeric__sleep_ratio_asleep_in_bed_mean_recent",
+      "SM2__numeric__missingindicator_sleep_ratio_asleep_in_bed_mean_recent"
+    ]
+  },
+  {
+    "block": "demographics",
+    "original_feature": "sex",
+    "column_indices": [
+      126,
+      127,
+      128
+    ],
+    "feature_names": [
+      "baseline_demographic__categorical__sex_0",
+      "baseline_demographic__categorical__sex_1",
+      "baseline_demographic__categorical__sex_2"
+    ]
+  },
+  {
+    "block": "demographics",
+    "original_feature": "race_white",
+    "column_indices": [
+      96
+    ],
+    "feature_names": [
+      "baseline_demographic__numeric__race_white"
+    ]
+  },
+  {
+    "block": "demographics",
+    "original_feature": "race_black",
+    "column_indices": [
+      97
+    ],
+    "feature_names": [
+      "baseline_demographic__numeric__race_black"
+    ]
+  },
+  {
+    "block": "demographics",
+    "original_feature": "race_hispanic",
+    "column_indices": [
+      98
+    ],
+    "feature_names": [
+      "baseline_demographic__numeric__race_hispanic"
+    ]
+  },
+  {
+    "block": "demographics",
+    "original_feature": "race_asian",
+    "column_indices": [
+      99
+    ],
+    "feature_names": [
+      "baseline_demographic__numeric__race_asian"
+    ]
+  },
+  {
+    "block": "demographics",
+    "original_feature": "race_other",
+    "column_indices": [
+      100
+    ],
+    "feature_names": [
+      "baseline_demographic__numeric__race_other"
+    ]
+  },
+  {
+    "block": "demographics",
+    "original_feature": "birthyear",
+    "column_indices": [
+      101
+    ],
+    "feature_names": [
+      "baseline_demographic__numeric__birthyear"
+    ]
+  },
+  {
+    "block": "demographics",
+    "original_feature": "educ",
+    "column_indices": [
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136
+    ],
+    "feature_names": [
+      "baseline_demographic__categorical__educ_0",
+      "baseline_demographic__categorical__educ_1",
+      "baseline_demographic__categorical__educ_2",
+      "baseline_demographic__categorical__educ_3",
+      "baseline_demographic__categorical__educ_4",
+      "baseline_demographic__categorical__educ_5",
+      "baseline_demographic__categorical__educ_6",
+      "baseline_demographic__categorical__educ___MISSING__"
+    ]
+  },
+  {
+    "block": "demographics",
+    "original_feature": "height",
+    "column_indices": [
+      102,
+      120
+    ],
+    "feature_names": [
+      "baseline_demographic__numeric__height",
+      "baseline_demographic__numeric__missingindicator_height"
+    ]
+  },
+  {
+    "block": "demographics",
+    "original_feature": "weight",
+    "column_indices": [
+      103
+    ],
+    "feature_names": [
+      "baseline_demographic__numeric__weight"
+    ]
+  },
+  {
+    "block": "demographics",
+    "original_feature": "bmi",
+    "column_indices": [
+      104,
+      121
+    ],
+    "feature_names": [
+      "baseline_demographic__numeric__bmi",
+      "baseline_demographic__numeric__missingindicator_bmi"
+    ]
+  },
+  {
+    "block": "demographics",
+    "original_feature": "pregnant",
+    "column_indices": [
+      105,
+      122
+    ],
+    "feature_names": [
+      "baseline_demographic__numeric__pregnant",
+      "baseline_demographic__numeric__missingindicator_pregnant"
+    ]
+  },
+  {
+    "block": "demographics",
+    "original_feature": "birth",
+    "column_indices": [
+      106,
+      123
+    ],
+    "feature_names": [
+      "baseline_demographic__numeric__birth",
+      "baseline_demographic__numeric__missingindicator_birth"
+    ]
+  },
+  {
+    "block": "demographics",
+    "original_feature": "trauma",
+    "column_indices": [
+      107
+    ],
+    "feature_names": [
+      "baseline_demographic__numeric__trauma"
+    ]
+  },
+  {
+    "block": "demographics",
+    "original_feature": "insurance",
+    "column_indices": [
+      108,
+      124
+    ],
+    "feature_names": [
+      "baseline_demographic__numeric__insurance",
+      "baseline_demographic__numeric__missingindicator_insurance"
+    ]
+  },
+  {
+    "block": "demographics",
+    "original_feature": "money",
+    "column_indices": [
+      137,
+      138,
+      139,
+      140,
+      141,
+      142
+    ],
+    "feature_names": [
+      "baseline_demographic__categorical__money_0",
+      "baseline_demographic__categorical__money_1",
+      "baseline_demographic__categorical__money_2",
+      "baseline_demographic__categorical__money_3",
+      "baseline_demographic__categorical__money_4",
+      "baseline_demographic__categorical__money___MISSING__"
+    ]
+  },
+  {
+    "block": "demographics",
+    "original_feature": "money_assistance",
+    "column_indices": [
+      109,
+      125
+    ],
+    "feature_names": [
+      "baseline_demographic__numeric__money_assistance",
+      "baseline_demographic__numeric__missingindicator_money_assistance"
+    ]
+  },
+  {
+    "block": "demographics",
+    "original_feature": "household",
+    "column_indices": [
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151
+    ],
+    "feature_names": [
+      "baseline_demographic__categorical__household_0",
+      "baseline_demographic__categorical__household_1",
+      "baseline_demographic__categorical__household_2",
+      "baseline_demographic__categorical__household_3",
+      "baseline_demographic__categorical__household_4",
+      "baseline_demographic__categorical__household_5",
+      "baseline_demographic__categorical__household_6",
+      "baseline_demographic__categorical__household_7",
+      "baseline_demographic__categorical__household_8"
+    ]
+  },
+  {
+    "block": "demographics",
+    "original_feature": "comorbid_cancer",
+    "column_indices": [
+      110
+    ],
+    "feature_names": [
+      "baseline_demographic__numeric__comorbid_cancer"
+    ]
+  },
+  {
+    "block": "demographics",
+    "original_feature": "comorbid_diabetes_typ1",
+    "column_indices": [
+      111
+    ],
+    "feature_names": [
+      "baseline_demographic__numeric__comorbid_diabetes_typ1"
+    ]
+  },
+  {
+    "block": "demographics",
+    "original_feature": "comorbid_diabetes_typ2",
+    "column_indices": [
+      112
+    ],
+    "feature_names": [
+      "baseline_demographic__numeric__comorbid_diabetes_typ2"
+    ]
+  },
+  {
+    "block": "demographics",
+    "original_feature": "comorbid_gout",
+    "column_indices": [
+      113
+    ],
+    "feature_names": [
+      "baseline_demographic__numeric__comorbid_gout"
+    ]
+  },
+  {
+    "block": "demographics",
+    "original_feature": "comorbid_migraines",
+    "column_indices": [
+      114
+    ],
+    "feature_names": [
+      "baseline_demographic__numeric__comorbid_migraines"
+    ]
+  },
+  {
+    "block": "demographics",
+    "original_feature": "comorbid_ms",
+    "column_indices": [
+      115
+    ],
+    "feature_names": [
+      "baseline_demographic__numeric__comorbid_ms"
+    ]
+  },
+  {
+    "block": "demographics",
+    "original_feature": "comorbid_osteoporosis",
+    "column_indices": [
+      116
+    ],
+    "feature_names": [
+      "baseline_demographic__numeric__comorbid_osteoporosis"
+    ]
+  },
+  {
+    "block": "demographics",
+    "original_feature": "comorbid_neuropathic",
+    "column_indices": [
+      117
+    ],
+    "feature_names": [
+      "baseline_demographic__numeric__comorbid_neuropathic"
+    ]
+  },
+  {
+    "block": "demographics",
+    "original_feature": "comorbid_arthritis",
+    "column_indices": [
+      118
+    ],
+    "feature_names": [
+      "baseline_demographic__numeric__comorbid_arthritis"
+    ]
+  },
+  {
+    "block": "demographics",
+    "original_feature": "num_migraine_days",
+    "column_indices": [
+      152,
+      153,
+      154,
+      155,
+      156,
+      157
+    ],
+    "feature_names": [
+      "baseline_demographic__categorical__num_migraine_days_0",
+      "baseline_demographic__categorical__num_migraine_days_1",
+      "baseline_demographic__categorical__num_migraine_days_2",
+      "baseline_demographic__categorical__num_migraine_days_3",
+      "baseline_demographic__categorical__num_migraine_days_4",
+      "baseline_demographic__categorical__num_migraine_days_5"
+    ]
+  },
+  {
+    "block": "demographics",
+    "original_feature": "meds_migraine",
+    "column_indices": [
+      119
+    ],
+    "feature_names": [
+      "baseline_demographic__numeric__meds_migraine"
+    ]
+  },
+  {
+    "block": "SM0",
+    "original_feature": "phq9_score_start",
+    "column_indices": [
+      158
+    ],
+    "feature_names": [
+      "measured_sm0_phq9_standardized"
+    ]
+  }
+]

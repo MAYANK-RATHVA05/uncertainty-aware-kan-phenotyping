@@ -1,0 +1,28 @@
+{
+  "checks": {
+    "all_84_original_feature_groups_have_correct_indicator_and_onehot_ownership": true,
+    "exact_nested_A_B_C_D_columns_and_complete_original_groups": true,
+    "all_candidate_metrics_alpha_selection_and_reloaded_models_reproduce": true,
+    "all_predictions_use_identical_validation_sample_indices_and_raw_targets": true,
+    "signed_incremental_comparisons_recomputed_correctly": true,
+    "D_reuses_original_selected_model_results_and_predictions_after_exact_reproduction": true,
+    "independent_repeat_reproduces_all_metrics_predictions_and_candidate_coefficients": true,
+    "source_input_output_and_unchanged_preprocessor_hashes_match": true,
+    "all_previous_source_docs_KAN_baseline_retrospective_and_dataset_artifacts_preserved": true,
+    "actual_run_and_independent_check_never_open_reserved_payloads": true
+  },
+  "checks_passed": 10,
+  "preexisting_source_files_preserved": 60,
+  "preexisting_artifact_files_preserved": 155,
+  "dataset_files_opened_during_independent_check": [
+    "manifest.json",
+    "preprocessor.joblib",
+    "sample_index.npz",
+    "splits.npz",
+    "train_inputs.npz",
+    "train_targets.npz",
+    "validation_inputs.npz",
+    "validation_targets.npz"
+  ],
+  "calibration_or_test_performance_computed": false
+}

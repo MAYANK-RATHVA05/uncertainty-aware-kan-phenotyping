@@ -1,0 +1,54 @@
+{
+  "name": "SM0 plus enrollment demographics",
+  "selected_alpha": 10.0,
+  "metrics": {
+    "mae": 2.808736383452751,
+    "rmse": 3.791514275887223,
+    "r2": 0.6241888823155404
+  },
+  "candidates": [
+    {
+      "alpha": 0.01,
+      "validation_metrics": {
+        "mae": 2.807635524075989,
+        "rmse": 3.7919501033113603,
+        "r2": 0.6241024797897576
+      }
+    },
+    {
+      "alpha": 0.1,
+      "validation_metrics": {
+        "mae": 2.8076485618854052,
+        "rmse": 3.7919457199559976,
+        "r2": 0.6241033488367724
+      }
+    },
+    {
+      "alpha": 1.0,
+      "validation_metrics": {
+        "mae": 2.8077745796913605,
+        "rmse": 3.7919006440274514,
+        "r2": 0.6241122855627339
+      }
+    },
+    {
+      "alpha": 10.0,
+      "validation_metrics": {
+        "mae": 2.808736383452751,
+        "rmse": 3.791514275887223,
+        "r2": 0.6241888823155404
+      }
+    },
+    {
+      "alpha": 100.0,
+      "validation_metrics": {
+        "mae": 2.8172524816984192,
+        "rmse": 3.794154826462982,
+        "r2": 0.6236652425531994
+      }
+    }
+  ],
+  "feature_count": 63,
+  "original_feature_groups": 30,
+  "result_origin": "new_training_only_fit"
+}

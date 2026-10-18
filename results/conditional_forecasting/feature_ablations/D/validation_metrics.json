@@ -1,0 +1,54 @@
+{
+  "name": "SM0 plus demographics plus SM1 and SM2 wearables",
+  "selected_alpha": 10.0,
+  "metrics": {
+    "mae": 2.8209296700698037,
+    "rmse": 3.8136326492905885,
+    "r2": 0.6197913906306861
+  },
+  "candidates": [
+    {
+      "alpha": 0.01,
+      "validation_metrics": {
+        "mae": 2.825101409552884,
+        "rmse": 3.8157919515869008,
+        "r2": 0.6193607158267482
+      }
+    },
+    {
+      "alpha": 0.1,
+      "validation_metrics": {
+        "mae": 2.824986477238077,
+        "rmse": 3.815730161479732,
+        "r2": 0.6193730433079261
+      }
+    },
+    {
+      "alpha": 1.0,
+      "validation_metrics": {
+        "mae": 2.8241442992559667,
+        "rmse": 3.8152216141376734,
+        "r2": 0.6194744938403229
+      }
+    },
+    {
+      "alpha": 10.0,
+      "validation_metrics": {
+        "mae": 2.8209296700698037,
+        "rmse": 3.8136326492905885,
+        "r2": 0.6197913906306861
+      }
+    },
+    {
+      "alpha": 100.0,
+      "validation_metrics": {
+        "mae": 2.8265835428840758,
+        "rmse": 3.815075995355778,
+        "r2": 0.6195035409619948
+      }
+    }
+  ],
+  "feature_count": 159,
+  "original_feature_groups": 84,
+  "result_origin": "reused_existing_full_ridge"
+}

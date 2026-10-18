@@ -1,0 +1,105 @@
+{
+  "dataset_dir": "/workspace/uncertainty-aware-kan-phenotyping/artifacts/conditional_forecasting/sm2-seed42",
+  "dataset_manifest_sha256": "af8c7874005e6f4c008a1e35b3f11109bbcb28d38ff75208c0b42fbc47e5216b",
+  "dataset_files_consumed": [
+    "manifest.json",
+    "splits.npz",
+    "sample_index.npz",
+    "preprocessor.joblib",
+    "train_inputs.npz",
+    "train_targets.npz",
+    "validation_inputs.npz",
+    "validation_targets.npz"
+  ],
+  "consumed_sha256": {
+    "manifest.json": "af8c7874005e6f4c008a1e35b3f11109bbcb28d38ff75208c0b42fbc47e5216b",
+    "splits.npz": "db9ef44c8fdf01ed07269628065dd287872b11f86239d17dab291e8f713ea126",
+    "sample_index.npz": "19dfe017fe49feaa1b7f514d96b3156d98e29998da9d429fb54fa3b525aacf57",
+    "preprocessor.joblib": "bdaf5b1980a8811204c4999bb74c0054410ecab2b945904c759bd7c3a01a5749",
+    "train_inputs.npz": "e36893d6e953a8d7e75cabecccf64db93ac7ca93fed3bb30839abe57c945dcc4",
+    "train_targets.npz": "053b0d7b933f8700bc438cf3f78a0a3d25d947cf9d6dcb794045b9457916ab31",
+    "validation_inputs.npz": "40bebf351865b480fa3d630f03718962aa98e64cf82df2997efd1d17195818a7",
+    "validation_targets.npz": "a13de356f8421045b60fa3749a63030db9b7eb43eb7cc8561d1c59c86ee51873"
+  },
+  "original_input_hashes": {
+    "data": {
+      "path": "/workspace/private-data/psyche-d/anon_processed_df_parquet.csv",
+      "sha256": "3d96afaa768bcd50c56524b931ac2e6acdd5f08c95db16c1e3b13d7dd6ce3934"
+    },
+    "dictionary": {
+      "path": "/workspace/private-data/psyche-d/feature_explanations.tsv",
+      "sha256": "e346b57eb81c8c7d22a6ff0bda71214e527d8bed72eef1c2218d7e5826612e3e"
+    }
+  },
+  "builder_source_hashes": {
+    "build_forecasting_dataset.py": "8a9095f75703d2f2d6b65b240009106b7ea2ad5bc26c432165d82be4be5e23ce",
+    "conditional_forecasting.py": "00bc36cd50e775e637e58d3822822b36225ed39919d562806a548143a9678fe0",
+    "forecasting_splits.py": "fcf4b93e3184732d1dba97ae5781c071997ffab77d1a786edb9ec9a9536a255b",
+    "forecasting_preprocessing.py": "bee2cc449a20d57305bbbd958e4aaf7d866564f63e7b6a395f92c130810c4f4d",
+    "preprocessing.py": "032f99fb041ace049bd4bccc507061a10a6e4d635034821fd7ba9a4fba61a0ba",
+    "dataset.py": "280506856664ff5a73fe479dcf3b7ebbbb01a27b442580c4e9b5c9581102054a"
+  },
+  "preprocessor_sha256": "bdaf5b1980a8811204c4999bb74c0054410ecab2b945904c759bd7c3a01a5749",
+  "full_ridge_reproduction": {
+    "result_origin": "reused compatible existing full Ridge after independent reproduction",
+    "baseline_dir": "/workspace/uncertainty-aware-kan-phenotyping/artifacts/conditional_forecasting_baselines/sm2-seed42",
+    "original_run_sha256": "161105f7a0a707d03802cc89da531348d805c8a988eb8e00dab444beec096849",
+    "all_five_candidates_reproduced": true,
+    "selected_alpha_reproduced": true,
+    "sample_indices_and_targets_identical": true,
+    "absolute_tolerance": 1e-10,
+    "max_candidate_prediction_difference": 0.0,
+    "selected_prediction_max_difference": 0.0,
+    "consumed_sha256": {
+      "run.json": "161105f7a0a707d03802cc89da531348d805c8a988eb8e00dab444beec096849",
+      "config.json": "a72980f1882936369b57a0ddfea290e69f7380961b60705b0e72e1144a992b7a",
+      "validation_metrics.json": "824070590b7ebf013d57b5c1ab5e47f1eb71e6b46a75047b2060866ebc70d400",
+      "validation_predictions.npz": "85d1c6d5289ae2f0be9feab3840dc47e6d97f67fe09b37ec16f72754607c140a",
+      "models.joblib": "1edfbe707f26dfad9527967fd0e143a736f89d1883f5bc5a6ed2478067209beb",
+      "ridge_candidates.joblib": "ad5ebdc02d944db7076445bec6b1d8c08626e796f21a532015f133937c77561e"
+    },
+    "original_artifacts_replaced": false
+  },
+  "source_sha256": {
+    "forecasting_feature_ablations.py": "d01d14aaed17fc097f39c6f94fb06f9f116c861d7ea6f4265b19d220f65d7683",
+    "forecasting_baselines.py": "1008ac7a0d17b51f0e888f9d27632f9119b92d5e1ca857e1cac54dbba27764a9"
+  },
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scikit-learn": "1.8.0"
+  },
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": null
+  },
+  "artifact_sha256": {
+    "A/features.json": "9cd1c734ab6d0c8eea716993614c2985e0861070c6d6bf48b77cd2018375ef25",
+    "A/ridge_candidates.joblib": "faa8c2520d743fad2fe540e1f348e075e2b297ce9744ceb1d62364bb4517d48e",
+    "A/selected_ridge.joblib": "3d48532dcf00a54802004a17c511d743d747d5ec4eb338d506abc020ed9c2c50",
+    "A/validation_metrics.json": "5f9afa5c82845909a8177f3d51c875bfe680bbd14c9499f071eb42b76ef2cdb6",
+    "A/validation_predictions.npz": "5c5341bdcab7a7560cd33d8290acb411165a0ab2ac61e4e822d47b5b074868d7",
+    "B/features.json": "331e2cca32d08af169cc6d66c394ee35d4541072b4d8afbd9d5e856ce0dcfb48",
+    "B/ridge_candidates.joblib": "c21204ece1bddd08fce0b7aef24804305a37cebed05a218bf8dc1f5f5480b033",
+    "B/selected_ridge.joblib": "835567ec44ad71a02287d41c972f39ea1c8c08a7ce1785d023ed878ecf0edcee",
+    "B/validation_metrics.json": "e21a59238cf64cb4e1fe0229d76803741db1bc47efec2a30e1520bf6296a2d9a",
+    "B/validation_predictions.npz": "831c5729a695bfc7562ebf05bb117d67b1f39761f500e817284ae4d2492b692b",
+    "C/features.json": "38849cc7f6a9d17fd7106492758cba44c8476c2bd5898fb6c68f820982b3338b",
+    "C/ridge_candidates.joblib": "8cc7320500ccf43d1aeb231b49351b437b3fd7aec389dfab838586facbb284bf",
+    "C/selected_ridge.joblib": "40209c788868894a6acf0edd8b77d8f615d235597c66a14806d7a8a5585930ed",
+    "C/validation_metrics.json": "9d9fbc16e0945870cfaff58b9b105371bf26a5a59de2969b9ae3d68e88cb9735",
+    "C/validation_predictions.npz": "d211f792ea140d221cfa9fbca530232b866ac8a6420439f94cf6ac8cde6bb42d",
+    "D/features.json": "4f663fc5028961f587229a39d7496121145b1606ef04b55f24f83d58870d99d1",
+    "D/reproduction.json": "e309c1030a1d3553906155b6fff3e105ca9f3f25fa00122b7879dff8c9d2f1b2",
+    "D/ridge_candidates.joblib": "84f80022716b74f4a1396ef4828ad194a81bc7040f35dd3d5a27a6bb603fc8c1",
+    "D/selected_ridge.joblib": "17fd8bfe5c26429d189bf75c1ea0c7676ae435d6ee75cb5c8afbb8e2a792f6a3",
+    "D/validation_metrics.json": "90c3610479f6dc4b68b33b0c2c13503493b922de1040e67f2789161707f9bd80",
+    "D/validation_predictions.npz": "f87f321675d8a9ee7d99937e9a3776f36d9a008517aed2dab46d10ddbe16f096",
+    "config.json": "c9c2c90f2cfa3eebddf4c4ff00d161c562852f78610274cd7a18cf068f78de6e",
+    "feature_groups.json": "4c44ca8998d9c9eb684ba6acab4f0d03c01866f21971ab22673436d2e4bc3b19",
+    "preprocessor.joblib": "bdaf5b1980a8811204c4999bb74c0054410ecab2b945904c759bd7c3a01a5749",
+    "summary.json": "124d45e2411a680e2aa0e2d1ab45df50c21904180e4bc3e7a6bbfdf28c936769",
+    "used_split_indices.npz": "3b2f55b682a236df75ea48a49f9b3075089cc3af3fdaf2cbe44e5f1e248d5a8a"
+  }
+}

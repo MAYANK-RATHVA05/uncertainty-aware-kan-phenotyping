@@ -1,0 +1,250 @@
+{
+  "study_type": "conditional_relative_month_forecasting",
+  "setups": {
+    "A": {
+      "name": "Measured SM0 PHQ-9 only",
+      "selected_alpha": 0.01,
+      "metrics": {
+        "mae": 2.875081972386991,
+        "rmse": 3.864836734823243,
+        "r2": 0.6095130382224714
+      },
+      "candidates": [
+        {
+          "alpha": 0.01,
+          "validation_metrics": {
+            "mae": 2.875081972386991,
+            "rmse": 3.864836734823243,
+            "r2": 0.6095130382224714
+          }
+        },
+        {
+          "alpha": 0.1,
+          "validation_metrics": {
+            "mae": 2.875094755406162,
+            "rmse": 3.864842839938499,
+            "r2": 0.6095118045508034
+          }
+        },
+        {
+          "alpha": 1.0,
+          "validation_metrics": {
+            "mae": 2.875222560842027,
+            "rmse": 3.8649039700879495,
+            "r2": 0.6094994517636316
+          }
+        },
+        {
+          "alpha": 10.0,
+          "validation_metrics": {
+            "mae": 2.8765116500094616,
+            "rmse": 3.8655231365784264,
+            "r2": 0.609374323572558
+          }
+        },
+        {
+          "alpha": 100.0,
+          "validation_metrics": {
+            "mae": 2.8904472810009465,
+            "rmse": 3.872467559863573,
+            "r2": 0.6079695425859009
+          }
+        }
+      ],
+      "feature_count": 1,
+      "original_feature_groups": 1,
+      "result_origin": "new_training_only_fit"
+    },
+    "B": {
+      "name": "SM0 plus enrollment demographics",
+      "selected_alpha": 10.0,
+      "metrics": {
+        "mae": 2.808736383452751,
+        "rmse": 3.791514275887223,
+        "r2": 0.6241888823155404
+      },
+      "candidates": [
+        {
+          "alpha": 0.01,
+          "validation_metrics": {
+            "mae": 2.807635524075989,
+            "rmse": 3.7919501033113603,
+            "r2": 0.6241024797897576
+          }
+        },
+        {
+          "alpha": 0.1,
+          "validation_metrics": {
+            "mae": 2.8076485618854052,
+            "rmse": 3.7919457199559976,
+            "r2": 0.6241033488367724
+          }
+        },
+        {
+          "alpha": 1.0,
+          "validation_metrics": {
+            "mae": 2.8077745796913605,
+            "rmse": 3.7919006440274514,
+            "r2": 0.6241122855627339
+          }
+        },
+        {
+          "alpha": 10.0,
+          "validation_metrics": {
+            "mae": 2.808736383452751,
+            "rmse": 3.791514275887223,
+            "r2": 0.6241888823155404
+          }
+        },
+        {
+          "alpha": 100.0,
+          "validation_metrics": {
+            "mae": 2.8172524816984192,
+            "rmse": 3.794154826462982,
+            "r2": 0.6236652425531994
+          }
+        }
+      ],
+      "feature_count": 63,
+      "original_feature_groups": 30,
+      "result_origin": "new_training_only_fit"
+    },
+    "C": {
+      "name": "SM0 plus demographics plus SM2 wearables",
+      "selected_alpha": 10.0,
+      "metrics": {
+        "mae": 2.7977057549955098,
+        "rmse": 3.8003424190090214,
+        "r2": 0.6224367713821104
+      },
+      "candidates": [
+        {
+          "alpha": 0.01,
+          "validation_metrics": {
+            "mae": 2.797737904595025,
+            "rmse": 3.801052990538447,
+            "r2": 0.6222955679153291
+          }
+        },
+        {
+          "alpha": 0.1,
+          "validation_metrics": {
+            "mae": 2.797725860005696,
+            "rmse": 3.8010403079624173,
+            "r2": 0.6222980884048865
+          }
+        },
+        {
+          "alpha": 1.0,
+          "validation_metrics": {
+            "mae": 2.7976204623962904,
+            "rmse": 3.8009271533835918,
+            "r2": 0.6223205759667714
+          }
+        },
+        {
+          "alpha": 10.0,
+          "validation_metrics": {
+            "mae": 2.7977057549955098,
+            "rmse": 3.8003424190090214,
+            "r2": 0.6224367713821104
+          }
+        },
+        {
+          "alpha": 100.0,
+          "validation_metrics": {
+            "mae": 2.8073921736637977,
+            "rmse": 3.801864334755368,
+            "r2": 0.6221343068050437
+          }
+        }
+      ],
+      "feature_count": 111,
+      "original_feature_groups": 57,
+      "result_origin": "new_training_only_fit"
+    },
+    "D": {
+      "name": "SM0 plus demographics plus SM1 and SM2 wearables",
+      "selected_alpha": 10.0,
+      "metrics": {
+        "mae": 2.8209296700698037,
+        "rmse": 3.8136326492905885,
+        "r2": 0.6197913906306861
+      },
+      "candidates": [
+        {
+          "alpha": 0.01,
+          "validation_metrics": {
+            "mae": 2.825101409552884,
+            "rmse": 3.8157919515869008,
+            "r2": 0.6193607158267482
+          }
+        },
+        {
+          "alpha": 0.1,
+          "validation_metrics": {
+            "mae": 2.824986477238077,
+            "rmse": 3.815730161479732,
+            "r2": 0.6193730433079261
+          }
+        },
+        {
+          "alpha": 1.0,
+          "validation_metrics": {
+            "mae": 2.8241442992559667,
+            "rmse": 3.8152216141376734,
+            "r2": 0.6194744938403229
+          }
+        },
+        {
+          "alpha": 10.0,
+          "validation_metrics": {
+            "mae": 2.8209296700698037,
+            "rmse": 3.8136326492905885,
+            "r2": 0.6197913906306861
+          }
+        },
+        {
+          "alpha": 100.0,
+          "validation_metrics": {
+            "mae": 2.8265835428840758,
+            "rmse": 3.815075995355778,
+            "r2": 0.6195035409619948
+          }
+        }
+      ],
+      "feature_count": 159,
+      "original_feature_groups": 84,
+      "result_origin": "reused_existing_full_ridge"
+    }
+  },
+  "increments": {
+    "B_minus_A": {
+      "mae": -0.06634558893424014,
+      "rmse": -0.07332245893601996,
+      "r2": 0.01467584409306899
+    },
+    "C_minus_B": {
+      "mae": -0.011030628457241232,
+      "rmse": 0.008828143121798249,
+      "r2": -0.0017521109334299734
+    },
+    "D_minus_C": {
+      "mae": 0.023223915074293888,
+      "rmse": 0.013290230281567172,
+      "r2": -0.0026453807514242866
+    }
+  },
+  "delta_definition": "later setup minus earlier; negative MAE/RMSE and positive R2 favor added inputs",
+  "counts": {
+    "train": {
+      "samples": 5111,
+      "participants": 2025
+    },
+    "validation": {
+      "samples": 851,
+      "participants": 338
+    }
+  },
+  "comparison_type": "exploratory predictive comparison; not a causal effect or significance test"
+}

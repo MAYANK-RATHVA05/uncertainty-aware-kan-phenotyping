@@ -1,0 +1,21 @@
+{
+  "name": "Measured SM0 PHQ-9 only",
+  "column_indices": [
+    158
+  ],
+  "feature_names": [
+    "measured_sm0_phq9_standardized"
+  ],
+  "original_feature_groups": [
+    {
+      "block": "SM0",
+      "original_feature": "phq9_score_start",
+      "column_indices": [
+        158
+      ],
+      "feature_names": [
+        "measured_sm0_phq9_standardized"
+      ]
+    }
+  ]
+}

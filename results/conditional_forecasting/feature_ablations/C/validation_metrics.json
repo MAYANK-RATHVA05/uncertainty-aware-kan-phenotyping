@@ -1,0 +1,54 @@
+{
+  "name": "SM0 plus demographics plus SM2 wearables",
+  "selected_alpha": 10.0,
+  "metrics": {
+    "mae": 2.7977057549955098,
+    "rmse": 3.8003424190090214,
+    "r2": 0.6224367713821104
+  },
+  "candidates": [
+    {
+      "alpha": 0.01,
+      "validation_metrics": {
+        "mae": 2.797737904595025,
+        "rmse": 3.801052990538447,
+        "r2": 0.6222955679153291
+      }
+    },
+    {
+      "alpha": 0.1,
+      "validation_metrics": {
+        "mae": 2.797725860005696,
+        "rmse": 3.8010403079624173,
+        "r2": 0.6222980884048865
+      }
+    },
+    {
+      "alpha": 1.0,
+      "validation_metrics": {
+        "mae": 2.7976204623962904,
+        "rmse": 3.8009271533835918,
+        "r2": 0.6223205759667714
+      }
+    },
+    {
+      "alpha": 10.0,
+      "validation_metrics": {
+        "mae": 2.7977057549955098,
+        "rmse": 3.8003424190090214,
+        "r2": 0.6224367713821104
+      }
+    },
+    {
+      "alpha": 100.0,
+      "validation_metrics": {
+        "mae": 2.8073921736637977,
+        "rmse": 3.801864334755368,
+        "r2": 0.6221343068050437
+      }
+    }
+  ],
+  "feature_count": 111,
+  "original_feature_groups": 57,
+  "result_origin": "new_training_only_fit"
+}
