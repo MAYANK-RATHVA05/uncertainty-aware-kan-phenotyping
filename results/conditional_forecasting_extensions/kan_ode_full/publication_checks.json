@@ -1,0 +1,12 @@
+{
+  "scope": "aggregate-only publication; no model training or dataset payload access",
+  "source_aggregate_files": 30,
+  "source_json_and_curves_only": true,
+  "individual_records_or_membership_arrays_published": false,
+  "checkpoint_weights_or_preprocessor_published": false,
+  "per_update_gradient_norms_published": false,
+  "absolute_local_paths_published": false,
+  "raw_or_reserved_payloads_opened_for_publication": false,
+  "aggregate_values_preserved_except_documented_path_sanitization": true,
+  "source_artifacts_modified": false
+}

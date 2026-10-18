@@ -1,0 +1,163 @@
+{
+  "seed": 43,
+  "validation": {
+    "mae": 2.8786545991897583,
+    "rmse": 3.8448121180981696,
+    "r2": 0.6135489628123761,
+    "n": 851
+  },
+  "best_epoch": 6,
+  "stopped_epoch": 16,
+  "epochs_run": 16,
+  "stop_reason": "early_stopping",
+  "training_seconds": 55.702817514000344,
+  "total_seed_seconds": 56.14174707699931,
+  "parameter_count": 26257,
+  "solver_calls_during_fit_including_epoch_validation": {
+    "integrate_calls": 2256,
+    "steps": 9024,
+    "rhs_evaluations": 36096
+  },
+  "solver_calls_final_validation": {
+    "integrate_calls": 21,
+    "steps": 84,
+    "rhs_evaluations": 336
+  },
+  "gradient_checks": {
+    "completed_backward_updates": 640,
+    "clip_norm": 5.0,
+    "all_observed_gradients_finite": true,
+    "backward_calls_by_parameter": {
+      "static_encoder.base_weight": 640,
+      "static_encoder.spline_weight": 640,
+      "static_encoder.bias": 640,
+      "wearable_encoder.base_weight": 640,
+      "wearable_encoder.spline_weight": 640,
+      "wearable_encoder.bias": 640,
+      "gru.weight_ih": 640,
+      "gru.weight_hh": 640,
+      "gru.bias_ih": 640,
+      "gru.bias_hh": 640,
+      "head.base_weight": 640,
+      "head.spline_weight": 640,
+      "head.bias": 640,
+      "dynamics.base_weight": 640,
+      "dynamics.spline_weight": 640,
+      "dynamics.bias": 640
+    },
+    "nonzero_gradient_seen_by_parameter": {
+      "static_encoder.base_weight": true,
+      "static_encoder.spline_weight": true,
+      "static_encoder.bias": true,
+      "wearable_encoder.base_weight": true,
+      "wearable_encoder.spline_weight": true,
+      "wearable_encoder.bias": true,
+      "gru.weight_ih": true,
+      "gru.weight_hh": true,
+      "gru.bias_ih": true,
+      "gru.bias_hh": true,
+      "head.base_weight": true,
+      "head.spline_weight": true,
+      "head.bias": true,
+      "dynamics.base_weight": true,
+      "dynamics.spline_weight": true,
+      "dynamics.bias": true
+    },
+    "all_parameters_received_gradients": true,
+    "all_parameters_received_nonzero_gradients": true,
+    "pending_parameters": [],
+    "preclip_norm_summary": {
+      "n": 640,
+      "min": 9.183990690564528,
+      "max": 416.58126292265905,
+      "mean": 87.91779976913887,
+      "above_clip_norm_count": 640
+    },
+    "numerical_failures": []
+  },
+  "dynamics_change": {
+    "l2_change_from_initial_by_parameter": {
+      "base_weight": 0.8009622791247438,
+      "spline_weight": 1.6693294889235915,
+      "bias": 0.11123196062970944
+    },
+    "every_dynamics_parameter_tensor_changed": true
+  },
+  "step_size_initial": {
+    "training_only": true,
+    "samples": 8,
+    "steps_compared": [
+      0.25,
+      0.125
+    ],
+    "prediction_max_absolute_difference": 2.9802322387695312e-08,
+    "prediction_rms_difference": 1.1896028162539096e-08,
+    "final_hidden_max_absolute_difference": 1.7881393432617188e-07,
+    "maximum_absolute_final_hidden": {
+      "0.25": 0.5073771476745605,
+      "0.125": 0.5073769688606262
+    },
+    "warning_threshold_phq_points": 0.01,
+    "instability_warning": false,
+    "all_states_and_predictions_finite": true,
+    "solver_calls": {
+      "0.25": {
+        "integrate_calls": 3,
+        "steps": 12,
+        "rhs_evaluations": 48
+      },
+      "0.125": {
+        "integrate_calls": 3,
+        "steps": 24,
+        "rhs_evaluations": 96
+      }
+    },
+    "training_step_size_unchanged": true,
+    "validation_used_for_step_selection": false,
+    "parameters_unchanged": true
+  },
+  "step_size_restored": {
+    "training_only": true,
+    "samples": 8,
+    "steps_compared": [
+      0.25,
+      0.125
+    ],
+    "prediction_max_absolute_difference": 0.000293731689453125,
+    "prediction_rms_difference": 0.00012239297211635858,
+    "final_hidden_max_absolute_difference": 0.00022125244140625,
+    "maximum_absolute_final_hidden": {
+      "0.25": 11.48409652709961,
+      "0.125": 11.48427677154541
+    },
+    "warning_threshold_phq_points": 0.01,
+    "instability_warning": false,
+    "all_states_and_predictions_finite": true,
+    "solver_calls": {
+      "0.25": {
+        "integrate_calls": 3,
+        "steps": 12,
+        "rhs_evaluations": 48
+      },
+      "0.125": {
+        "integrate_calls": 3,
+        "steps": 24,
+        "rhs_evaluations": 96
+      }
+    },
+    "training_step_size_unchanged": true,
+    "validation_used_for_step_selection": false,
+    "parameters_unchanged": true
+  },
+  "prefix_checks": {
+    "sm1_gradient_wrt_sm2_exactly_zero": true,
+    "sm1_state_unchanged_when_sm2_changes": true,
+    "prefix_without_sm2_matches": true,
+    "sm1_and_context_gradients_nonzero": true
+  },
+  "restored_predictions_and_metrics_exact": true,
+  "preprocessing_unchanged": true,
+  "fresh_initialization": true,
+  "warm_start_from_smoke_or_sanity": false,
+  "numerical_failures": []
+}

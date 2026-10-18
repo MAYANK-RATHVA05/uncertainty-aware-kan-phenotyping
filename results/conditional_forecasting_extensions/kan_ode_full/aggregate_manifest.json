@@ -1,0 +1,286 @@
+{
+  "format_version": 1,
+  "section": "kan_ode_full",
+  "source_artifact_root": "artifacts/conditional_forecasting_kan_ode/sm2-fixed-seeds42-44",
+  "files_count": 30,
+  "files": [
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-fixed-seeds42-44/access_checks.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_full/access_checks.json",
+      "source_sha256": "f7cab0e72ad4ba9bae240767ff532ee2cbbbc544919ef9686308bd7da3b45711",
+      "published_sha256": "f7cab0e72ad4ba9bae240767ff532ee2cbbbc544919ef9686308bd7da3b45711",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-fixed-seeds42-44/comparisons.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_full/comparisons.json",
+      "source_sha256": "1f726dbfbfb48d8ea109986c1d5b99b15c1cec8de150d4d13c3bce98b0368fc2",
+      "published_sha256": "c8a32169785093051beaa2a535207309f8eb37f604f17bf1db2989664314e4a9",
+      "transformations": [
+        {
+          "field": ".provenance.baselines.directory",
+          "action": "repository_path_made_relative"
+        },
+        {
+          "field": ".provenance.ablations.directory",
+          "action": "repository_path_made_relative"
+        },
+        {
+          "field": ".provenance.tabular.directory",
+          "action": "repository_path_made_relative"
+        },
+        {
+          "field": ".provenance.recurrent.directory",
+          "action": "repository_path_made_relative"
+        }
+      ]
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-fixed-seeds42-44/completed_seeds.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_full/completed_seeds.json",
+      "source_sha256": "4db02d66a3c2b182a062deebeffa48a73d72c934af412e638e963c96198f72d4",
+      "published_sha256": "4db02d66a3c2b182a062deebeffa48a73d72c934af412e638e963c96198f72d4",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-fixed-seeds42-44/config.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_full/config.json",
+      "source_sha256": "724fa87727d0d61e171789fc50f840403fcb8478d65f5aed91a92d7960b53e08",
+      "published_sha256": "724fa87727d0d61e171789fc50f840403fcb8478d65f5aed91a92d7960b53e08",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-fixed-seeds42-44/learning_curves.png",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_full/learning_curves.png",
+      "source_sha256": "555f3458c2e56e26f988fbcac902dfb88d352ebc96506b1b749f171eec070cd2",
+      "published_sha256": "555f3458c2e56e26f988fbcac902dfb88d352ebc96506b1b749f171eec070cd2",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-fixed-seeds42-44/learning_curves.svg",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_full/learning_curves.svg",
+      "source_sha256": "a77c692021eaa40d2dfd2b9b66965a79a894822c59f55919b9abc0f385dcb2b3",
+      "published_sha256": "a77c692021eaa40d2dfd2b9b66965a79a894822c59f55919b9abc0f385dcb2b3",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-fixed-seeds42-44/run.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_full/run.json",
+      "source_sha256": "4c8c50c82f16559fcc9fdca2ba5cd7a25b207f1178d84944b8e6bdeab4b5ccbc",
+      "published_sha256": "efa7ebd8573282573144c39f9667e7848982d09aad8ac85ff24fa9e4afa685d6",
+      "transformations": [
+        {
+          "field": ".dataset_dir",
+          "action": "repository_path_made_relative"
+        },
+        {
+          "field": ".original_input_hashes.data.path",
+          "action": "external_private_path_redacted"
+        },
+        {
+          "field": ".original_input_hashes.dictionary.path",
+          "action": "external_private_path_redacted"
+        },
+        {
+          "field": ".comparisons.baselines.directory",
+          "action": "repository_path_made_relative"
+        },
+        {
+          "field": ".comparisons.ablations.directory",
+          "action": "repository_path_made_relative"
+        },
+        {
+          "field": ".comparisons.tabular.directory",
+          "action": "repository_path_made_relative"
+        },
+        {
+          "field": ".comparisons.recurrent.directory",
+          "action": "repository_path_made_relative"
+        }
+      ]
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-fixed-seeds42-44/seed_42/epoch_diagnostics.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_full/seed_42/epoch_diagnostics.json",
+      "source_sha256": "ddd0ca8ee0b067229290cb8a76e43a07e13c7b4bb9ece9eb522664e0acf4bc6b",
+      "published_sha256": "ddd0ca8ee0b067229290cb8a76e43a07e13c7b4bb9ece9eb522664e0acf4bc6b",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-fixed-seeds42-44/seed_42/gradient_checks.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_full/seed_42/gradient_checks.json",
+      "source_sha256": "9522941a7e8abb8c374fa232920ca6a31f12e0be6792681a9b716fd7e09c9f1a",
+      "published_sha256": "9522941a7e8abb8c374fa232920ca6a31f12e0be6792681a9b716fd7e09c9f1a",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-fixed-seeds42-44/seed_42/history.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_full/seed_42/history.json",
+      "source_sha256": "746bda0773cbdb96c2df7a3dd60a32f2b04b62b9b2b1b5dba79ba64c399f35d4",
+      "published_sha256": "746bda0773cbdb96c2df7a3dd60a32f2b04b62b9b2b1b5dba79ba64c399f35d4",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-fixed-seeds42-44/seed_42/step_size_initial.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_full/seed_42/step_size_initial.json",
+      "source_sha256": "bc0a85a67cb8b8070d68efbbb7dde91cbdcc89ba4f90e233b60e1fe51d9787ed",
+      "published_sha256": "bc0a85a67cb8b8070d68efbbb7dde91cbdcc89ba4f90e233b60e1fe51d9787ed",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-fixed-seeds42-44/seed_42/step_size_restored.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_full/seed_42/step_size_restored.json",
+      "source_sha256": "4dd1caf51aa5e37631dc002a11879a5c8ab5e6ac599488f7a296c45435e3be6a",
+      "published_sha256": "4dd1caf51aa5e37631dc002a11879a5c8ab5e6ac599488f7a296c45435e3be6a",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-fixed-seeds42-44/seed_42/training_config.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_full/seed_42/training_config.json",
+      "source_sha256": "4d8fa7075e5124733ec53c9ebf29210631421e8167746e630a5c36874f916504",
+      "published_sha256": "4d8fa7075e5124733ec53c9ebf29210631421e8167746e630a5c36874f916504",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-fixed-seeds42-44/seed_42/validation_metrics.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_full/seed_42/validation_metrics.json",
+      "source_sha256": "3f0b6c6a52f7490b93d2fd1f38aca4f469d0e4135bead32988aad1abbc465adc",
+      "published_sha256": "3f0b6c6a52f7490b93d2fd1f38aca4f469d0e4135bead32988aad1abbc465adc",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-fixed-seeds42-44/seed_43/epoch_diagnostics.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_full/seed_43/epoch_diagnostics.json",
+      "source_sha256": "0dd8b344dca07050a1ac86513c16789b22af9cb3a1bbb821675b171c9c70e05c",
+      "published_sha256": "0dd8b344dca07050a1ac86513c16789b22af9cb3a1bbb821675b171c9c70e05c",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-fixed-seeds42-44/seed_43/gradient_checks.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_full/seed_43/gradient_checks.json",
+      "source_sha256": "c206811f067127553838d69801dde12ea8f8e40496fd7363c193e2d6d6e8e2ee",
+      "published_sha256": "c206811f067127553838d69801dde12ea8f8e40496fd7363c193e2d6d6e8e2ee",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-fixed-seeds42-44/seed_43/history.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_full/seed_43/history.json",
+      "source_sha256": "2d7afc74d00bcd2bf8375cdfc95e2a2db0cf9e4d01f0eea860de22fb2a997f0d",
+      "published_sha256": "2d7afc74d00bcd2bf8375cdfc95e2a2db0cf9e4d01f0eea860de22fb2a997f0d",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-fixed-seeds42-44/seed_43/step_size_initial.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_full/seed_43/step_size_initial.json",
+      "source_sha256": "8f041b412c65721b64a2325bc6bdcf17c6bffeb3cc46c3337b35d2c82a784529",
+      "published_sha256": "8f041b412c65721b64a2325bc6bdcf17c6bffeb3cc46c3337b35d2c82a784529",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-fixed-seeds42-44/seed_43/step_size_restored.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_full/seed_43/step_size_restored.json",
+      "source_sha256": "66daf14ff190c689503e4960cf80609a016ae2cca6a8b85c4638414d887ec854",
+      "published_sha256": "66daf14ff190c689503e4960cf80609a016ae2cca6a8b85c4638414d887ec854",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-fixed-seeds42-44/seed_43/training_config.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_full/seed_43/training_config.json",
+      "source_sha256": "02a78e6ff44f294c846d8f80ad55a48acffc1b1fcf47011a5cec3556a34c9f3e",
+      "published_sha256": "02a78e6ff44f294c846d8f80ad55a48acffc1b1fcf47011a5cec3556a34c9f3e",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-fixed-seeds42-44/seed_43/validation_metrics.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_full/seed_43/validation_metrics.json",
+      "source_sha256": "127983d872ae72e4dd81e77360a99c9f54914b7b0e4491539a51f48000f45513",
+      "published_sha256": "127983d872ae72e4dd81e77360a99c9f54914b7b0e4491539a51f48000f45513",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-fixed-seeds42-44/seed_44/epoch_diagnostics.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_full/seed_44/epoch_diagnostics.json",
+      "source_sha256": "b61f6b7757ce1bd2a83c318f9fb55f2d389758a697c2f4aac88943f85659a9dd",
+      "published_sha256": "b61f6b7757ce1bd2a83c318f9fb55f2d389758a697c2f4aac88943f85659a9dd",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-fixed-seeds42-44/seed_44/gradient_checks.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_full/seed_44/gradient_checks.json",
+      "source_sha256": "0a074b1432cb19b6e9e69fdfec78408c12a1ebf066e574039e55de803c4c9a46",
+      "published_sha256": "0a074b1432cb19b6e9e69fdfec78408c12a1ebf066e574039e55de803c4c9a46",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-fixed-seeds42-44/seed_44/history.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_full/seed_44/history.json",
+      "source_sha256": "0b207174de9df7c1738ae0b8c8b667bab9f2b44e8714fed8ca57432edb199a58",
+      "published_sha256": "0b207174de9df7c1738ae0b8c8b667bab9f2b44e8714fed8ca57432edb199a58",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-fixed-seeds42-44/seed_44/step_size_initial.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_full/seed_44/step_size_initial.json",
+      "source_sha256": "078ba48667df1c8ee49994ed3c27673f99b349b68a06193321d86bf8882c870b",
+      "published_sha256": "078ba48667df1c8ee49994ed3c27673f99b349b68a06193321d86bf8882c870b",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-fixed-seeds42-44/seed_44/step_size_restored.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_full/seed_44/step_size_restored.json",
+      "source_sha256": "12c9e3b5b8d0e75c6fd97a1529691e44c27a2fd0951028b8533ab655e43c53d5",
+      "published_sha256": "12c9e3b5b8d0e75c6fd97a1529691e44c27a2fd0951028b8533ab655e43c53d5",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-fixed-seeds42-44/seed_44/training_config.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_full/seed_44/training_config.json",
+      "source_sha256": "f20e69d0101865e55ded1fd973c53a6b9af04d07096d6e35b1393834b02325cf",
+      "published_sha256": "f20e69d0101865e55ded1fd973c53a6b9af04d07096d6e35b1393834b02325cf",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-fixed-seeds42-44/seed_44/validation_metrics.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_full/seed_44/validation_metrics.json",
+      "source_sha256": "a89e53b804baf5c0d9ed2de9409c0d97c4280ea7d9c9d564c65282fe1e1e2f8a",
+      "published_sha256": "a89e53b804baf5c0d9ed2de9409c0d97c4280ea7d9c9d564c65282fe1e1e2f8a",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-fixed-seeds42-44/summary.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_full/summary.json",
+      "source_sha256": "7805475d3502f8c3e811fc9c155bbb18ef1f9fa5823a6475b57e08c8b0ffbd42",
+      "published_sha256": "019581c0671174f1a4fd00094d2f02efea6c51ce88edc3d4a4475758321c089f",
+      "transformations": [
+        {
+          "field": ".comparisons.provenance.baselines.directory",
+          "action": "repository_path_made_relative"
+        },
+        {
+          "field": ".comparisons.provenance.ablations.directory",
+          "action": "repository_path_made_relative"
+        },
+        {
+          "field": ".comparisons.provenance.tabular.directory",
+          "action": "repository_path_made_relative"
+        },
+        {
+          "field": ".comparisons.provenance.recurrent.directory",
+          "action": "repository_path_made_relative"
+        }
+      ]
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-fixed-seeds42-44/validation_checks.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_full/validation_checks.json",
+      "source_sha256": "887073dfa099730cb21dc6ed768726eab855525e9ebedb4fd98c31cf40835310",
+      "published_sha256": "887073dfa099730cb21dc6ed768726eab855525e9ebedb4fd98c31cf40835310",
+      "transformations": []
+    }
+  ],
+  "additional_authored_files": [
+    "README.md",
+    "publication_checks.json"
+  ],
+  "self_hash_excluded": true
+}

@@ -1,0 +1,99 @@
+{
+  "independent_fresh_process": true,
+  "checks": {
+    "exact_frozen_5111_851_saved_samples_month_order_static_inputs_and_measured_targets": true,
+    "all_saved_training_rows_used_and_fixed_eight_training_diagnostic_rows_reused_across_seeds": true,
+    "fixed_architecture_and_training_protocol_no_search_or_warm_start": true,
+    "seed_42_fresh_exact_initialization_and_documented_dynamics_scale": true,
+    "seed_42_minimum_validation_RMSE_checkpoint_and_patience10_independently_replayed": true,
+    "seed_42_fresh_process_direct_batches_exact_predictions_and_manual_metrics": true,
+    "seed_42_same_training_subset_step_halving_and_SM1_causality_reproduced": true,
+    "seed_42_preclip_norms_independently_recomputed_without_optimizer_update": true,
+    "seed_42_all_backward_calls_optimizer_updates_and_solver_counts_reconciled": true,
+    "seed_43_fresh_exact_initialization_and_documented_dynamics_scale": true,
+    "seed_43_minimum_validation_RMSE_checkpoint_and_patience10_independently_replayed": true,
+    "seed_43_fresh_process_direct_batches_exact_predictions_and_manual_metrics": true,
+    "seed_43_same_training_subset_step_halving_and_SM1_causality_reproduced": true,
+    "seed_43_preclip_norms_independently_recomputed_without_optimizer_update": true,
+    "seed_43_all_backward_calls_optimizer_updates_and_solver_counts_reconciled": true,
+    "seed_44_fresh_exact_initialization_and_documented_dynamics_scale": true,
+    "seed_44_minimum_validation_RMSE_checkpoint_and_patience10_independently_replayed": true,
+    "seed_44_fresh_process_direct_batches_exact_predictions_and_manual_metrics": true,
+    "seed_44_same_training_subset_step_halving_and_SM1_causality_reproduced": true,
+    "seed_44_preclip_norms_independently_recomputed_without_optimizer_update": true,
+    "seed_44_all_backward_calls_optimizer_updates_and_solver_counts_reconciled": true,
+    "three_seed_means_and_sample_SD_independently_recomputed_ddof1": true,
+    "actual_unclipped_recurrent_control_configuration_difference_disclosed": true,
+    "all_consumed_source_original_and_artifact_hashes_match_preprocessing_unchanged": true,
+    "all_prior_source_docs_tests_artifacts_preserved_reserved_files_metadata_only": true,
+    "no_recorded_numerical_failures_material_step_instability_or_solver_change": true
+  },
+  "checks_passed": 26,
+  "preservation": {
+    "passed": true,
+    "tracked_files_preserved": 106,
+    "preexisting_untracked_files_preserved": 12,
+    "prior_artifacts_preserved": 132,
+    "prior_artifact_hashes_verified": 128,
+    "reserved_payloads_checked_with_metadata_only": 4,
+    "failures": []
+  },
+  "per_seed": [
+    {
+      "seed": 42,
+      "manual_metrics": {
+        "mae": 2.838541563683475,
+        "rmse": 3.85395629898178,
+        "r2": 0.6117085709805397,
+        "n": 851
+      },
+      "epochs_run": 25,
+      "optimizer_updates": 1000,
+      "first_batch_preclip_norm": 42.6812659683856,
+      "step_halving_prediction_max_abs": 0.0001010894775390625
+    },
+    {
+      "seed": 43,
+      "manual_metrics": {
+        "mae": 2.8786545991897583,
+        "rmse": 3.8448121180981696,
+        "r2": 0.6135489628123761,
+        "n": 851
+      },
+      "epochs_run": 16,
+      "optimizer_updates": 640,
+      "first_batch_preclip_norm": 42.766827950100414,
+      "step_halving_prediction_max_abs": 0.000293731689453125
+    },
+    {
+      "seed": 44,
+      "manual_metrics": {
+        "mae": 2.8672924050152933,
+        "rmse": 3.8156389546510496,
+        "r2": 0.6193912392291567,
+        "n": 851
+      },
+      "epochs_run": 21,
+      "optimizer_updates": 840,
+      "first_batch_preclip_norm": 42.85964762059116,
+      "step_halving_prediction_max_abs": 0.00016117095947265625
+    }
+  ],
+  "training_samples": 5111,
+  "training_participants": 2025,
+  "validation_samples": 851,
+  "validation_participants": 338,
+  "restored_predictions_and_manual_metrics_exact": true,
+  "extra_optimizer_steps_run_by_audit": 0,
+  "calibration_or_test_performance_computed": false,
+  "raw_dataset_reopened": false,
+  "scope": "conditional relative-month forecasting; not scientific validation of clinical latent dynamics",
+  "repository_tests": {
+    "command": "python -m pytest -q",
+    "passed": 422,
+    "new_full_experiment_tests": 46,
+    "gradient_diagnostics_tests": 20,
+    "full_runner_protocol_tests": 26,
+    "seconds": 21.59
+  }
+}

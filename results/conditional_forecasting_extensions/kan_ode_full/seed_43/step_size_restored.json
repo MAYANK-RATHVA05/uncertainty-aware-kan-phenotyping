@@ -1,0 +1,33 @@
+{
+  "training_only": true,
+  "samples": 8,
+  "steps_compared": [
+    0.25,
+    0.125
+  ],
+  "prediction_max_absolute_difference": 0.000293731689453125,
+  "prediction_rms_difference": 0.00012239297211635858,
+  "final_hidden_max_absolute_difference": 0.00022125244140625,
+  "maximum_absolute_final_hidden": {
+    "0.25": 11.48409652709961,
+    "0.125": 11.48427677154541
+  },
+  "warning_threshold_phq_points": 0.01,
+  "instability_warning": false,
+  "all_states_and_predictions_finite": true,
+  "solver_calls": {
+    "0.25": {
+      "integrate_calls": 3,
+      "steps": 12,
+      "rhs_evaluations": 48
+    },
+    "0.125": {
+      "integrate_calls": 3,
+      "steps": 24,
+      "rhs_evaluations": 96
+    }
+  },
+  "training_step_size_unchanged": true,
+  "validation_used_for_step_selection": false,
+  "parameters_unchanged": true
+}

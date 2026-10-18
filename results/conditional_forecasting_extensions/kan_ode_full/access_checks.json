@@ -1,0 +1,101 @@
+{
+  "guarded_full_training_and_independent_verification": true,
+  "reports": {
+    "full_training": {
+      "python_open_audit_guard_enabled": true,
+      "scope": "Python open audit events; not a native I/O sandbox",
+      "dataset_files_read": [
+        "manifest.json",
+        "preprocessor.joblib",
+        "sample_index.npz",
+        "splits.npz",
+        "train_inputs.npz",
+        "train_targets.npz",
+        "validation_inputs.npz",
+        "validation_targets.npz"
+      ],
+      "dataset_read_events_by_file": {
+        "manifest.json": 3,
+        "preprocessor.joblib": 6,
+        "sample_index.npz": 3,
+        "splits.npz": 3,
+        "train_inputs.npz": 3,
+        "train_targets.npz": 3,
+        "validation_inputs.npz": 3,
+        "validation_targets.npz": 3
+      },
+      "blocked_open_attempts": {
+        "reserved_payload": 0,
+        "raw_dataset": 0
+      },
+      "reserved_payload_open_attempts": 0,
+      "raw_dataset_open_attempts": 0
+    },
+    "independent_verification": {
+      "python_open_audit_guard_enabled": true,
+      "scope": "Python open audit events; not a native I/O sandbox",
+      "dataset_files_read": [
+        "manifest.json",
+        "preprocessor.joblib",
+        "sample_index.npz",
+        "splits.npz",
+        "train_inputs.npz",
+        "train_targets.npz",
+        "validation_checks.json",
+        "validation_inputs.npz",
+        "validation_targets.npz"
+      ],
+      "dataset_read_events_by_file": {
+        "manifest.json": 4,
+        "preprocessor.joblib": 5,
+        "sample_index.npz": 4,
+        "splits.npz": 4,
+        "train_inputs.npz": 4,
+        "train_targets.npz": 4,
+        "validation_checks.json": 1,
+        "validation_inputs.npz": 4,
+        "validation_targets.npz": 4
+      },
+      "blocked_open_attempts": {
+        "reserved_payload": 0,
+        "raw_dataset": 0
+      },
+      "reserved_payload_open_attempts": 0,
+      "raw_dataset_open_attempts": 0
+    },
+    "independent_early_gradient_check": {
+      "python_open_audit_guard_enabled": true,
+      "scope": "Python open audit events; not a native I/O sandbox",
+      "dataset_files_read": [
+        "manifest.json",
+        "preprocessor.joblib",
+        "sample_index.npz",
+        "splits.npz",
+        "train_inputs.npz",
+        "train_targets.npz",
+        "validation_inputs.npz",
+        "validation_targets.npz"
+      ],
+      "dataset_read_events_by_file": {
+        "manifest.json": 2,
+        "preprocessor.joblib": 2,
+        "sample_index.npz": 2,
+        "splits.npz": 2,
+        "train_inputs.npz": 2,
+        "train_targets.npz": 2,
+        "validation_inputs.npz": 2,
+        "validation_targets.npz": 2
+      },
+      "blocked_open_attempts": {
+        "reserved_payload": 0,
+        "raw_dataset": 0
+      },
+      "reserved_payload_open_attempts": 0,
+      "raw_dataset_open_attempts": 0
+    }
+  },
+  "reserved_payload_open_attempts": 0,
+  "raw_dataset_open_attempts": 0,
+  "scope": "Python open audit events; not a native I/O sandbox",
+  "calibration_or_test_performance_computed": false
+}

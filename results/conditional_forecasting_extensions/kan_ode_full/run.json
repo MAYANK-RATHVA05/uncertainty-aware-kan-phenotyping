@@ -1,0 +1,152 @@
+{
+  "dataset_manifest_sha256": "af8c7874005e6f4c008a1e35b3f11109bbcb28d38ff75208c0b42fbc47e5216b",
+  "dataset_dir": "artifacts/conditional_forecasting/sm2-seed42",
+  "dataset_files_consumed": [
+    "manifest.json",
+    "splits.npz",
+    "sample_index.npz",
+    "preprocessor.joblib",
+    "train_inputs.npz",
+    "train_targets.npz",
+    "validation_inputs.npz",
+    "validation_targets.npz"
+  ],
+  "consumed_sha256": {
+    "manifest.json": "af8c7874005e6f4c008a1e35b3f11109bbcb28d38ff75208c0b42fbc47e5216b",
+    "splits.npz": "db9ef44c8fdf01ed07269628065dd287872b11f86239d17dab291e8f713ea126",
+    "sample_index.npz": "19dfe017fe49feaa1b7f514d96b3156d98e29998da9d429fb54fa3b525aacf57",
+    "preprocessor.joblib": "bdaf5b1980a8811204c4999bb74c0054410ecab2b945904c759bd7c3a01a5749",
+    "train_inputs.npz": "e36893d6e953a8d7e75cabecccf64db93ac7ca93fed3bb30839abe57c945dcc4",
+    "train_targets.npz": "053b0d7b933f8700bc438cf3f78a0a3d25d947cf9d6dcb794045b9457916ab31",
+    "validation_inputs.npz": "40bebf351865b480fa3d630f03718962aa98e64cf82df2997efd1d17195818a7",
+    "validation_targets.npz": "a13de356f8421045b60fa3749a63030db9b7eb43eb7cc8561d1c59c86ee51873"
+  },
+  "original_input_hashes": {
+    "data": {
+      "path": "[private source path omitted]/anon_processed_df_parquet.csv",
+      "sha256": "3d96afaa768bcd50c56524b931ac2e6acdd5f08c95db16c1e3b13d7dd6ce3934"
+    },
+    "dictionary": {
+      "path": "[private source path omitted]/feature_explanations.tsv",
+      "sha256": "e346b57eb81c8c7d22a6ff0bda71214e527d8bed72eef1c2218d7e5826612e3e"
+    }
+  },
+  "original_input_hash_verification": "inherited; raw CSV never reopened",
+  "builder_source_hashes": {
+    "build_forecasting_dataset.py": "8a9095f75703d2f2d6b65b240009106b7ea2ad5bc26c432165d82be4be5e23ce",
+    "conditional_forecasting.py": "00bc36cd50e775e637e58d3822822b36225ed39919d562806a548143a9678fe0",
+    "forecasting_splits.py": "fcf4b93e3184732d1dba97ae5781c071997ffab77d1a786edb9ec9a9536a255b",
+    "forecasting_preprocessing.py": "bee2cc449a20d57305bbbd958e4aaf7d866564f63e7b6a395f92c130810c4f4d",
+    "preprocessing.py": "032f99fb041ace049bd4bccc507061a10a6e4d635034821fd7ba9a4fba61a0ba",
+    "dataset.py": "280506856664ff5a73fe479dcf3b7ebbbb01a27b442580c4e9b5c9581102054a"
+  },
+  "source_sha256": {
+    "experiments/forecasting_kan_ode_full.py": "3c25a1fb3c9838040216b556f512fd22acf7df3960f30cc60f0c84128fa7ecd5",
+    "experiments/forecasting_kan_ode.py": "e2fdaf05d217f37c047e8fae1566e525c4bbaf2729298e8d33d7961ceb37c52b",
+    "experiments/forecasting_sequential_kan.py": "188f1252180381d8228ab8f161f6b9ffd09d19aaefeb5dbe0a9e8e1edfef71b7",
+    "experiments/forecasting_baselines.py": "1008ac7a0d17b51f0e888f9d27632f9119b92d5e1ca857e1cac54dbba27764a9",
+    "experiments/forecasting_kan.py": "4b24a54a9db7cea6c35d6e793eaaa4235e0319174bcb2e0ba454a273287aba9b",
+    "models/latent_kan_ode.py": "3199687c0361b1f2b4d2b69ad1aa6586f7153b5d59bf434faa89b6498abeb57c",
+    "models/sequential_kan.py": "6a8253fe60b90a134ff86091bb4f66de2e811e50904f5bbbafd6c90d83a70af1",
+    "models/kan_layer.py": "227ce8fe5ffc5bbeecf513fbbea50c8f2702b3e26cebc54b1bfabdb584977f1b",
+    "numerics/rk4.py": "e7f747d9d5fe0973f8374962f46dcf247e733984018f674858449a3e58561d26",
+    "training/gradient_diagnostics.py": "62d169d887627c64008a2eb2799a3449825da3a380b11dd9f072387fb0a973ca",
+    "training/trainer.py": "8b1d4ab7ca45acf98109b172d2831b77ad47e8765fd8b96179123c588602f1a4",
+    "evaluation/metrics.py": "9c1571faf1bd6f0f39b6b9d861c70be29c147f07aadf8433293813711ad1bbbe"
+  },
+  "preprocessor_sha256": "bdaf5b1980a8811204c4999bb74c0054410ecab2b945904c759bd7c3a01a5749",
+  "comparisons": {
+    "baselines": {
+      "directory": "artifacts/conditional_forecasting_baselines/sm2-seed42",
+      "sha256": {
+        "run.json": "161105f7a0a707d03802cc89da531348d805c8a988eb8e00dab444beec096849",
+        "validation_metrics.json": "824070590b7ebf013d57b5c1ab5e47f1eb71e6b46a75047b2060866ebc70d400",
+        "validation_predictions.npz": "85d1c6d5289ae2f0be9feab3840dc47e6d97f67fe09b37ec16f72754607c140a"
+      }
+    },
+    "ablations": {
+      "directory": "artifacts/conditional_forecasting_feature_ablations/sm2-seed42",
+      "sha256": {
+        "run.json": "30668e2c20eed074661bc7b98532a44e2f454a632e459cf2f1481f8ce3fc752b",
+        "summary.json": "124d45e2411a680e2aa0e2d1ab45df50c21904180e4bc3e7a6bbfdf28c936769",
+        "B/validation_predictions.npz": "831c5729a695bfc7562ebf05bb117d67b1f39761f500e817284ae4d2492b692b",
+        "D/validation_predictions.npz": "f87f321675d8a9ee7d99937e9a3776f36d9a008517aed2dab46d10ddbe16f096"
+      }
+    },
+    "tabular": {
+      "directory": "artifacts/conditional_forecasting_kan/sm2-fixed-seeds42-44",
+      "sha256": {
+        "run.json": "d50df3d11b372999fb98f8b05abe6375e49f95118f642b3ba6b1fae4163fd088",
+        "summary.json": "7db757eecf315f873553a3850ebfe04aa10d74ae8cada18aa957b677c5fe8665",
+        "seed_42/validation_predictions.npz": "1c06638284240d9200f1cd92e27d323ed84e6f5a0ad97f214c38f8ea7663beb3",
+        "seed_43/validation_predictions.npz": "f3d7fe2dcc13d6066f2f4c298980cd0a64e69a397094ecb699116d8e2ac515f2",
+        "seed_44/validation_predictions.npz": "45fa52af16f61703ed0613a15ecb9531028ca7f44a52e4fc331e76c34f18bcce"
+      }
+    },
+    "recurrent": {
+      "directory": "artifacts/conditional_forecasting_sequential_kan/sm2-fixed-seeds42-44",
+      "sha256": {
+        "run.json": "be47baa2164a07a2f8b219dcdb8743603c9a1f890ffcae3f8cc6efbff778a4b1",
+        "summary.json": "62eb7fb31a4a796c477377c8088d549433904fa14f2f8f09f4c693cf4b2a9690",
+        "seed_42/validation_predictions.npz": "ba5cf7b3fce75b31b55d9bdf7d186bad588d4b53054ec75b0ba796cdc70e4621",
+        "seed_42/training_config.json": "2b359c2210528344ab541d34f5f6f36b1a9f8776346dd0ec4a49323af60df199",
+        "seed_43/validation_predictions.npz": "02073098449e72852bc08729a6a8641a406b7c5817a41386fff3c93d2c117592",
+        "seed_43/training_config.json": "2ea7d074e6a68246dc20fa7be6867902cca59d4bea83f0f544a0e01fe492e9ca",
+        "seed_44/validation_predictions.npz": "9babb43228fd5ac54ece5428344ba3de29986568c725eb5896eb3ea9ffc6c8d4",
+        "seed_44/training_config.json": "0412787d85f35fb4bd149dfd1dadcebbd95f428b175aff19dd8ad542c49dcbff"
+      }
+    }
+  },
+  "versions": {
+    "python": "3.12.14",
+    "torch": "2.9.1+cpu",
+    "numpy": "2.3.5",
+    "rk4_local_implementation": "1.0"
+  },
+  "deterministic_algorithms": true,
+  "device": "cpu",
+  "num_threads": 2,
+  "artifact_sha256": {
+    "comparisons.json": "1f726dbfbfb48d8ea109986c1d5b99b15c1cec8de150d4d13c3bce98b0368fc2",
+    "completed_seeds.json": "4db02d66a3c2b182a062deebeffa48a73d72c934af412e638e963c96198f72d4",
+    "config.json": "724fa87727d0d61e171789fc50f840403fcb8478d65f5aed91a92d7960b53e08",
+    "learning_curves.png": "555f3458c2e56e26f988fbcac902dfb88d352ebc96506b1b749f171eec070cd2",
+    "learning_curves.svg": "a77c692021eaa40d2dfd2b9b66965a79a894822c59f55919b9abc0f385dcb2b3",
+    "preprocessor.joblib": "bdaf5b1980a8811204c4999bb74c0054410ecab2b945904c759bd7c3a01a5749",
+    "seed_42/best.pt": "32f14d8b2f7ec2060d0ced3b6623a01546046ad2ffaa632696566543d264a24f",
+    "seed_42/epoch_diagnostics.json": "ddd0ca8ee0b067229290cb8a76e43a07e13c7b4bb9ece9eb522664e0acf4bc6b",
+    "seed_42/gradient_checks.json": "9522941a7e8abb8c374fa232920ca6a31f12e0be6792681a9b716fd7e09c9f1a",
+    "seed_42/gradient_norms.json": "05216007e35292d974695d32a81e873dd59dabf90c2dc725baf6850c849a5bba",
+    "seed_42/history.json": "746bda0773cbdb96c2df7a3dd60a32f2b04b62b9b2b1b5dba79ba64c399f35d4",
+    "seed_42/initial.pt": "0be30e540f5d9d605e245ea92e661fa2ff53f335309326870cd7ab9b8a57cebb",
+    "seed_42/step_size_initial.json": "bc0a85a67cb8b8070d68efbbb7dde91cbdcc89ba4f90e233b60e1fe51d9787ed",
+    "seed_42/step_size_restored.json": "4dd1caf51aa5e37631dc002a11879a5c8ab5e6ac599488f7a296c45435e3be6a",
+    "seed_42/training_config.json": "4d8fa7075e5124733ec53c9ebf29210631421e8167746e630a5c36874f916504",
+    "seed_42/validation_metrics.json": "3f0b6c6a52f7490b93d2fd1f38aca4f469d0e4135bead32988aad1abbc465adc",
+    "seed_42/validation_predictions.npz": "c5030f6a70d80203bff668676e501e2b2c32cf6e386d9907f82425b440d6ff37",
+    "seed_43/best.pt": "82d062ebb59a7be3309ff3f5c25cab06c4e6f85a49fb5beb3a5cb3c572a23c5c",
+    "seed_43/epoch_diagnostics.json": "0dd8b344dca07050a1ac86513c16789b22af9cb3a1bbb821675b171c9c70e05c",
+    "seed_43/gradient_checks.json": "c206811f067127553838d69801dde12ea8f8e40496fd7363c193e2d6d6e8e2ee",
+    "seed_43/gradient_norms.json": "c4ba7e3bb4788b6567d0fc203424b15a92522d16a7973b4fb77c86badbea9544",
+    "seed_43/history.json": "2d7afc74d00bcd2bf8375cdfc95e2a2db0cf9e4d01f0eea860de22fb2a997f0d",
+    "seed_43/initial.pt": "b89930bc8757db39f4d8b8b7135ef2de7bbbe608ea69a2ca00b0e29c8a76ef57",
+    "seed_43/step_size_initial.json": "8f041b412c65721b64a2325bc6bdcf17c6bffeb3cc46c3337b35d2c82a784529",
+    "seed_43/step_size_restored.json": "66daf14ff190c689503e4960cf80609a016ae2cca6a8b85c4638414d887ec854",
+    "seed_43/training_config.json": "02a78e6ff44f294c846d8f80ad55a48acffc1b1fcf47011a5cec3556a34c9f3e",
+    "seed_43/validation_metrics.json": "127983d872ae72e4dd81e77360a99c9f54914b7b0e4491539a51f48000f45513",
+    "seed_43/validation_predictions.npz": "66b8cdeff55420e85c6fef3b495b8dd3fc1e6e9ddd412e7199b8cce75788e435",
+    "seed_44/best.pt": "0eec67624e86486e50d933eff1196b2404aaffe919671d08e28dcaf40cd2d06c",
+    "seed_44/epoch_diagnostics.json": "b61f6b7757ce1bd2a83c318f9fb55f2d389758a697c2f4aac88943f85659a9dd",
+    "seed_44/gradient_checks.json": "0a074b1432cb19b6e9e69fdfec78408c12a1ebf066e574039e55de803c4c9a46",
+    "seed_44/gradient_norms.json": "6b766b57168b35f541bab8345edb3992618d6c2a0be882a8e9941e3c463bd311",
+    "seed_44/history.json": "0b207174de9df7c1738ae0b8c8b667bab9f2b44e8714fed8ca57432edb199a58",
+    "seed_44/initial.pt": "177cac7faae452018547a9053c0deb480ea475e8f13ceefc121c216715f38ffe",
+    "seed_44/step_size_initial.json": "078ba48667df1c8ee49994ed3c27673f99b349b68a06193321d86bf8882c870b",
+    "seed_44/step_size_restored.json": "12c9e3b5b8d0e75c6fd97a1529691e44c27a2fd0951028b8533ab655e43c53d5",
+    "seed_44/training_config.json": "f20e69d0101865e55ded1fd973c53a6b9af04d07096d6e35b1393834b02325cf",
+    "seed_44/validation_metrics.json": "a89e53b804baf5c0d9ed2de9409c0d97c4280ea7d9c9d564c65282fe1e1e2f8a",
+    "seed_44/validation_predictions.npz": "f2171f3bbd8d36d1af8dc4ae5f7dda73c35b4702821a6a4aefb41b48f50292a2",
+    "summary.json": "7805475d3502f8c3e811fc9c155bbb18ef1f9fa5823a6475b57e08c8b0ffbd42",
+    "used_split_indices.npz": "78364ca02627a79738ee41f5ef3c1db534b3e011f750613acf378ef74832430f"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "completed_backward_updates": 640,
+  "clip_norm": 5.0,
+  "all_observed_gradients_finite": true,
+  "backward_calls_by_parameter": {
+    "static_encoder.base_weight": 640,
+    "static_encoder.spline_weight": 640,
+    "static_encoder.bias": 640,
+    "wearable_encoder.base_weight": 640,
+    "wearable_encoder.spline_weight": 640,
+    "wearable_encoder.bias": 640,
+    "gru.weight_ih": 640,
+    "gru.weight_hh": 640,
+    "gru.bias_ih": 640,
+    "gru.bias_hh": 640,
+    "head.base_weight": 640,
+    "head.spline_weight": 640,
+    "head.bias": 640,
+    "dynamics.base_weight": 640,
+    "dynamics.spline_weight": 640,
+    "dynamics.bias": 640
+  },
+  "nonzero_gradient_seen_by_parameter": {
+    "static_encoder.base_weight": true,
+    "static_encoder.spline_weight": true,
+    "static_encoder.bias": true,
+    "wearable_encoder.base_weight": true,
+    "wearable_encoder.spline_weight": true,
+    "wearable_encoder.bias": true,
+    "gru.weight_ih": true,
+    "gru.weight_hh": true,
+    "gru.bias_ih": true,
+    "gru.bias_hh": true,
+    "head.base_weight": true,
+    "head.spline_weight": true,
+    "head.bias": true,
+    "dynamics.base_weight": true,
+    "dynamics.spline_weight": true,
+    "dynamics.bias": true
+  },
+  "all_parameters_received_gradients": true,
+  "all_parameters_received_nonzero_gradients": true,
+  "pending_parameters": [],
+  "preclip_norm_summary": {
+    "n": 640,
+    "min": 9.183990690564528,
+    "max": 416.58126292265905,
+    "mean": 87.91779976913887,
+    "above_clip_norm_count": 640
+  },
+  "numerical_failures": []
+}

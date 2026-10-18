@@ -1,0 +1,33 @@
+{
+  "scope": "strict audit of aggregate publication bundle",
+  "sections": [
+    "sequential_kan",
+    "kan_ode_implementation",
+    "kan_ode_full"
+  ],
+  "aggregate_source_files_verified": 63,
+  "source_and_published_hashes_verified": true,
+  "all_json_parsed_without_nonfinite_values": true,
+  "allowed_formats": [
+    ".json",
+    ".md",
+    ".png",
+    ".svg"
+  ],
+  "absolute_local_paths": 0,
+  "individual_identifier_or_record_fields": 0,
+  "raw_or_reserved_payloads_opened_for_publication": false,
+  "checkpoints_preprocessors_or_private_array_files_published": false,
+  "per_update_gradient_norms_published": false,
+  "all_published_files_hashed_except_root_manifest_itself": true,
+  "source_artifacts_modified": false,
+  "full_experiment_independent_checks_passed": 26,
+  "repository_tests_reported_by_independent_verification": {
+    "command": "python -m pytest -q",
+    "passed": 422,
+    "new_full_experiment_tests": 46,
+    "gradient_diagnostics_tests": 20,
+    "full_runner_protocol_tests": 26,
+    "seconds": 21.59
+  }
+}
