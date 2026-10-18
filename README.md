@@ -6,22 +6,64 @@ Zhenghao Ni, and Deepa Kundur, to one depression-related outcome. It does not
 implement anxiety prediction, causal modelling, or clinical diagnosis, and does
 not reproduce the paper's All of Us experiments.
 
-The implemented PSYCHE-D study is **exploratory retrospective tabular regression**
+The original PSYCHE-D workflow is **exploratory retrospective tabular regression**
 of `phq9_score_end - phq9_score_start`, using documented three-month PHQ-9
 measurements. The scores remain continuous; no binary screening threshold is
 invented. See the [dataset audit](docs/dataset_audit.md),
 [complete schema and missingness](docs/data_schema.md), and
 [paper audit](docs/paper_audit.md).
 
+The project now also implements **conditional relative-month forecasting** of
+measured SM3 PHQ-9 severity from enrollment demographics, measured SM0 PHQ-9,
+and SM1/SM2 wearable summaries available conditionally by SM2. Its horizon is
+one relative study-month interval, not a fixed 30 days. The original
+retrospective workflow and results are retained separately.
+
+## Current research status
+
+The sequence remains **KAN → validated future forecasting → KAN-ODE →
+conformal prediction**. Current forecasting experiments remain conditional:
+export correspondence, actual input availability, feature construction, and
+target recall-period separation are not fully verified. ODE and conformal
+methods are not implemented.
+
+| Completed step | Report |
+|---|---|
+| Paper/code/export temporal review | [Temporal feasibility](docs/temporal_feasibility.md) |
+| Frozen cohort, participant partitions, preprocessing, and leakage checks | [Forecasting dataset](docs/forecasting_dataset.md) |
+| Persistence, training mean, and validation-selected Ridge | [Forecasting baselines](docs/forecasting_baselines.md) |
+| Fixed 159 → 64 → 1 spline KAN, initialization seeds 42/43/44 | [Forecasting KAN](docs/forecasting_kan.md) |
+| Controlled SM0/demographic/SM2/SM1 Ridge comparisons | [Feature ablations](docs/forecasting_feature_ablations.md) |
+
+The frozen forecasting cohort contains 8,494 quarter samples from 3,375
+participant prefixes under the release mapping. Training uses 5,111 samples;
+all reported forecasting comparisons use the same 851 validation samples.
+Calibration and test payloads remain unused.
+
+Full Ridge validation RMSE is 3.8136; the fixed KAN's mean RMSE is
+3.9120 ± 0.0038 across initializations (sample SD, not a confidence interval).
+In the controlled Ridge ablations, SM0 plus demographics has the lowest RMSE
+(3.7915); wearable additions give mixed or adverse validation increments.
+These exploratory comparisons establish neither causality nor clinical
+validity and do not exclude useful nonlinear or temporal wearable information.
+
+Tracked [aggregate result snapshots](results/conditional_forecasting/README.md)
+include metrics, configuration, feature metadata, verification reports, and
+learning curves. Original participant-level artifacts and fitted binaries
+remain local under the data policy below. The forecasting reports contain
+commands for their separate runners; retrospective commands follow here.
+
 ## What the available data supports
 
 The actual uploaded file is CSV inside a ZIP, despite the word `parquet` in
 its filename: 35,694 rows, 155 columns, and 10,866 labeled rows. All 154
-dictionary features are present. The index looks like two integer tokens,
-but its participant/month meanings and feature measurement windows are
-unconfirmed; the user has no documentation establishing them.
+dictionary features are present. The initial retrospective audit could not
+establish the composite index's participant/month meanings or feature windows.
+The subsequent paper and official-code review supports a relative-month
+mapping conditionally; actual availability and export provenance remain
+unverified. See the [complete temporal review](docs/temporal_feasibility.md).
 
-Consequently, the running study uses a tabular KAN and keeps matching index
+The retained retrospective workflow uses a tabular KAN and keeps matching index
 prefixes together as **provisional groups**. This does not establish real
 participant separation. No temporal sequences are constructed from those
 tokens. Results measure association with the observed PHQ-9 change, not
@@ -67,8 +109,10 @@ and data are not redistributed in this repository. Place private copies at:
 
 Those locations are already prepared in the current cloud instance. Future
 users must supply their own authorized copies if absent. Keep raw data,
-participant identifiers, model checkpoints, and generated outputs out of Git.
-`.gitignore` covers their usual formats and output directories.
+participant identifiers, model checkpoints, and participant-level generated
+outputs out of Git. `.gitignore` covers their usual formats and output
+directories. Reviewed aggregate JSON and learning curves are copied into
+`results/conditional_forecasting/` for versioned research evidence.
 
 ## Inspect before modelling
 
@@ -84,7 +128,7 @@ candidates are explicitly unverified. The project-specific audit reconciles
 the actual columns against the dictionary; it does not infer a target from a
 suggestive name alone.
 
-## Data handling and leakage limits
+## Retrospective data handling and leakage limits
 
 The reference split seed is 42, separate from model initialization seeds.
 The actual split contains 7,567 / 1,116 / 2,183 observations and
@@ -116,7 +160,7 @@ Each KAN layer computes
 y_j=b_j+\sum_i\left[\sum_r c_{jir} B_{r,p}(x_i)+w_{ji}\operatorname{SiLU}(x_i)\right].
 \]
 
-The actual tabular model is `111 -> KAN(64) -> KAN(1)` and returns an
+The retrospective tabular model is `111 -> KAN(64) -> KAN(1)` and returns an
 unbounded scalar PHQ-9 change estimate. It does not apply sigmoid. The
 following choices are explicit adaptations; the paper does not specify them:
 
@@ -136,7 +180,7 @@ Channel allocation, padding, and exact head dimensions are disclosed choices.
 Static fields are not duplicated in temporal inputs. These modules do not
 convert tabular columns into time steps.
 
-## Train, restore, and evaluate
+## Train, restore, and evaluate the retrospective workflow
 
 ```bash
 python -m kan_phenotyping.experiments.train_depression \

@@ -1,0 +1,19 @@
+{
+  "scope": "publication verification of completed conditional forecasting work",
+  "test_command": "python -m pytest -q",
+  "tests_passed": 248,
+  "aggregate_files_verified": 39,
+  "aggregate_source_and_copy_sha256_match": true,
+  "published_formats": [
+    ".md",
+    ".py",
+    ".json",
+    ".png",
+    ".svg"
+  ],
+  "private_payloads_or_fitted_binaries_in_result_bundle": false,
+  "new_real_data_training_for_publication": false,
+  "calibration_or_test_payloads_consumed_for_publication": false,
+  "historical_experiment_reports_preserved": true,
+  "notes": "Snapshot JSON retains historical local provenance paths; private referenced artifacts are excluded."
+}

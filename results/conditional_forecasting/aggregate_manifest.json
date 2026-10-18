@@ -1,0 +1,203 @@
+{
+  "format_version": 1,
+  "study_type": "conditional_relative_month_forecasting",
+  "snapshot_scope": "aggregate configuration, provenance, feature metadata, validation metrics, and learning curves only",
+  "files_count": 39,
+  "files": [
+    {
+      "source": "artifacts/conditional_forecasting/sm2-seed42/manifest.json",
+      "destination": "results/conditional_forecasting/dataset/manifest.json",
+      "sha256": "af8c7874005e6f4c008a1e35b3f11109bbcb28d38ff75208c0b42fbc47e5216b"
+    },
+    {
+      "source": "artifacts/conditional_forecasting/sm2-seed42/validation_checks.json",
+      "destination": "results/conditional_forecasting/dataset/validation_checks.json",
+      "sha256": "c61c24e36272dd3725f7a9533f4fa652f7a78d799410129e5518a737aafba63b"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_baselines/sm2-seed42/config.json",
+      "destination": "results/conditional_forecasting/baselines/config.json",
+      "sha256": "a72980f1882936369b57a0ddfea290e69f7380961b60705b0e72e1144a992b7a"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_baselines/sm2-seed42/run.json",
+      "destination": "results/conditional_forecasting/baselines/run.json",
+      "sha256": "161105f7a0a707d03802cc89da531348d805c8a988eb8e00dab444beec096849"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_baselines/sm2-seed42/validation_checks.json",
+      "destination": "results/conditional_forecasting/baselines/validation_checks.json",
+      "sha256": "fafe8e140eab5b60c14ecf6778890632a11c3730ca7d9b17e3888841585e7257"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_baselines/sm2-seed42/validation_metrics.json",
+      "destination": "results/conditional_forecasting/baselines/validation_metrics.json",
+      "sha256": "824070590b7ebf013d57b5c1ab5e47f1eb71e6b46a75047b2060866ebc70d400"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan/sm2-fixed-seeds42-44/access_checks.json",
+      "destination": "results/conditional_forecasting/kan/access_checks.json",
+      "sha256": "fb7ae21b97e0391318db2c45fd2c9f5827407fef8385b01447eb7277bf1a4df1"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan/sm2-fixed-seeds42-44/config.json",
+      "destination": "results/conditional_forecasting/kan/config.json",
+      "sha256": "9914e49e0fde2a78b721feeea78c9bd4dbb095eca9757819b5eb539c2f992671"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan/sm2-fixed-seeds42-44/run.json",
+      "destination": "results/conditional_forecasting/kan/run.json",
+      "sha256": "d50df3d11b372999fb98f8b05abe6375e49f95118f642b3ba6b1fae4163fd088"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan/sm2-fixed-seeds42-44/sanity/history.json",
+      "destination": "results/conditional_forecasting/kan/sanity/history.json",
+      "sha256": "457c2e8fa5c5eb4654b0eb487fe9a09582806b4cc192358761a3b3bd3295cea4"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan/sm2-fixed-seeds42-44/sanity/sanity.json",
+      "destination": "results/conditional_forecasting/kan/sanity/sanity.json",
+      "sha256": "874bd4939ec20fc06293a1270bdad9acf81e3ec8b9e2e187c4dee87b2426aed2"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan/sm2-fixed-seeds42-44/seed_42/history.json",
+      "destination": "results/conditional_forecasting/kan/seed_42/history.json",
+      "sha256": "80b5c41ce5cc02ceae6a6ea02e36b07c6cce4155da959d823f59e2daabb0b8a4"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan/sm2-fixed-seeds42-44/seed_42/training_config.json",
+      "destination": "results/conditional_forecasting/kan/seed_42/training_config.json",
+      "sha256": "2b359c2210528344ab541d34f5f6f36b1a9f8776346dd0ec4a49323af60df199"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan/sm2-fixed-seeds42-44/seed_42/validation_metrics.json",
+      "destination": "results/conditional_forecasting/kan/seed_42/validation_metrics.json",
+      "sha256": "9fe5cbda32c63475bb051584ff152c5ba3379a9962707d544fad9a79dc129264"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan/sm2-fixed-seeds42-44/seed_43/history.json",
+      "destination": "results/conditional_forecasting/kan/seed_43/history.json",
+      "sha256": "1df18600301c23593ea14361d4e010eefbc861bf95be6030814db871c3337e5e"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan/sm2-fixed-seeds42-44/seed_43/training_config.json",
+      "destination": "results/conditional_forecasting/kan/seed_43/training_config.json",
+      "sha256": "2ea7d074e6a68246dc20fa7be6867902cca59d4bea83f0f544a0e01fe492e9ca"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan/sm2-fixed-seeds42-44/seed_43/validation_metrics.json",
+      "destination": "results/conditional_forecasting/kan/seed_43/validation_metrics.json",
+      "sha256": "d45d4a26830a5370e661f3f6d869f7e0bd3e1d504b847cd836d76b59277e6a2a"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan/sm2-fixed-seeds42-44/seed_44/history.json",
+      "destination": "results/conditional_forecasting/kan/seed_44/history.json",
+      "sha256": "bd68902814d8ab3f482740420b9085c8d4251ebe7d2916fb485f3040f027b8b8"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan/sm2-fixed-seeds42-44/seed_44/training_config.json",
+      "destination": "results/conditional_forecasting/kan/seed_44/training_config.json",
+      "sha256": "0412787d85f35fb4bd149dfd1dadcebbd95f428b175aff19dd8ad542c49dcbff"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan/sm2-fixed-seeds42-44/seed_44/validation_metrics.json",
+      "destination": "results/conditional_forecasting/kan/seed_44/validation_metrics.json",
+      "sha256": "b0d4921e99ff9f1c2836a42e828a3a0cf8d0d0cc05b1351b4970ac8dca68a8c9"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan/sm2-fixed-seeds42-44/summary.json",
+      "destination": "results/conditional_forecasting/kan/summary.json",
+      "sha256": "7db757eecf315f873553a3850ebfe04aa10d74ae8cada18aa957b677c5fe8665"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan/sm2-fixed-seeds42-44/validation_checks.json",
+      "destination": "results/conditional_forecasting/kan/validation_checks.json",
+      "sha256": "fd13ae364efc09459b398255b15cc920b7c4de0debb51a3291e084b6f733aaa1"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_feature_ablations/sm2-seed42/A/features.json",
+      "destination": "results/conditional_forecasting/feature_ablations/A/features.json",
+      "sha256": "9cd1c734ab6d0c8eea716993614c2985e0861070c6d6bf48b77cd2018375ef25"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_feature_ablations/sm2-seed42/A/validation_metrics.json",
+      "destination": "results/conditional_forecasting/feature_ablations/A/validation_metrics.json",
+      "sha256": "5f9afa5c82845909a8177f3d51c875bfe680bbd14c9499f071eb42b76ef2cdb6"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_feature_ablations/sm2-seed42/B/features.json",
+      "destination": "results/conditional_forecasting/feature_ablations/B/features.json",
+      "sha256": "331e2cca32d08af169cc6d66c394ee35d4541072b4d8afbd9d5e856ce0dcfb48"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_feature_ablations/sm2-seed42/B/validation_metrics.json",
+      "destination": "results/conditional_forecasting/feature_ablations/B/validation_metrics.json",
+      "sha256": "e21a59238cf64cb4e1fe0229d76803741db1bc47efec2a30e1520bf6296a2d9a"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_feature_ablations/sm2-seed42/C/features.json",
+      "destination": "results/conditional_forecasting/feature_ablations/C/features.json",
+      "sha256": "38849cc7f6a9d17fd7106492758cba44c8476c2bd5898fb6c68f820982b3338b"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_feature_ablations/sm2-seed42/C/validation_metrics.json",
+      "destination": "results/conditional_forecasting/feature_ablations/C/validation_metrics.json",
+      "sha256": "9d9fbc16e0945870cfaff58b9b105371bf26a5a59de2969b9ae3d68e88cb9735"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_feature_ablations/sm2-seed42/D/features.json",
+      "destination": "results/conditional_forecasting/feature_ablations/D/features.json",
+      "sha256": "4f663fc5028961f587229a39d7496121145b1606ef04b55f24f83d58870d99d1"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_feature_ablations/sm2-seed42/D/reproduction.json",
+      "destination": "results/conditional_forecasting/feature_ablations/D/reproduction.json",
+      "sha256": "e309c1030a1d3553906155b6fff3e105ca9f3f25fa00122b7879dff8c9d2f1b2"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_feature_ablations/sm2-seed42/D/validation_metrics.json",
+      "destination": "results/conditional_forecasting/feature_ablations/D/validation_metrics.json",
+      "sha256": "90c3610479f6dc4b68b33b0c2c13503493b922de1040e67f2789161707f9bd80"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_feature_ablations/sm2-seed42/access_checks.json",
+      "destination": "results/conditional_forecasting/feature_ablations/access_checks.json",
+      "sha256": "0855223a0afe1cea317c0dfe489416992b4a333701b0a46dab122f1cffcf71a2"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_feature_ablations/sm2-seed42/config.json",
+      "destination": "results/conditional_forecasting/feature_ablations/config.json",
+      "sha256": "c9c2c90f2cfa3eebddf4c4ff00d161c562852f78610274cd7a18cf068f78de6e"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_feature_ablations/sm2-seed42/feature_groups.json",
+      "destination": "results/conditional_forecasting/feature_ablations/feature_groups.json",
+      "sha256": "4c44ca8998d9c9eb684ba6acab4f0d03c01866f21971ab22673436d2e4bc3b19"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_feature_ablations/sm2-seed42/run.json",
+      "destination": "results/conditional_forecasting/feature_ablations/run.json",
+      "sha256": "30668e2c20eed074661bc7b98532a44e2f454a632e459cf2f1481f8ce3fc752b"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_feature_ablations/sm2-seed42/summary.json",
+      "destination": "results/conditional_forecasting/feature_ablations/summary.json",
+      "sha256": "124d45e2411a680e2aa0e2d1ab45df50c21904180e4bc3e7a6bbfdf28c936769"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_feature_ablations/sm2-seed42/validation_checks.json",
+      "destination": "results/conditional_forecasting/feature_ablations/validation_checks.json",
+      "sha256": "b61d0681a7f588cdee556418e5d13c9b6b1a0d434a0b979ea31b949886671a1e"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan/sm2-fixed-seeds42-44/learning_curves.png",
+      "destination": "results/conditional_forecasting/kan/learning_curves.png",
+      "sha256": "21baa5a91f11f361bb27c227e4a336f382525f944955e3338e3ca966e36a484f"
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan/sm2-fixed-seeds42-44/learning_curves.svg",
+      "destination": "results/conditional_forecasting/kan/learning_curves.svg",
+      "sha256": "c668d36946ae1e29d121075a1ba89a55c2f23ec914bba72bb529826ebcd9f9b2"
+    }
+  ]
+}
