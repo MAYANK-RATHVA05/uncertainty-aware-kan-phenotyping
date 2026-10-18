@@ -1,0 +1,39 @@
+{
+  "training_only": true,
+  "seed": 2026,
+  "samples": 32,
+  "max_steps": 500,
+  "steps_run": 112,
+  "initial_mse": 59.222923278808594,
+  "final_mse": 0.06147010251879692,
+  "final_rmse": 0.24793164888492336,
+  "pass_rule": "RMSE <=0.25 and MSE <=1% of initial; finite gradients; changed parameters",
+  "passed": true,
+  "parameters_changed": true,
+  "gradient_checks": {
+    "all_observed_gradients_finite": true,
+    "backward_calls_by_parameter": {
+      "layers.0.base_weight": 112,
+      "layers.0.spline_weight": 112,
+      "layers.0.bias": 112,
+      "layers.1.base_weight": 112,
+      "layers.1.spline_weight": 112,
+      "layers.1.bias": 112
+    },
+    "nonzero_gradient_seen_by_parameter": {
+      "layers.0.base_weight": true,
+      "layers.0.spline_weight": true,
+      "layers.0.bias": true,
+      "layers.1.base_weight": true,
+      "layers.1.spline_weight": true,
+      "layers.1.bias": true
+    }
+  },
+  "seconds": 0.7204673289998027,
+  "optimizer": {
+    "name": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001
+  },
+  "warm_start_experiment": false
+}

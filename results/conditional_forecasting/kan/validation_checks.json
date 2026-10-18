@@ -1,0 +1,29 @@
+{
+  "checks": {
+    "original_shapes_159_features_raw_severity_and_parameter_count": true,
+    "identical_prescribed_settings_fixed_batch_order_and_three_initializations": true,
+    "every_checkpoint_selects_best_validation_epoch_and_respects_patience": true,
+    "fresh_process_reload_exactly_reproduces_aligned_predictions_and_metrics": true,
+    "all_backward_gradients_finite_and_nonzero_for_all_parameter_tensors": true,
+    "initialization_mean_and_sample_sd_recomputed_with_ddof1": true,
+    "separate_overfit_check_passes_using_only_training_subset": true,
+    "comparison_uses_unchanged_baselines_and_identical_validation_examples": true,
+    "input_source_checkpoint_curve_and_preprocessor_hashes_match": true,
+    "all_previous_source_docs_results_and_artifacts_preserved": true,
+    "training_and_independent_restore_never_open_reserved_observations": true
+  },
+  "checks_passed": 11,
+  "preexisting_source_files_preserved": 57,
+  "preexisting_artifact_files_preserved": 127,
+  "dataset_files_opened_during_independent_check": [
+    "manifest.json",
+    "preprocessor.joblib",
+    "sample_index.npz",
+    "splits.npz",
+    "train_inputs.npz",
+    "train_targets.npz",
+    "validation_inputs.npz",
+    "validation_targets.npz"
+  ],
+  "calibration_or_test_performance_computed": false
+}

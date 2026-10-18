@@ -1,0 +1,14 @@
+{
+  "reserved_observation_opens": 0,
+  "dataset_files_opened": [
+    "manifest.json",
+    "preprocessor.joblib",
+    "sample_index.npz",
+    "splits.npz",
+    "train_inputs.npz",
+    "train_targets.npz",
+    "validation_inputs.npz",
+    "validation_targets.npz"
+  ],
+  "runtime_file_guard_enabled": true
+}

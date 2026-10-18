@@ -1,0 +1,37 @@
+{
+  "seed": 42,
+  "validation": {
+    "mae": 2.9625720282979353,
+    "rmse": 3.915984875571929,
+    "r2": 0.5991090574069335,
+    "n": 851
+  },
+  "parameter_count": 122945,
+  "best_epoch": 13,
+  "epochs_run": 23,
+  "training_seconds": 10.603272497000944,
+  "selection_metric": "validation_rmse",
+  "gradient_checks": {
+    "all_observed_gradients_finite": true,
+    "backward_calls_by_parameter": {
+      "layers.0.base_weight": 920,
+      "layers.0.spline_weight": 920,
+      "layers.0.bias": 920,
+      "layers.1.base_weight": 920,
+      "layers.1.spline_weight": 920,
+      "layers.1.bias": 920
+    },
+    "nonzero_gradient_seen_by_parameter": {
+      "layers.0.base_weight": true,
+      "layers.0.spline_weight": true,
+      "layers.0.bias": true,
+      "layers.1.base_weight": true,
+      "layers.1.spline_weight": true,
+      "layers.1.bias": true
+    }
+  },
+  "restored_predictions_match": true,
+  "preprocessing_unchanged": true,
+  "shuffle_seed": 42,
+  "warm_start_from_sanity": false
+}
