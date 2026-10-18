@@ -1,0 +1,22 @@
+{
+  "study_type": "conditional_relative_month_forecasting",
+  "checks": {
+    "all_samples_exact_participant_quarter_and_endpoint_mapping": true,
+    "four_partitions_disjoint_complete_and_deterministic": true,
+    "separate_target_files_match_measured_sm3": true,
+    "reloaded_training_transform_reconstructs_every_saved_input": true,
+    "all_persisted_artifact_hashes_match": true,
+    "source_data_dictionary_hashes_match": true,
+    "independent_second_export_metadata_all_arrays_and_fitted_statistics_identical": true,
+    "all_preexisting_source_docs_results_and_guards_unchanged": true
+  },
+  "preserved_files": 151,
+  "samples": 8494,
+  "participants": 3375,
+  "input_hashes": {
+    "data": "3d96afaa768bcd50c56524b931ac2e6acdd5f08c95db16c1e3b13d7dd6ce3934",
+    "dictionary": "e346b57eb81c8c7d22a6ff0bda71214e527d8bed72eef1c2218d7e5826612e3e"
+  },
+  "model_training_performed": false,
+  "available_at_timestamps_verified": false
+}
