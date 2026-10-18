@@ -1,0 +1,141 @@
+{
+  "preliminary_smoke_only": true,
+  "seed": 42,
+  "epochs_run": 2,
+  "best_epoch": 2,
+  "validation": {
+    "mae": 7.082089221330423,
+    "rmse": 9.290823909530046,
+    "r2": -1.2565901623027083,
+    "n": 851
+  },
+  "training_seconds": 0.8038050760005717,
+  "parameter_count": 26257,
+  "solver_calls_during_fit_including_epoch_validation": {
+    "integrate_calls": 60,
+    "steps": 240,
+    "rhs_evaluations": 960
+  },
+  "gradient_checks": {
+    "all_observed_gradients_finite": true,
+    "backward_calls_by_parameter": {
+      "static_encoder.base_weight": 6,
+      "static_encoder.spline_weight": 6,
+      "static_encoder.bias": 6,
+      "wearable_encoder.base_weight": 6,
+      "wearable_encoder.spline_weight": 6,
+      "wearable_encoder.bias": 6,
+      "gru.weight_ih": 6,
+      "gru.weight_hh": 6,
+      "gru.bias_ih": 6,
+      "gru.bias_hh": 6,
+      "head.base_weight": 6,
+      "head.spline_weight": 6,
+      "head.bias": 6,
+      "dynamics.base_weight": 6,
+      "dynamics.spline_weight": 6,
+      "dynamics.bias": 6
+    },
+    "nonzero_gradient_seen_by_parameter": {
+      "static_encoder.base_weight": true,
+      "static_encoder.spline_weight": true,
+      "static_encoder.bias": true,
+      "wearable_encoder.base_weight": true,
+      "wearable_encoder.spline_weight": true,
+      "wearable_encoder.bias": true,
+      "gru.weight_ih": true,
+      "gru.weight_hh": true,
+      "gru.bias_ih": true,
+      "gru.bias_hh": true,
+      "head.base_weight": true,
+      "head.spline_weight": true,
+      "head.bias": true,
+      "dynamics.base_weight": true,
+      "dynamics.spline_weight": true,
+      "dynamics.bias": true
+    }
+  },
+  "step_size_before": {
+    "training_only": true,
+    "samples": 8,
+    "steps_compared": [
+      0.25,
+      0.125
+    ],
+    "prediction_max_absolute_difference": 1.4901161193847656e-08,
+    "prediction_rms_difference": 9.497663988611293e-09,
+    "final_hidden_max_absolute_difference": 8.940696716308594e-08,
+    "maximum_absolute_final_hidden": {
+      "0.25": 0.4224702715873718,
+      "0.125": 0.4224703013896942
+    },
+    "warning_threshold_phq_points": 0.01,
+    "instability_warning": false,
+    "all_states_and_predictions_finite": true,
+    "solver_calls": {
+      "0.25": {
+        "integrate_calls": 3,
+        "steps": 12,
+        "rhs_evaluations": 48
+      },
+      "0.125": {
+        "integrate_calls": 3,
+        "steps": 24,
+        "rhs_evaluations": 96
+      }
+    },
+    "training_step_size_unchanged": true,
+    "validation_used_for_step_selection": false,
+    "parameters_unchanged": true
+  },
+  "step_size_after": {
+    "training_only": true,
+    "samples": 8,
+    "steps_compared": [
+      0.25,
+      0.125
+    ],
+    "prediction_max_absolute_difference": 1.1920928955078125e-07,
+    "prediction_rms_difference": 5.57550414725938e-08,
+    "final_hidden_max_absolute_difference": 1.7881393432617188e-07,
+    "maximum_absolute_final_hidden": {
+      "0.25": 0.9745722413063049,
+      "0.125": 0.9745722413063049
+    },
+    "warning_threshold_phq_points": 0.01,
+    "instability_warning": false,
+    "all_states_and_predictions_finite": true,
+    "solver_calls": {
+      "0.25": {
+        "integrate_calls": 3,
+        "steps": 12,
+        "rhs_evaluations": 48
+      },
+      "0.125": {
+        "integrate_calls": 3,
+        "steps": 24,
+        "rhs_evaluations": 96
+      }
+    },
+    "training_step_size_unchanged": true,
+    "validation_used_for_step_selection": false,
+    "parameters_unchanged": true
+  },
+  "prefix_before": {
+    "sm1_gradient_wrt_sm2_exactly_zero": true,
+    "sm1_state_unchanged_when_sm2_changes": true,
+    "prefix_without_sm2_matches": true,
+    "sm1_and_context_gradients_nonzero": true
+  },
+  "prefix_after": {
+    "sm1_gradient_wrt_sm2_exactly_zero": true,
+    "sm1_state_unchanged_when_sm2_changes": true,
+    "prefix_without_sm2_matches": true,
+    "sm1_and_context_gradients_nonzero": true
+  },
+  "restored_predictions_match": true,
+  "preprocessing_unchanged": true,
+  "fresh_initialization_not_sanity_weights": true,
+  "numerical_failures": [],
+  "selection_metric": "validation_rmse within the two smoke epochs"
+}

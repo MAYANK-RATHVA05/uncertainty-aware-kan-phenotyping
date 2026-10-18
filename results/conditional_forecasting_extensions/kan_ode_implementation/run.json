@@ -1,0 +1,84 @@
+{
+  "dataset_dir": "artifacts/conditional_forecasting/sm2-seed42",
+  "dataset_manifest_sha256": "af8c7874005e6f4c008a1e35b3f11109bbcb28d38ff75208c0b42fbc47e5216b",
+  "dataset_files_consumed": [
+    "manifest.json",
+    "splits.npz",
+    "sample_index.npz",
+    "preprocessor.joblib",
+    "train_inputs.npz",
+    "train_targets.npz",
+    "validation_inputs.npz",
+    "validation_targets.npz"
+  ],
+  "consumed_sha256": {
+    "manifest.json": "af8c7874005e6f4c008a1e35b3f11109bbcb28d38ff75208c0b42fbc47e5216b",
+    "splits.npz": "db9ef44c8fdf01ed07269628065dd287872b11f86239d17dab291e8f713ea126",
+    "sample_index.npz": "19dfe017fe49feaa1b7f514d96b3156d98e29998da9d429fb54fa3b525aacf57",
+    "preprocessor.joblib": "bdaf5b1980a8811204c4999bb74c0054410ecab2b945904c759bd7c3a01a5749",
+    "train_inputs.npz": "e36893d6e953a8d7e75cabecccf64db93ac7ca93fed3bb30839abe57c945dcc4",
+    "train_targets.npz": "053b0d7b933f8700bc438cf3f78a0a3d25d947cf9d6dcb794045b9457916ab31",
+    "validation_inputs.npz": "40bebf351865b480fa3d630f03718962aa98e64cf82df2997efd1d17195818a7",
+    "validation_targets.npz": "a13de356f8421045b60fa3749a63030db9b7eb43eb7cc8561d1c59c86ee51873"
+  },
+  "original_input_hashes": {
+    "data": {
+      "path": "[private source path omitted]/anon_processed_df_parquet.csv",
+      "sha256": "3d96afaa768bcd50c56524b931ac2e6acdd5f08c95db16c1e3b13d7dd6ce3934"
+    },
+    "dictionary": {
+      "path": "[private source path omitted]/feature_explanations.tsv",
+      "sha256": "e346b57eb81c8c7d22a6ff0bda71214e527d8bed72eef1c2218d7e5826612e3e"
+    }
+  },
+  "builder_source_hashes": {
+    "build_forecasting_dataset.py": "8a9095f75703d2f2d6b65b240009106b7ea2ad5bc26c432165d82be4be5e23ce",
+    "conditional_forecasting.py": "00bc36cd50e775e637e58d3822822b36225ed39919d562806a548143a9678fe0",
+    "forecasting_splits.py": "fcf4b93e3184732d1dba97ae5781c071997ffab77d1a786edb9ec9a9536a255b",
+    "forecasting_preprocessing.py": "bee2cc449a20d57305bbbd958e4aaf7d866564f63e7b6a395f92c130810c4f4d",
+    "preprocessing.py": "032f99fb041ace049bd4bccc507061a10a6e4d635034821fd7ba9a4fba61a0ba",
+    "dataset.py": "280506856664ff5a73fe479dcf3b7ebbbb01a27b442580c4e9b5c9581102054a"
+  },
+  "source_sha256": {
+    "experiments/forecasting_kan_ode.py": "e2fdaf05d217f37c047e8fae1566e525c4bbaf2729298e8d33d7961ceb37c52b",
+    "experiments/forecasting_sequential_kan.py": "188f1252180381d8228ab8f161f6b9ffd09d19aaefeb5dbe0a9e8e1edfef71b7",
+    "experiments/forecasting_baselines.py": "1008ac7a0d17b51f0e888f9d27632f9119b92d5e1ca857e1cac54dbba27764a9",
+    "experiments/forecasting_kan.py": "4b24a54a9db7cea6c35d6e793eaaa4235e0319174bcb2e0ba454a273287aba9b",
+    "models/latent_kan_ode.py": "3199687c0361b1f2b4d2b69ad1aa6586f7153b5d59bf434faa89b6498abeb57c",
+    "models/sequential_kan.py": "6a8253fe60b90a134ff86091bb4f66de2e811e50904f5bbbafd6c90d83a70af1",
+    "models/kan_layer.py": "227ce8fe5ffc5bbeecf513fbbea50c8f2702b3e26cebc54b1bfabdb584977f1b",
+    "numerics/rk4.py": "e7f747d9d5fe0973f8374962f46dcf247e733984018f674858449a3e58561d26",
+    "training/trainer.py": "8b1d4ab7ca45acf98109b172d2831b77ad47e8765fd8b96179123c588602f1a4",
+    "evaluation/metrics.py": "9c1571faf1bd6f0f39b6b9d861c70be29c147f07aadf8433293813711ad1bbbe"
+  },
+  "preprocessor_sha256": "bdaf5b1980a8811204c4999bb74c0054410ecab2b945904c759bd7c3a01a5749",
+  "versions": {
+    "python": "3.12.14",
+    "torch": "2.9.1+cpu",
+    "numpy": "2.3.5",
+    "rk4_local_implementation": "1.0"
+  },
+  "device": "cpu",
+  "num_threads": 2,
+  "deterministic_algorithms": true,
+  "artifact_sha256": {
+    "config.json": "b41ec65001ff7286134ea8b367c322949dad6613e5408b5df5b666dfdc333b27",
+    "learning_curves.png": "658a40366379c85e09f7e81be9e1128a3f533f986e596c37d0582ce109a11e16",
+    "learning_curves.svg": "4e4ba674607e1fcd0c8ce0d6d576c20d778508488a07fad5b3c38dee3a1d53fa",
+    "preprocessor.joblib": "bdaf5b1980a8811204c4999bb74c0054410ecab2b945904c759bd7c3a01a5749",
+    "sanity/history.json": "cbf7aa1abb61b62de27d64d5be9a52c97512fdd0b525af5bd6afbfe291ffcbc0",
+    "sanity/sanity.json": "fc077bf4f501331ae36d47dc57d48550775f4550f03ca19863e70240ebb9ea99",
+    "sanity/sanity.pt": "bd1c87d9865c2cb6359fa1bf3055ecac69ad63499f203314747b48655fb41f0d",
+    "sanity/training_subset_indices.npz": "0160030b0c9f9d53c033903f626c6f38a42d9ad318d43de676510f424ffc5f49",
+    "smoke/best.pt": "5bf83c78125ad4b0332111c423c346f61980a3f10db84ab5e22e94127e5f3447",
+    "smoke/history.json": "2c7b2124b8c3114e9dbf054596da5bd8e92af7ad280b69d58e9c4adbafca3841",
+    "smoke/initial.pt": "77c9e8065f5be4f742a675bb18b44cca8f49bbf4cb3c8fc27ccde8b94e85357d",
+    "smoke/step_size_after.json": "e13cfc9cad4e749f1673e760d1c82dfe673a852fb493e9780c7f0445069e01bd",
+    "smoke/step_size_before.json": "bc0a85a67cb8b8070d68efbbb7dde91cbdcc89ba4f90e233b60e1fe51d9787ed",
+    "smoke/training_config.json": "7290a488e96644e7c4244615941ec5673df59601c06a99487f3e707bab17c309",
+    "smoke/validation_metrics.json": "13b54e3a3ca7ec05158d61969919e75cf9fc834e9ca28c8f1e9889a7c1f45005",
+    "smoke/validation_predictions.npz": "d542199284c0929ae05bd33788fff402d9e55b1b921ad0ed3eec8b071314bc9a",
+    "summary.json": "8347bf65dd752cdb64bda28c663d3346dc9f36e84ee439a69056db9c4c3d6762",
+    "used_split_indices.npz": "2ae57928c069d291e7bce5ee8184695e35771f23c21b1378e81f1e5f3bcb762c"
+  }
+}

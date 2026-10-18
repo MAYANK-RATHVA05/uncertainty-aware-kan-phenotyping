@@ -1,0 +1,124 @@
+{
+  "format_version": 1,
+  "section": "kan_ode_implementation",
+  "source_artifact_root": "artifacts/conditional_forecasting_kan_ode/sm2-seed42-smoke",
+  "files_count": 14,
+  "files": [
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-seed42-smoke/access_checks.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_implementation/access_checks.json",
+      "source_sha256": "0b84dbd2e2fa3c4e4f581292df872393a549f3afff5208d2d6fcdfdda2f45698",
+      "published_sha256": "0b84dbd2e2fa3c4e4f581292df872393a549f3afff5208d2d6fcdfdda2f45698",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-seed42-smoke/config.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_implementation/config.json",
+      "source_sha256": "b41ec65001ff7286134ea8b367c322949dad6613e5408b5df5b666dfdc333b27",
+      "published_sha256": "b41ec65001ff7286134ea8b367c322949dad6613e5408b5df5b666dfdc333b27",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-seed42-smoke/learning_curves.png",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_implementation/learning_curves.png",
+      "source_sha256": "658a40366379c85e09f7e81be9e1128a3f533f986e596c37d0582ce109a11e16",
+      "published_sha256": "658a40366379c85e09f7e81be9e1128a3f533f986e596c37d0582ce109a11e16",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-seed42-smoke/learning_curves.svg",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_implementation/learning_curves.svg",
+      "source_sha256": "4e4ba674607e1fcd0c8ce0d6d576c20d778508488a07fad5b3c38dee3a1d53fa",
+      "published_sha256": "4e4ba674607e1fcd0c8ce0d6d576c20d778508488a07fad5b3c38dee3a1d53fa",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-seed42-smoke/run.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_implementation/run.json",
+      "source_sha256": "e92de8ebf76f216a054bb796faac03b5e4759a1dd32b5cdb25382238e5451e0e",
+      "published_sha256": "40070a2e221268c3dd0ea3350d2dedda61c2eefdea5ec13cf2b81a5f6cf79f00",
+      "transformations": [
+        {
+          "field": ".dataset_dir",
+          "action": "repository_path_made_relative"
+        },
+        {
+          "field": ".original_input_hashes.data.path",
+          "action": "external_private_path_redacted"
+        },
+        {
+          "field": ".original_input_hashes.dictionary.path",
+          "action": "external_private_path_redacted"
+        }
+      ]
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-seed42-smoke/sanity/history.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_implementation/sanity/history.json",
+      "source_sha256": "cbf7aa1abb61b62de27d64d5be9a52c97512fdd0b525af5bd6afbfe291ffcbc0",
+      "published_sha256": "cbf7aa1abb61b62de27d64d5be9a52c97512fdd0b525af5bd6afbfe291ffcbc0",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-seed42-smoke/sanity/sanity.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_implementation/sanity/sanity.json",
+      "source_sha256": "fc077bf4f501331ae36d47dc57d48550775f4550f03ca19863e70240ebb9ea99",
+      "published_sha256": "fc077bf4f501331ae36d47dc57d48550775f4550f03ca19863e70240ebb9ea99",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-seed42-smoke/smoke/history.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_implementation/smoke/history.json",
+      "source_sha256": "2c7b2124b8c3114e9dbf054596da5bd8e92af7ad280b69d58e9c4adbafca3841",
+      "published_sha256": "2c7b2124b8c3114e9dbf054596da5bd8e92af7ad280b69d58e9c4adbafca3841",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-seed42-smoke/smoke/step_size_after.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_implementation/smoke/step_size_after.json",
+      "source_sha256": "e13cfc9cad4e749f1673e760d1c82dfe673a852fb493e9780c7f0445069e01bd",
+      "published_sha256": "e13cfc9cad4e749f1673e760d1c82dfe673a852fb493e9780c7f0445069e01bd",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-seed42-smoke/smoke/step_size_before.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_implementation/smoke/step_size_before.json",
+      "source_sha256": "bc0a85a67cb8b8070d68efbbb7dde91cbdcc89ba4f90e233b60e1fe51d9787ed",
+      "published_sha256": "bc0a85a67cb8b8070d68efbbb7dde91cbdcc89ba4f90e233b60e1fe51d9787ed",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-seed42-smoke/smoke/training_config.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_implementation/smoke/training_config.json",
+      "source_sha256": "7290a488e96644e7c4244615941ec5673df59601c06a99487f3e707bab17c309",
+      "published_sha256": "7290a488e96644e7c4244615941ec5673df59601c06a99487f3e707bab17c309",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-seed42-smoke/smoke/validation_metrics.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_implementation/smoke/validation_metrics.json",
+      "source_sha256": "13b54e3a3ca7ec05158d61969919e75cf9fc834e9ca28c8f1e9889a7c1f45005",
+      "published_sha256": "13b54e3a3ca7ec05158d61969919e75cf9fc834e9ca28c8f1e9889a7c1f45005",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-seed42-smoke/summary.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_implementation/summary.json",
+      "source_sha256": "8347bf65dd752cdb64bda28c663d3346dc9f36e84ee439a69056db9c4c3d6762",
+      "published_sha256": "8347bf65dd752cdb64bda28c663d3346dc9f36e84ee439a69056db9c4c3d6762",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_kan_ode/sm2-seed42-smoke/validation_checks.json",
+      "destination": "results/conditional_forecasting_extensions/kan_ode_implementation/validation_checks.json",
+      "source_sha256": "d04dad02ee49d553c046378c5baec109a56547cc78cfbca1cd134e05694d955e",
+      "published_sha256": "d04dad02ee49d553c046378c5baec109a56547cc78cfbca1cd134e05694d955e",
+      "transformations": []
+    }
+  ],
+  "additional_authored_files": [
+    "README.md",
+    "publication_checks.json"
+  ],
+  "self_hash_excluded": true
+}

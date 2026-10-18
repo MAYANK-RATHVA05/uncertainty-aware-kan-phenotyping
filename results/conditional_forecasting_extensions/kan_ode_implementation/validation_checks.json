@@ -1,0 +1,59 @@
+{
+  "independent_fresh_process": true,
+  "checks": {
+    "frozen_saved_train_validation_exact_arrays_and_targets": true,
+    "deterministic_128_training_participants_all_340_saved_rows_no_partial_quarters": true,
+    "fixed_diagnostic_indices_are_eight_smoke_training_rows_before_and_after": true,
+    "fresh_seed42_initial_checkpoint_matches_exactly_and_does_not_reuse_sanity_weights": true,
+    "existing_component_initialization_preserved_and_only_dynamics_scaled_001": true,
+    "fixed_two_epoch_AdamW_MSE_clip5_and_validation_RMSE_checkpoint_selection": true,
+    "fresh_process_restore_reproduces_all_851_aligned_predictions_and_manual_metrics_exactly": true,
+    "before_after_step_halving_diagnostics_exactly_reproduced_on_same_training_inputs": true,
+    "SM1_update_computationally_independent_of_SM2_before_and_after_training": true,
+    "static_encoded_once_shared_encoder_GRU_SM1_then_SM2_and_no_state_carry": true,
+    "zero_dynamics_exactly_recovers_copied_weight_recurrent_control": true,
+    "all_16_parameter_tensors_finite_nonzero_for_exactly_six_optimizer_updates": true,
+    "solver_fit_counters_match_20_training_validation_batches": true,
+    "separate_training_only_32_sample_overfit_passes_and_weights_discarded": true,
+    "all_consumed_source_and_original_artifact_hashes_match_and_preprocessing_unchanged": true,
+    "all_106_tracked_four_prior_sequential_files_and_111_old_artifacts_preserved": true,
+    "no_recorded_numerical_failures_or_silent_solver_change": true,
+    "guarded_smoke_and_independent_verification_no_raw_or_reserved_opens": true
+  },
+  "checks_passed": 18,
+  "preservation": {
+    "passed": true,
+    "tracked_files_preserved": 106,
+    "preexisting_untracked_files_preserved": 4,
+    "prior_artifacts_preserved": 111,
+    "prior_artifact_hashes_verified": 107,
+    "reserved_payloads_checked_with_metadata_only": 4,
+    "commit_unchanged": true,
+    "failures": []
+  },
+  "validation_samples": 851,
+  "smoke_training_samples": 340,
+  "smoke_training_participants": 128,
+  "optimizer_updates": 6,
+  "manual_validation_metrics": {
+    "mae": 7.082089221330423,
+    "rmse": 9.290823909530046,
+    "r2": -1.2565901623027083,
+    "n": 851
+  },
+  "before_step_prediction_max_absolute_difference": 1.4901161193847656e-08,
+  "after_step_prediction_max_absolute_difference": 1.1920928955078125e-07,
+  "calibration_or_test_performance_computed": false,
+  "raw_dataset_reopened": false,
+  "scope": "implementation and numerical smoke checks, not scientific validation of latent dynamics",
+  "access_checks_file": "access_checks.json",
+  "repository_tests": {
+    "command": "python -m pytest -q",
+    "passed": 376,
+    "new_tests": 89,
+    "rk4_tests": 34,
+    "latent_model_tests": 26,
+    "experiment_protocol_tests": 29,
+    "seconds": 18.3
+  }
+}
