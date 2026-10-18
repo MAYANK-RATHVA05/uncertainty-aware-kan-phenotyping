@@ -1,0 +1,91 @@
+{
+  "persistence": {
+    "mae": 2.8495887191539366,
+    "rmse": 4.035244260229853,
+    "r2": 0.5743193691196091
+  },
+  "ridge_B": {
+    "mae": 2.808736383452751,
+    "rmse": 3.791514275887223,
+    "r2": 0.6241888823155404
+  },
+  "ridge_D": {
+    "mae": 2.8209296700698037,
+    "rmse": 3.8136326492905885,
+    "r2": 0.6197913906306861
+  },
+  "tabular_KAN": {
+    "mean_and_sample_sd": {
+      "mae": {
+        "mean": 2.9575864826049987,
+        "sample_sd": 0.007532591763900928
+      },
+      "rmse": {
+        "mean": 3.912013463830036,
+        "sample_sd": 0.0037699326842197548
+      },
+      "r2": {
+        "mean": 0.5999215276999311,
+        "sample_sd": 0.0007711599508414915
+      }
+    },
+    "seeds": [
+      {
+        "seed": 42,
+        "validation": {
+          "mae": 2.9625720282979353,
+          "rmse": 3.915984875571929,
+          "r2": 0.5991090574069335,
+          "n": 851
+        }
+      },
+      {
+        "seed": 43,
+        "validation": {
+          "mae": 2.9612660828264286,
+          "rmse": 3.908483961008123,
+          "r2": 0.6006433681173446,
+          "n": 851
+        }
+      },
+      {
+        "seed": 44,
+        "validation": {
+          "mae": 2.9489213366906317,
+          "rmse": 3.911571554910057,
+          "r2": 0.6000121575755153,
+          "n": 851
+        }
+      }
+    ]
+  },
+  "provenance": {
+    "baselines": {
+      "directory": "artifacts/conditional_forecasting_baselines/sm2-seed42",
+      "sha256": {
+        "run.json": "161105f7a0a707d03802cc89da531348d805c8a988eb8e00dab444beec096849",
+        "validation_metrics.json": "824070590b7ebf013d57b5c1ab5e47f1eb71e6b46a75047b2060866ebc70d400",
+        "validation_predictions.npz": "85d1c6d5289ae2f0be9feab3840dc47e6d97f67fe09b37ec16f72754607c140a"
+      }
+    },
+    "ablations": {
+      "directory": "artifacts/conditional_forecasting_feature_ablations/sm2-seed42",
+      "sha256": {
+        "run.json": "30668e2c20eed074661bc7b98532a44e2f454a632e459cf2f1481f8ce3fc752b",
+        "summary.json": "124d45e2411a680e2aa0e2d1ab45df50c21904180e4bc3e7a6bbfdf28c936769",
+        "B/validation_predictions.npz": "831c5729a695bfc7562ebf05bb117d67b1f39761f500e817284ae4d2492b692b",
+        "D/validation_predictions.npz": "f87f321675d8a9ee7d99937e9a3776f36d9a008517aed2dab46d10ddbe16f096"
+      }
+    },
+    "tabular": {
+      "directory": "artifacts/conditional_forecasting_kan/sm2-fixed-seeds42-44",
+      "sha256": {
+        "run.json": "d50df3d11b372999fb98f8b05abe6375e49f95118f642b3ba6b1fae4163fd088",
+        "summary.json": "7db757eecf315f873553a3850ebfe04aa10d74ae8cada18aa957b677c5fe8665",
+        "seed_42/validation_predictions.npz": "1c06638284240d9200f1cd92e27d323ed84e6f5a0ad97f214c38f8ea7663beb3",
+        "seed_43/validation_predictions.npz": "f3d7fe2dcc13d6066f2f4c298980cd0a64e69a397094ecb699116d8e2ac515f2",
+        "seed_44/validation_predictions.npz": "45fa52af16f61703ed0613a15ecb9531028ca7f44a52e4fc331e76c34f18bcce"
+      }
+    }
+  }
+}

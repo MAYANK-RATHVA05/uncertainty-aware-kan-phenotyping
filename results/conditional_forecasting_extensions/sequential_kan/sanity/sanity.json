@@ -1,0 +1,53 @@
+{
+  "training_only": true,
+  "seed": 2026,
+  "samples": 32,
+  "max_steps": 1000,
+  "steps_run": 226,
+  "initial_mse": 57.44514083862305,
+  "final_mse": 0.06179098039865494,
+  "final_rmse": 0.2485779161523705,
+  "seconds": 1.3969881439988967,
+  "pass_rule": "RMSE <=0.25, MSE <=1% initial, finite/nonzero gradients, changed parameters",
+  "passed": true,
+  "gradient_checks": {
+    "all_observed_gradients_finite": true,
+    "backward_calls_by_parameter": {
+      "static_encoder.base_weight": 226,
+      "static_encoder.spline_weight": 226,
+      "static_encoder.bias": 226,
+      "wearable_encoder.base_weight": 226,
+      "wearable_encoder.spline_weight": 226,
+      "wearable_encoder.bias": 226,
+      "gru.weight_ih": 226,
+      "gru.weight_hh": 226,
+      "gru.bias_ih": 226,
+      "gru.bias_hh": 226,
+      "head.base_weight": 226,
+      "head.spline_weight": 226,
+      "head.bias": 226
+    },
+    "nonzero_gradient_seen_by_parameter": {
+      "static_encoder.base_weight": true,
+      "static_encoder.spline_weight": true,
+      "static_encoder.bias": true,
+      "wearable_encoder.base_weight": true,
+      "wearable_encoder.spline_weight": true,
+      "wearable_encoder.bias": true,
+      "gru.weight_ih": true,
+      "gru.weight_hh": true,
+      "gru.bias_ih": true,
+      "gru.bias_hh": true,
+      "head.base_weight": true,
+      "head.spline_weight": true,
+      "head.bias": true
+    }
+  },
+  "parameters_changed": true,
+  "warm_start_experiment": false,
+  "optimizer": {
+    "name": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001
+  }
+}

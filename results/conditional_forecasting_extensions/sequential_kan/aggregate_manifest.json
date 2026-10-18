@@ -1,0 +1,197 @@
+{
+  "format_version": 1,
+  "section": "sequential_kan",
+  "source_artifact_root": "artifacts/conditional_forecasting_sequential_kan/sm2-fixed-seeds42-44",
+  "files_count": 19,
+  "files": [
+    {
+      "source": "artifacts/conditional_forecasting_sequential_kan/sm2-fixed-seeds42-44/access_checks.json",
+      "destination": "results/conditional_forecasting_extensions/sequential_kan/access_checks.json",
+      "source_sha256": "0855223a0afe1cea317c0dfe489416992b4a333701b0a46dab122f1cffcf71a2",
+      "published_sha256": "0855223a0afe1cea317c0dfe489416992b4a333701b0a46dab122f1cffcf71a2",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_sequential_kan/sm2-fixed-seeds42-44/comparisons.json",
+      "destination": "results/conditional_forecasting_extensions/sequential_kan/comparisons.json",
+      "source_sha256": "19819c10016130a47909b754830d4b0025157941073133886da074359f520d26",
+      "published_sha256": "2279e20757409a42f1b87acb5dbda408c5871997df2e18fb133565a0cd59a958",
+      "transformations": [
+        {
+          "field": ".provenance.baselines.directory",
+          "action": "repository_path_made_relative"
+        },
+        {
+          "field": ".provenance.ablations.directory",
+          "action": "repository_path_made_relative"
+        },
+        {
+          "field": ".provenance.tabular.directory",
+          "action": "repository_path_made_relative"
+        }
+      ]
+    },
+    {
+      "source": "artifacts/conditional_forecasting_sequential_kan/sm2-fixed-seeds42-44/config.json",
+      "destination": "results/conditional_forecasting_extensions/sequential_kan/config.json",
+      "source_sha256": "ced90f28c4771aa923f22e985ef8999cf79ab1aa2783764fbec3573d2bfc4aa2",
+      "published_sha256": "ced90f28c4771aa923f22e985ef8999cf79ab1aa2783764fbec3573d2bfc4aa2",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_sequential_kan/sm2-fixed-seeds42-44/learning_curves.png",
+      "destination": "results/conditional_forecasting_extensions/sequential_kan/learning_curves.png",
+      "source_sha256": "d739b025d27b45e105b7391ca970fb7616ea54a9c583285a7b535faf9c8a5faa",
+      "published_sha256": "d739b025d27b45e105b7391ca970fb7616ea54a9c583285a7b535faf9c8a5faa",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_sequential_kan/sm2-fixed-seeds42-44/learning_curves.svg",
+      "destination": "results/conditional_forecasting_extensions/sequential_kan/learning_curves.svg",
+      "source_sha256": "e11ab6c496a42f1376f90d5baea013a9b0cda21cc605cd75ba550b5ef4a092f8",
+      "published_sha256": "e11ab6c496a42f1376f90d5baea013a9b0cda21cc605cd75ba550b5ef4a092f8",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_sequential_kan/sm2-fixed-seeds42-44/run.json",
+      "destination": "results/conditional_forecasting_extensions/sequential_kan/run.json",
+      "source_sha256": "be47baa2164a07a2f8b219dcdb8743603c9a1f890ffcae3f8cc6efbff778a4b1",
+      "published_sha256": "4f2e369c505c71ffa11962c120a4ba172210143c1da5f45bb9d876034462010b",
+      "transformations": [
+        {
+          "field": ".dataset_dir",
+          "action": "repository_path_made_relative"
+        },
+        {
+          "field": ".original_input_hashes.data.path",
+          "action": "external_private_path_redacted"
+        },
+        {
+          "field": ".original_input_hashes.dictionary.path",
+          "action": "external_private_path_redacted"
+        },
+        {
+          "field": ".comparisons.baselines.directory",
+          "action": "repository_path_made_relative"
+        },
+        {
+          "field": ".comparisons.ablations.directory",
+          "action": "repository_path_made_relative"
+        },
+        {
+          "field": ".comparisons.tabular.directory",
+          "action": "repository_path_made_relative"
+        }
+      ]
+    },
+    {
+      "source": "artifacts/conditional_forecasting_sequential_kan/sm2-fixed-seeds42-44/sanity/history.json",
+      "destination": "results/conditional_forecasting_extensions/sequential_kan/sanity/history.json",
+      "source_sha256": "6946a18d74a660862ecd3488a4e0af27aa87023c1c96c7fefff48e4883efbed0",
+      "published_sha256": "6946a18d74a660862ecd3488a4e0af27aa87023c1c96c7fefff48e4883efbed0",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_sequential_kan/sm2-fixed-seeds42-44/sanity/sanity.json",
+      "destination": "results/conditional_forecasting_extensions/sequential_kan/sanity/sanity.json",
+      "source_sha256": "f2c56f49975604e26f45691406fc14649b9ad3d99bfb5ba747dc105f7b7d5b71",
+      "published_sha256": "f2c56f49975604e26f45691406fc14649b9ad3d99bfb5ba747dc105f7b7d5b71",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_sequential_kan/sm2-fixed-seeds42-44/seed_42/history.json",
+      "destination": "results/conditional_forecasting_extensions/sequential_kan/seed_42/history.json",
+      "source_sha256": "ae84c3eb877ca58b127ffc0651944203ea98badc649498c96c696d1353853be7",
+      "published_sha256": "ae84c3eb877ca58b127ffc0651944203ea98badc649498c96c696d1353853be7",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_sequential_kan/sm2-fixed-seeds42-44/seed_42/training_config.json",
+      "destination": "results/conditional_forecasting_extensions/sequential_kan/seed_42/training_config.json",
+      "source_sha256": "2b359c2210528344ab541d34f5f6f36b1a9f8776346dd0ec4a49323af60df199",
+      "published_sha256": "2b359c2210528344ab541d34f5f6f36b1a9f8776346dd0ec4a49323af60df199",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_sequential_kan/sm2-fixed-seeds42-44/seed_42/validation_metrics.json",
+      "destination": "results/conditional_forecasting_extensions/sequential_kan/seed_42/validation_metrics.json",
+      "source_sha256": "f9f518c75ee367d5b4826dd333784f400100933ce5685ac805696c66566ab765",
+      "published_sha256": "f9f518c75ee367d5b4826dd333784f400100933ce5685ac805696c66566ab765",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_sequential_kan/sm2-fixed-seeds42-44/seed_43/history.json",
+      "destination": "results/conditional_forecasting_extensions/sequential_kan/seed_43/history.json",
+      "source_sha256": "40822bc08a7390f0a4efede1e4d1c6d44056b1d6f905eb8dbd61944e200b5d54",
+      "published_sha256": "40822bc08a7390f0a4efede1e4d1c6d44056b1d6f905eb8dbd61944e200b5d54",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_sequential_kan/sm2-fixed-seeds42-44/seed_43/training_config.json",
+      "destination": "results/conditional_forecasting_extensions/sequential_kan/seed_43/training_config.json",
+      "source_sha256": "2ea7d074e6a68246dc20fa7be6867902cca59d4bea83f0f544a0e01fe492e9ca",
+      "published_sha256": "2ea7d074e6a68246dc20fa7be6867902cca59d4bea83f0f544a0e01fe492e9ca",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_sequential_kan/sm2-fixed-seeds42-44/seed_43/validation_metrics.json",
+      "destination": "results/conditional_forecasting_extensions/sequential_kan/seed_43/validation_metrics.json",
+      "source_sha256": "ec82129a7b19c1de9be3122606011bd4a288a6470d7e52e6b3774be113af236c",
+      "published_sha256": "ec82129a7b19c1de9be3122606011bd4a288a6470d7e52e6b3774be113af236c",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_sequential_kan/sm2-fixed-seeds42-44/seed_44/history.json",
+      "destination": "results/conditional_forecasting_extensions/sequential_kan/seed_44/history.json",
+      "source_sha256": "66b47f4fc419dc7b35cc478a55f93ed5809a1741db39cb636b77235bb27a3a96",
+      "published_sha256": "66b47f4fc419dc7b35cc478a55f93ed5809a1741db39cb636b77235bb27a3a96",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_sequential_kan/sm2-fixed-seeds42-44/seed_44/training_config.json",
+      "destination": "results/conditional_forecasting_extensions/sequential_kan/seed_44/training_config.json",
+      "source_sha256": "0412787d85f35fb4bd149dfd1dadcebbd95f428b175aff19dd8ad542c49dcbff",
+      "published_sha256": "0412787d85f35fb4bd149dfd1dadcebbd95f428b175aff19dd8ad542c49dcbff",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_sequential_kan/sm2-fixed-seeds42-44/seed_44/validation_metrics.json",
+      "destination": "results/conditional_forecasting_extensions/sequential_kan/seed_44/validation_metrics.json",
+      "source_sha256": "5502444e42a6e2648cf390865c664201ecf5068fd0e7b739d6317610681365c2",
+      "published_sha256": "5502444e42a6e2648cf390865c664201ecf5068fd0e7b739d6317610681365c2",
+      "transformations": []
+    },
+    {
+      "source": "artifacts/conditional_forecasting_sequential_kan/sm2-fixed-seeds42-44/summary.json",
+      "destination": "results/conditional_forecasting_extensions/sequential_kan/summary.json",
+      "source_sha256": "62eb7fb31a4a796c477377c8088d549433904fa14f2f8f09f4c693cf4b2a9690",
+      "published_sha256": "893cbcb43a2ffb19ae810a6cf8b0c47e39c8a398de28842f1d08fd1efd258dae",
+      "transformations": [
+        {
+          "field": ".comparisons.provenance.baselines.directory",
+          "action": "repository_path_made_relative"
+        },
+        {
+          "field": ".comparisons.provenance.ablations.directory",
+          "action": "repository_path_made_relative"
+        },
+        {
+          "field": ".comparisons.provenance.tabular.directory",
+          "action": "repository_path_made_relative"
+        }
+      ]
+    },
+    {
+      "source": "artifacts/conditional_forecasting_sequential_kan/sm2-fixed-seeds42-44/validation_checks.json",
+      "destination": "results/conditional_forecasting_extensions/sequential_kan/validation_checks.json",
+      "source_sha256": "a5bfe47109e4e4e740dcf1cd7909dde20a56cd49b0c743e45a2133535594b5e3",
+      "published_sha256": "a5bfe47109e4e4e740dcf1cd7909dde20a56cd49b0c743e45a2133535594b5e3",
+      "transformations": []
+    }
+  ],
+  "additional_authored_files": [
+    "README.md",
+    "publication_checks.json"
+  ],
+  "self_hash_excluded": true
+}

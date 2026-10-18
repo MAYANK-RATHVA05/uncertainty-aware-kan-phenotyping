@@ -1,0 +1,69 @@
+{
+  "seed": 44,
+  "validation": {
+    "mae": 2.8371620929059076,
+    "rmse": 3.8161884350613606,
+    "r2": 0.619281610346986,
+    "n": 851
+  },
+  "parameter_count": 23169,
+  "best_epoch": 22,
+  "epochs_run": 32,
+  "training_seconds": 10.673931249000816,
+  "gradient_checks": {
+    "all_observed_gradients_finite": true,
+    "backward_calls_by_parameter": {
+      "static_encoder.base_weight": 1280,
+      "static_encoder.spline_weight": 1280,
+      "static_encoder.bias": 1280,
+      "wearable_encoder.base_weight": 1280,
+      "wearable_encoder.spline_weight": 1280,
+      "wearable_encoder.bias": 1280,
+      "gru.weight_ih": 1280,
+      "gru.weight_hh": 1280,
+      "gru.bias_ih": 1280,
+      "gru.bias_hh": 1280,
+      "head.base_weight": 1280,
+      "head.spline_weight": 1280,
+      "head.bias": 1280
+    },
+    "nonzero_gradient_seen_by_parameter": {
+      "static_encoder.base_weight": true,
+      "static_encoder.spline_weight": true,
+      "static_encoder.bias": true,
+      "wearable_encoder.base_weight": true,
+      "wearable_encoder.spline_weight": true,
+      "wearable_encoder.bias": true,
+      "gru.weight_ih": true,
+      "gru.weight_hh": true,
+      "gru.bias_ih": true,
+      "gru.bias_hh": true,
+      "head.base_weight": true,
+      "head.spline_weight": true,
+      "head.bias": true
+    }
+  },
+  "prefix_checks": {
+    "events": [
+      "initialize_static",
+      "encode_SM1",
+      "update_SM1",
+      "encode_SM2",
+      "update_SM2"
+    ],
+    "static_initializations": 1,
+    "wearable_encoder_shared": true,
+    "gru_shared": true,
+    "sm1_state_unchanged_when_sm2_changes": true,
+    "prefix_only_api_matches_first_update": true,
+    "sm1_gradient_wrt_sm2_exactly_zero": true,
+    "sm1_gradient_wrt_sm1_nonzero": true,
+    "sm1_gradient_wrt_static_nonzero": true,
+    "reversal_performance_requirement": false
+  },
+  "restored_predictions_match": true,
+  "preprocessing_unchanged": true,
+  "shuffle_seed": 42,
+  "warm_start_from_sanity": false,
+  "selection_metric": "validation_rmse"
+}

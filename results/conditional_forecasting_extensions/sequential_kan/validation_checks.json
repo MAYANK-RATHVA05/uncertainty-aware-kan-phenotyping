@@ -1,0 +1,31 @@
+{
+  "checks": {
+    "frozen_sample_alignment_and_exact_SM1_SM2_static_arrays": true,
+    "exact_static_KAN_shared_packet_KAN_GRU_KAN_head_and_parameter_count": true,
+    "fixed_settings_initializations_batch_order_and_validation_only_checkpoint_selection": true,
+    "fresh_process_restoration_exactly_reproduces_all_predictions_and_metrics": true,
+    "all_13_parameter_tensors_have_finite_and_nonzero_training_gradients": true,
+    "shared_encoder_GRU_and_static_once_process_exact_SM1_then_SM2": true,
+    "SM1_state_has_zero_SM2_gradient_and_exact_counterfactual_prefix_invariance": true,
+    "means_and_sample_standard_deviations_recomputed_with_ddof1": true,
+    "separate_overfit_sanity_passes_on_training_samples_only": true,
+    "comparisons_use_unchanged_existing_results_and_identical_validation_indices": true,
+    "input_source_checkpoint_curve_hashes_match_and_preprocessor_is_unchanged": true,
+    "all_existing_tracked_files_and_prior_artifacts_preserved_without_commit": true,
+    "training_and_independent_checks_never_open_reserved_payloads": true
+  },
+  "checks_passed": 13,
+  "tracked_files_preserved": 106,
+  "prior_artifacts_preserved": 184,
+  "dataset_files_opened_during_independent_check": [
+    "manifest.json",
+    "preprocessor.joblib",
+    "sample_index.npz",
+    "splits.npz",
+    "train_inputs.npz",
+    "train_targets.npz",
+    "validation_inputs.npz",
+    "validation_targets.npz"
+  ],
+  "calibration_or_test_performance_computed": false
+}

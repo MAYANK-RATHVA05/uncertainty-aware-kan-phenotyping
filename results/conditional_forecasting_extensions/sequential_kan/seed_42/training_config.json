@@ -1,0 +1,17 @@
+{
+  "task": "regression",
+  "max_epochs": 50,
+  "batch_size": 128,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "patience": 10,
+  "seed": 42,
+  "device": "cpu",
+  "num_threads": 2,
+  "min_delta": 0.0,
+  "gradient_clip": null,
+  "binary_loss": "focal",
+  "focal_alpha": 0.25,
+  "focal_gamma": 2.0,
+  "regression_loss": "mse"
+}
